@@ -148,7 +148,7 @@ $cat_br = listaCategoria($soller);
                         <br>
                         <div class="form-group">
                           <!-- <label for="categoria">Categoria</label> -->
-                          <select name="categoria" id="categoria" class="form-control">
+                          <select name="categoria" id="categoria" class="form-control" required>
                             <option value="">Categoria</option>
                             <?php foreach ($cat_br as $cat) { ?>
                               <option value="<?=$cat->idcategoria;?>"><?=$cat->nome;?></option>

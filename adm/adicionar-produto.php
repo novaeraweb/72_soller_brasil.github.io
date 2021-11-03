@@ -83,14 +83,20 @@ mysqli_select_db($soller, 'sollerbrasil');
 
     if ($linha == ''){
         $linha = '0';
+    } else {
+        $linha_en = $linha - 1;
+        $linha_es = $linha + 1;
     }
 
     if ($colecao == ''){
         $colecao = '0';
+    } else {
+        $colecao_en = $colecao - 1;
+        $colecao_es = $colecao + 1;
     }
     
 //Insert inglês
-$insertSQL = "INSERT INTO produto (nome, descricao, peso_unico, peso_g_br, peso_m_br, peso_p_br, peso_g_en, peso_m_en, peso_p_en, ididioma_prod, arquivo, video, idlinha_prod, idcolecao_prod, ativo, data, user) VALUES ('$nome_en', '$descricao_en', '$peso_unico', '$peso_g_br',  '$peso_m_br', '$peso_p_br','$peso_g_en', '$peso_m_en', '$peso_p_en', '1', '$novo', '$video', '$linha', '$colecao', '$ativo', '$data', '$user' )";      
+$insertSQL = "INSERT INTO produto (nome, descricao, peso_unico, peso_g_br, peso_m_br, peso_p_br, peso_g_en, peso_m_en, peso_p_en, ididioma_prod, arquivo, video, idlinha_prod, idcolecao_prod, ativo, data, user) VALUES ('$nome_en', '$descricao_en', '$peso_unico', '$peso_g_br',  '$peso_m_br', '$peso_p_br','$peso_g_en', '$peso_m_en', '$peso_p_en', '1', '$novo', '$video', '$linha_en', '$colecao_en', '$ativo', '$data', '$user' )";      
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller)); 
 
 //Insert português
@@ -98,6 +104,6 @@ $insertSQL = "INSERT INTO produto (nome, descricao, peso_unico, peso_g_br, peso_
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));     
 
 //Insert espanhol
-$insertSQL = "INSERT INTO produto (nome, descricao, peso_unico, peso_g_br, peso_m_br, peso_p_br, peso_g_en, peso_m_en, peso_p_en, ididioma_prod, arquivo, video, idlinha_prod, idcolecao_prod, ativo, data, user) VALUES ('$nome_es', '$descricao_es', '$peso_unico', '$peso_g_br', '$peso_m_br', '$peso_p_br', '$peso_g_en', '$peso_m_en', '$peso_p_en', '3', '$novo', '$video', '$linha', '$colecao', '$ativo', '$data', '$user')";           
+$insertSQL = "INSERT INTO produto (nome, descricao, peso_unico, peso_g_br, peso_m_br, peso_p_br, peso_g_en, peso_m_en, peso_p_en, ididioma_prod, arquivo, video, idlinha_prod, idcolecao_prod, ativo, data, user) VALUES ('$nome_es', '$descricao_es', '$peso_unico', '$peso_g_br', '$peso_m_br', '$peso_p_br', '$peso_g_en', '$peso_m_en', '$peso_p_en', '3', '$novo', '$video', '$linha_es', '$colecao_es', '$ativo', '$data', '$user')";           
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));  
 header("Location: home.php?inserido=true");

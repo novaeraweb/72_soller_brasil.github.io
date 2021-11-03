@@ -6,9 +6,15 @@ require_once "adm/function.php";
 
 $categoria_get = $_GET['id'];
 
-$query_categorias = "SELECT * FROM categoria WHERE idcategoria = '$categoria_get'";
+$query_categorias = "SELECT c.*, i.ididioma FROM categoria c LEFT JOIN idioma i ON (i.ididioma = c.ididioma_cat) WHERE c.idcategoria = '$categoria_get' AND c.ididioma_cat = '1'";
 $resultado_categorias = mysqli_query($soller, $query_categorias);
 $result = mysqli_fetch_assoc($resultado_categorias);
+
+// var_dump($query_categorias)."<br>";
+// var_dump($result);
+// exit;
+
+
 
 
 $colecoes = listaColecaoFrontEn($soller, $categoria_get);
@@ -113,41 +119,76 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 					
 				</section>
 				<section class="row section section-volume">
-					<div class="row-content buffer even clear-after">	
+					<!-- <div class="row-content buffer even clear-after">	 -->
 						<div class="text-center">
 							<h2><?=$colecao->nome;?></h2>
 							<?=$colecao->descricao;?>
-							<!-- <a class="button transparent aqua" href="#">Full Collection</a> -->
-						</div>
-						<div class="side-mockup animation" style="height:1000px;">
-								<?php $produtos = listaProdutoFront($soller, $idcol); 
+							<h3>Professional Line</h3>
+							<br>
+							<br>
+							<?php $count = 1; $produtos = listaProdutoFront($soller, $idcol); 
 								  foreach ($produtos as $produto) {?>
-									<div class="row-content buffer even clear-after">
-										<h2><?=$produto->nome;?></h2>
-										<?=$produto->descricao;?>
-										<br>
-										<?php if ($produto->peso_unico == '') {?>
-											<?=$produto->peso_p_br?>
-											<?=$produto->peso_m_br?>
-											<?=$produto->peso_g_br?>
-											<?=$produto->peso_p_en?>
-											<?=$produto->peso_m_en?>
-											<?=$produto->peso_g_en?>
-										<?php } else { ?>
-											<?=$produto->peso_unico;?>
-											<?php }?>
-										<figure>
-											<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>">
-										</figure>
-									</div>
+										<?php if ($produto->idlinha_prod == '4'){?>
+											<?php if ($GLOBALS['total'] == 3) {?>
+												<div class="column third">
+											<?php } else {?>
+												<div class="column four">
+											<?php } ?>
+												<figure>
+													<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
+												</figure>
+												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
+												<br>
+												<div class="peso">
+													<?php if ($produto->peso_unico == '') { ?>
+														<ul>
+															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+														</ul>
+													<?php } else {?>
+														<ul>
+															<li><?=$produto->peso_unico;?></li>
+														</ul>
+													<?php }?>
+												</div>
+											</div>
+										<?php } else {?>
+											<?php if ($count == 1) {?>
+												<br>
+												<div style="width: 90%; margin-left: 5%;">
+													<hr>
+												</div>
+												<br>
+												<h3>Maintenance Line</h3>
+												<br>
+											<?php } $count++;?>
+											<div class="column third">
+												<figure>
+													<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
+												</figure>
+												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong> <?=$produto->descricao;?></p>
+												<br>
+												<div class="peso">
+													<?php if ($produto->peso_unico == '') { ?>
+														<ul>
+															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+														</ul>
+													<?php } else {?>
+														<ul>
+															<li><?=$produto->peso_unico;?></li>
+														</ul>
+													<?php }?>
+												</div>
+											</div>
+										<?php }?>
 								<?php }?>
 						</div>
-					</div>	
 				</section>
 				<?php $i++; ?>
 				<?php } ?>
-
-				
 				
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
