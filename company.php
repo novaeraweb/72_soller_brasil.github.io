@@ -29,41 +29,7 @@
 				<p>In order to bring the quality of S'ollér Brazil products to every corner of the world, we dream higher<br>and start our international opening in 2008, with partners who believe<br>in the brand and gain space in other continents.</p>
 			</div><!-- intro-wrap -->
 
-			<div id="main">
-
-				<section class="row section">
-					<div class="row-content buffer even clear-after">
-						<div class="custom-carousel" data-autoplay="5000" data-pagination="true" data-transition="fade" data-autoheight="false">
-							<div class="carousel-item">
-								<div class="column four">
-									<img src="http://placehold.it/800x300/ddd/fff&text=Beetle%20image" alt="">
-								</div>
-								<div class="column eight last">
-									<h3>I create simple interfaces for humans and enjoy pixel-perfection.</h3>
-									<p>I’m an experienced and passionate user interface designer with interaction design background.</p>
-								</div>
-							</div><!-- carousel-item -->
-							<div class="carousel-item">
-								<div class="column four">
-									<img src="http://placehold.it/800x300/ddd/fff&text=Beetle%20image" alt="">
-								</div>
-								<div class="column eight last">
-									<h3>I am a top experience designer.</h3>
-									<p>I’m an experienced and passionate user interface designer with interaction design background.</p>
-								</div>
-							</div><!-- carousel-item -->
-							<div class="carousel-item">
-								<div class="column four">
-									<img src="http://placehold.it/800x300/ddd/fff&text=Beetle%20image" alt="">
-								</div>
-								<div class="column eight last">
-									<h3>I am a Themeforest Elite Author.</h3>
-									<p>I’m an experienced and passionate user interface designer with interaction design background.</p>
-								</div>
-							</div><!-- carousel-item -->
-						</div>			
-					</div>
-				</section>								
+			<div id="main">							
 
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
@@ -95,7 +61,6 @@
 								<time datetime="2004">2004</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>STARTED ITS ACTIVITIES</h5>
 										<div class="role">In the cosmetics manufacturing by releasing Surf Wax pomades</div>
@@ -108,7 +73,6 @@
 								<time datetime="2013">2005</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>AGI MAX RELEASE</h5>
 										<div class="role">First 3 steps hair smoothening.</div>
@@ -121,7 +85,6 @@
 								<time datetime="2006">2006</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>INTERNATIONAL</h5>
 										<div class="role">Opening international market</div>
@@ -133,7 +96,6 @@
 								<time datetime="2008">2008</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>AWARDS</h5>
 										<div class="role">SINDBELEZA Partner</div>
@@ -145,7 +107,6 @@
 								<time datetime="2009">2009/2010</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>RELEASE</h5>
 										<div class="role">Day by Day colletion and Radiance Color Plus Collection</div>
@@ -157,7 +118,6 @@
 								<time datetime="2009">2012 a 2015</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>IMPROVEMENTS</h5>
 										<div class="role">Stablishment of Riello Group, which includes 3 industries with full structure for manufacturing to national and international clients.</div>
@@ -169,50 +129,76 @@
 								<time datetime="2016">2016/2017</time>
 								<div class="experience">
 									<span class="circle"></span>
-									<div class="experience-img"><img src="http://placehold.it/120x120/ddd/fff&text=Beetle%20image" alt=""></div>
 									<div class="experience-info clear-after">
 										<h5>OVERCONVEIVED</h5>
 										<div class="role">S’ollér Brasil currently produces about 900 tons net per year. Being present all over the country and over 40 countries.</div>
 										<p></p>
 									</div><!-- experience-info -->
 								</div><!-- experience -->								
+							</div><!-- year -->	
+							<div class="year">
+								<time datetime="2016">2021</time>
+								<div class="experience">
+									<span class="circle"></span>
+								
+									<div class="experience-info clear-after">
+										<h5>TEXT</h5>
+										<div class="role">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque.</div>
+										<p></p>
+									</div><!-- experience-info -->
+								</div><!-- experience -->								
 							</div><!-- year -->									
 						</div><!-- timeline -->
 					</div>	
-				</section>							
-
+				</section>
+			<div class="banner-infra" style="color:white; text-align: center;padding-top:4%;">
+				<h2 style="color:white;">INFRAESTRUCTURE</h2>
+				<p>We are located in a wide production park that allows us to<br>produce products of differentiated quality and with exclusive formulas.</p>
+			</div><!-- intro-wrap -->							
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
-					<div class="section-title"><h3>Contact</h3></div>	
+						<div class="column" style="text-align:justify;">
+							<p>Our products are created and developed by our Research & Development teams, in modern and differentiated structures. Our laboratories count on sectors of Quality Control and automated machinery, reducing the human contact and increasing the quality of our products. In addition, our products are packaged and labeled in the same production park, streamlining logistics and eliminating contact with contaminants.</p>
+							<p>At year-end,<strong>S’ollér Brasil</strong> counts on the production capacity of 900 tons of products, distributed by our logistic structure of more than 10 thousand square meters. It is with this solid and modern structure that we are able to produce innovative collections of exceptional quality to bring beauty products around the world.</p>
+						</div><!-- timeline-label -->		
+					</div>	
+				</section>	
+				<section class="row section">
+					<div class="row-content buffer even clear-after">
+						<h3>Talk with us</h3>
 						<div class="column nine">
-							<form class="contact-section">
+							<form id="contact-form" class="contact-section" method="post" action="">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
-								<input class="name plain buffer" type="text" placeholder="Full name">
+								<input class="name plain buffer" type="text" name="name" placeholder="Full name">
 								<span class="pre-input"><i class="icon icon-email"></i></span>
-								<input class="email plain buffer" type="email" placeholder="Email address">
-								<textarea class="plain buffer" placeholder="Don't forget that kindness is all!"></textarea>
-								<input class="plain button red" type="submit" value="Send">
+								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
+								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
+								<input id="send" class="plain button red" type="button" value="Send a Message">
 							</form>	
-						</div>	
+							<div id="success"></div>
+						</div>
 						<div class="column three last">
 							<div class="widget">
 								<h4>Location</h4>
-								<p>
-									13, 2 Elizabeth ST,<br>
-									Melbourne, Victoria 3000,<br>
-									Australia
-								</p>
+								<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, 18608-590<br> Botucatu/SP | Brasil</p>
 							</div>
 							<div class="widget">
-								<h4>I am Social</h4>
+								<h4>Social Media</h4>
 								<ul class="inline meta-social">
-									<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>
-					</div>	
+					</div>
+				</section>
+				<section class="row section call-to-action">
+					<div class="row-content buffer even animation">
+						<p>WANT TO BE OUR REPRESENTATIVE?</p>
+						<a class="button red" href="#">Contact us</a>
+					</div>
 				</section>	
 			</div><!-- id-main -->
 		</main><!-- main -->

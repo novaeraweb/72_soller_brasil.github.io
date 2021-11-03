@@ -115,12 +115,12 @@
 						<div class="row" style="text-align:center;">
                 <div class="column four" style="text-align:center;margin-left:4%;">
                     <img src="img/13-anos.svg" height="100" style="margin:0 auto;">
-										<h3><strong>13</strong></h3>
+										<h3><strong>20</strong></h3>
                     <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">years in the <br>cosmetics market</h4>    
                 </div>
             		<div class="column three" style="text-align:center;">
               		<img src="img/paises-alcancados.svg" height="100" style="margin:0 auto">
-									<h3><strong>40</strong></h3>
+									<h3><strong>48</strong></h3>
                   <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">countries reached <br>by 2017</h4>
                 </div>
                 <div class="column four" style="text-align:center;">

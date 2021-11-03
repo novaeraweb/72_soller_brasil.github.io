@@ -169,40 +169,51 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 				<section class="row section section-volume bg"style="background: url(adm/arquivos/coleção-agi-one.png) no-repeat;background-size: 100%;">
 				</section>
 				<div class="row colecao" style="text-align:center;">
+					<ul>
+						<li>1 step only volume reduction.</li>
+						<li>3 product versions for 3 hair versions (Thin, Blond Highlighted and Thick)</li>
+						<li>Formaldehyde and Glyoxylic Acid Free</li>
+					</ul>
 					<h3>Professional Line</h3>
-            		<div class="column four" style="text-align:center;width: 27.75%;margin-left:4%;">
-                		<img src="img/produtos/agi-plus-1.png"  style="margin:0 auto">
-						<h4>Step 1 | Shampoo Deep Cleasing</h4>
-                		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Deep Cleansing Shampoo</strong> has a foaming action. deep cleasing hair without damaging is fiber.</p>
+            		<div class="column four" style="text-align:center;width:20%;margin-left:4%;">
+                		<img src="img/produtos/agi-one-co-wash-1000x1000.png"  style="margin:0 auto">
+						<h4>Co-Wash</h4>
+                		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi One Co-Wash Conditioner</strong> provides "Long Lasting Liss" effect which align and protect the hair fiber. For frizzy and volumous hair.</p>
                 		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>60ml – 2.02 fl oz</li>
-							<li>500ml – 16.90 fl oz</li>
 							<li>1000ml – 33.81 fl oz</li>
-                		</ul>   
+                		</ul>
+                		<p style="text-align:center;"><a href="https://www.youtube.com/watch?v=-qVbP0FO1gU&t=17s" target="_blank"> Watch the step by step <img src="img/icon-youtube.svg" width="10%" style="display:inline-block;vertical-align: middle;margin-left: 10px;"></a></p>  
             		</div>
-            		<div class="column four" style="text-align:center;width: 27.75%;">
-              			<img src="img/produtos/agi-plus-2.png"  style="margin:0 auto">
-						<h4>Step 2 | Reconstructive Butter</h4>
-                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Reconstructive Butter</strong>, promotes deep nutrition and emollience, making hair more manageable, frizz free and qith as intense shine.</p>
+            		<div class="column four" style="text-align:center;width:20%;">
+              			<img src="img/produtos/agi-one-co-wash-violet-1000x1000.png"  style="margin:0 auto">
+						<h4>Co-Wash Violet</h4>
+                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi One Co-Wash Violet Conditioner</strong> has a casting effect which neutralizes the yellow shades and realigns the hair fiber. For blond and highlighted hair.</p>
                   		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
+							<li>1000ml – 33.81 fl oz</li>
+                		</ul>
+                		<p style="text-align:center;"><a href="https://www.youtube.com/watch?v=djONx23XQ7I&t=2s" target="_blank"> Watch the step by step <img src="img/icon-youtube.svg" width="10%" style="display:inline-block;vertical-align: middle;margin-left: 10px;"></a></p>  
+                	</div>
+                	<div class="column four" style="text-align:center;width:20%;">
+                  		<img src="img/produtos/agi-one-serum-1000x1000.png"  style="margin:0 auto">
+                  		<h4>Sérum</h4>
+                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>The Agi One Sérum Conditioner</strong> is an expert on shielding the hair, reducing frizz and "faint effect". For thick and rebels hair.</p>
+                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
+							<li>1000ml – 33.81 fl oz</li>
+                		</ul>
+                		<p style="text-align:center;"><a href="https://www.youtube.com/watch?v=Vy6WnGsBHvs&t=106s" target="_blank"> Watch the step by step <img src="img/icon-youtube.svg" width="10%" style="display:inline-block;vertical-align: middle;margin-left: 10px;"></p>  
+                	</div>
+                	<div class="column four" style="text-align:center;width:20%;">
+                  		<img src="img/produtos/agi-one-deep-cleansing-1000x1000.png"  style="margin:0 auto">
+                  		<h4>Shampoo Deep Cleasing</h4>
+                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">Cleans hair and scalp, taking off the oiliness without damage hair fiber, removing impurities and repairing hair for other procedures.</p>
+                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
                 			<li>60ml – 2.02 fl oz</li>
 							<li>500ml – 16.90 fl oz</li>
-							<li>1000ml – 33.81 fl oz</li>
-                		</ul>  
-                	</div>
-                	<div class="column four" style="text-align:center;width: 27.75%;">
-                  		<img src="img/produtos/agi-plus-3.png"  style="margin:0 auto">
-                  		<h4>Step 3 | Finish Mask</h4>
-                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Finishing Mask</strong> instantly nourishes your hair, untangling and promoting fiber softness.</p>
-                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>55g – 1.94 oz</li>
-							<li>460g – 16.23 oz</li>
-							<li>920g – 32.45 oz</li>
                 		</ul>  
                 	</div>
                 	<h3 style="padding:7% 0 2% 0">Line Maintenance</h3>
                  	<div class="column four" style="text-align:center;width: 27.75%;margin-left:4%;">
-                		<img src="img/produtos/agi-one-shampoo-maintenance-500ml.png" width="150" style="margin:0 auto">
+                		<img src="img/produtos/agi-one-shampoo-maintenance-500ml.jpg"  style="margin:0 auto">
 						<h4>Shampoo Maintenance</h4>
                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">Developed to increase the durability of the treatment and to keep your hair hydrated, reduces the volume and makes the hair softer and realigned much longer.</p>
                 		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
@@ -210,7 +221,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
                 		</ul>   
             		</div>
             		<div class="column four" style="text-align:center;width: 27.75%;">
-              			<img src="img/produtos/agi-one-conditioning-maintenance-460g.png" width="150" style="margin:0 auto">
+              			<img src="img/produtos/agi-one-conditioning-maintenance-460g.jpg" style="margin:0 auto">
 						<h4>Conditioner Maintenance</h4>
                   		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">The combinated use with Shampoo Agi One Maintenance ensures that the treatment lasts much longer. Keeps your hair hydrated, controlling the volume and providing softness to your hair.</p>
                   		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
@@ -218,7 +229,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
                 		</ul>  
                 	</div>
                 	<div class="column four" style="text-align:center;width: 27.75%;">
-                  		<img src="img/produtos/agi-one-thermo- control-maintenance-120ml.png" width="150" style="margin:0 auto">
+                  		<img src="img/produtos/agi-one-thermo- control-maintenance-120ml.jpg" style="margin:0 auto">
                   		<h4>Thermo Control Maintenance</h4>
                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">Forms a film that seals the cuticles and shields your hair from damage caused by heat of the dryer and flat iron. Prolongs the smooth effect, decreases the volume, moisturizes and conditions the hair, restoring shine and softness lost for damage caused in chemical processes.</p>
                         <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
@@ -226,28 +237,13 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
                 		</ul>  
                 	</div>
 
-     			</div>
-				<section class="row section section-volume bg"style="background: url(adm/arquivos/soller-brasil-296329079.png) no-repeat; background-size: 100%;">	
-				</section>
-				<section class="row section section-volume">
-					<div class="row-content buffer even clear-after">	
-						<div class="text-center">
-							<h2>NOme</h2>
-						
-							<!-- <a class="button transparent aqua" href="#">Full Collection</a> -->
-						</div>
-					</div>	
-				</section>
-			
-
-				
-				
+     			</div>			
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
-						<p>Have you fallen in love with Beetle?</p>
-						<a class="button red" href="#">Buy it now!</a>
+						<p>WANT TO BE OUR REPRESENTATIVE?</p>
+						<a class="button red" href="#">Contact us</a>
 					</div>
-				</section>				
+				</section>					
 
 			</div><!-- id-main -->
 		</main><!-- main -->

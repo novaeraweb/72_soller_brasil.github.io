@@ -118,7 +118,7 @@ img {
     position: relative;
     z-index: 10;
     overflow: hidden;
-    background-color: #fbfbfb;
+    background-color:white;
 }
 
 section {
@@ -283,12 +283,27 @@ h6 {
     Banners
 ----------------------------------------------------------------*/
 .banner-contato {
-    background-image: url(img/back-contato.jpg);
+    background-image: url(img/banner-contato.jpg);
     background-size: 100%;
-    height:400px;
+    height:300px;
 }
 .banner-reseller {
     background-image: url(img/banner-reseller.jpg);
+    background-size: 100%;
+    height:300px;
+}
+.banner-company {
+    background-image: url(img/banner-company.jpg);
+    background-size: 100%;
+    height:300px;
+}
+.banner-comex {
+    background-image: url(img/banner-comex.jpg);
+    background-size: 100%;
+    height:300px;
+}
+.banner-infra {
+    background-image: url(img/banner-infra.jpg);
     background-size: 100%;
     height:300px;
 }
