@@ -6,7 +6,7 @@ require_once "adm/function.php";
 
 $categoria_get = $_GET['id'];
 
-$query_categorias = "SELECT * FROM categoria WHERE idcategoria = '$categoria_get'";
+$query_categorias = "SELECT c.*, i.ididioma FROM categoria c LEFT JOIN idioma i ON (i.ididioma = c.ididioma_cat) WHERE c.idcategoria = '$categoria_get' AND c.ididioma_cat = '1'";
 $resultado_categorias = mysqli_query($soller, $query_categorias);
 $result = mysqli_fetch_assoc($resultado_categorias);
 
@@ -88,8 +88,8 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 				<div id="intro" class="preload" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fade">	
 					<div class="intro-item" style="background-image:url(img/black-back.jpg);">
 					<div class="section-title">
-						<h2>Volume Reduction</h2>
-						<p>OUR VOLUME REDUCTORS REALIGN HAIR WITHOUT DAMAGE THEM, PROVIDING INTENSE MOISTURIZING.<br>EACH COLLECTION HAVE ACTIVES WHICH FITS BETTER TO EACH KIND OF HAIR, PERFORMING THE CORRECT TREATMENT.</p>
+						<h2><?=$result['nome'];?></h2>
+						<?=$result['descricao_breve'];?>
 					</div>	
 				</div>					
 			
@@ -98,149 +98,91 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 
 			<div id="main">
 				
-				<section class="row section">
+					<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<?=$result['descricao_longa'];?>
 					</div>	
 				</section>	
 
-
-				<section class="row section section-volume bg" style="background: url(adm/arquivos/coleção-agi-max-plus.png) no-repeat;background-size: 100%;">
-				</section>
-				<div class="row colecao" style="text-align:center;padding-bottom:54%;">
-					<h3>Professional Line</h3>
-            		<div class="column four" style="text-align:center;width: 27.75%;margin-left:4%;">
-                		<img src="img/produtos/agi-plus-1.png"  style="margin:0 auto">
-						<h4>Step 1 | Shampoo Deep Cleasing</h4>
-                		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Deep Cleansing Shampoo</strong> has a foaming action. deep cleasing hair without damaging is fiber.</p>
-                		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>60ml – 2.02 fl oz</li>
-							<li>500ml – 16.90 fl oz</li>
-							<li>1000ml – 33.81 fl oz</li>
-                		</ul>   
-            		</div>
-            		<div class="column four" style="text-align:center;width: 27.75%;">
-              			<img src="img/produtos/agi-plus-2.png"  style="margin:0 auto">
-						<h4>Step 2 | Reconstructive Butter</h4>
-                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Reconstructive Butter</strong>, promotes deep nutrition and emollience, making hair more manageable, frizz free and qith as intense shine.</p>
-                  		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>60ml – 2.02 fl oz</li>
-							<li>500ml – 16.90 fl oz</li>
-							<li>1000ml – 33.81 fl oz</li>
-                		</ul>  
-                	</div>
-                	<div class="column four" style="text-align:center;width: 27.75%;">
-                  		<img src="img/produtos/agi-plus-3.png"  style="margin:0 auto">
-                  		<h4>Step 3 | Finish Mask</h4>
-                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Finishing Mask</strong> instantly nourishes your hair, untangling and promoting fiber softness.</p>
-                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>55g – 1.94 oz</li>
-							<li>460g – 16.23 oz</li>
-							<li>920g – 32.45 oz</li>
-                		</ul>  
-                	</div>
-                	<h3 style="padding:7% 0 2% 0">Line Maintenance</h3>
-                 	<div class="column four" style="text-align:center;width: 27.75%;margin-left:4%;">
-                		<img src="img/produtos/agi-max-shampoo-maintenance-250ml.png"  style="margin:0 auto">
-						<h4>Shampoo Maintenance</h4>
-                		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Maintenance Shampoo</strong> gently cleanses providing full emollience and volume control on frizzy hair.</p>
-                		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>250ml – 2.02 fl oz</li>
-                		</ul>   
-            		</div>
-            		<div class="column four" style="text-align:center;width: 27.75%;">
-              			<img src="img/produtos/agi-max-conditioner-maintenance-240g.png"  style="margin:0 auto">
-						<h4>Conditioner Maintenance</h4>
-                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Reconstructive Butter</strong>, promotes deep nutrition and emollience, making hair more manageable, frizz free and qith as intense shine.</p>
-                  		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>240g – 2.02 oz</li>
-                		</ul>  
-                	</div>
-                	<div class="column four" style="text-align:center;width: 27.75%;">
-                  		<img src="img/produtos/agi-max-hair-mask-maintenance-250g.png"  style="margin:0 auto">
-                  		<h4>Hair Mask Maintenance</h4>
-                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Finishing Mask</strong> instantly nourishes your hair, untangling and promoting fiber softness.</p>
-                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>250g – 1.94 oz</li>
-                		</ul>  
-                	</div>
-
-     			</div>
-				<section class="row section section-volume bg"style="background: url(adm/arquivos/coleção-agi-one.png) no-repeat;background-size: 100%;">
-				</section>
-				<div class="row colecao" style="text-align:center;">
-					<h3>Professional Line</h3>
-            		<div class="column four" style="text-align:center;width: 27.75%;margin-left:4%;">
-                		<img src="img/produtos/agi-plus-1.png"  style="margin:0 auto">
-						<h4>Step 1 | Shampoo Deep Cleasing</h4>
-                		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Deep Cleansing Shampoo</strong> has a foaming action. deep cleasing hair without damaging is fiber.</p>
-                		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>60ml – 2.02 fl oz</li>
-							<li>500ml – 16.90 fl oz</li>
-							<li>1000ml – 33.81 fl oz</li>
-                		</ul>   
-            		</div>
-            		<div class="column four" style="text-align:center;width: 27.75%;">
-              			<img src="img/produtos/agi-plus-2.png"  style="margin:0 auto">
-						<h4>Step 2 | Reconstructive Butter</h4>
-                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Reconstructive Butter</strong>, promotes deep nutrition and emollience, making hair more manageable, frizz free and qith as intense shine.</p>
-                  		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>60ml – 2.02 fl oz</li>
-							<li>500ml – 16.90 fl oz</li>
-							<li>1000ml – 33.81 fl oz</li>
-                		</ul>  
-                	</div>
-                	<div class="column four" style="text-align:center;width: 27.75%;">
-                  		<img src="img/produtos/agi-plus-3.png"  style="margin:0 auto">
-                  		<h4>Step 3 | Finish Mask</h4>
-                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong>Agi Max Plus Finishing Mask</strong> instantly nourishes your hair, untangling and promoting fiber softness.</p>
-                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>55g – 1.94 oz</li>
-							<li>460g – 16.23 oz</li>
-							<li>920g – 32.45 oz</li>
-                		</ul>  
-                	</div>
-                	<h3 style="padding:7% 0 2% 0">Line Maintenance</h3>
-                 	<div class="column four" style="text-align:center;width: 27.75%;margin-left:4%;">
-                		<img src="img/produtos/agi-one-shampoo-maintenance-500ml.png" width="150" style="margin:0 auto">
-						<h4>Shampoo Maintenance</h4>
-                		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">Developed to increase the durability of the treatment and to keep your hair hydrated, reduces the volume and makes the hair softer and realigned much longer.</p>
-                		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>500ml – 16.90 fl oz</li>
-                		</ul>   
-            		</div>
-            		<div class="column four" style="text-align:center;width: 27.75%;">
-              			<img src="img/produtos/agi-one-conditioning-maintenance-460g.png" width="150" style="margin:0 auto">
-						<h4>Conditioner Maintenance</h4>
-                  		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">The combinated use with Shampoo Agi One Maintenance ensures that the treatment lasts much longer. Keeps your hair hydrated, controlling the volume and providing softness to your hair.</p>
-                  		<ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>460g – 16.22 oz</li>
-                		</ul>  
-                	</div>
-                	<div class="column four" style="text-align:center;width: 27.75%;">
-                  		<img src="img/produtos/agi-one-thermo- control-maintenance-120ml.png" width="150" style="margin:0 auto">
-                  		<h4>Thermo Control Maintenance</h4>
-                 		<p class="mbr-content-title mbr-bold mbr-fonts-style display-7">Forms a film that seals the cuticles and shields your hair from damage caused by heat of the dryer and flat iron. Prolongs the smooth effect, decreases the volume, moisturizes and conditions the hair, restoring shine and softness lost for damage caused in chemical processes.</p>
-                        <ul style="padding-left: 0;font-size: 0.8em;font-weight: bold;">
-                			<li>120ml – 4.06 fl oz</li>
-                		</ul>  
-                	</div>
-
-     			</div>
-				<section class="row section section-volume bg"style="background: url(adm/arquivos/soller-brasil-296329079.png) no-repeat; background-size: 100%;">	
+				<?php $i = 1; foreach ($colecoes as $colecao) {?>	
+				<?php $idcol = $colecao->idcolecao;?>
+				<section class="row section section-volume bg"
+								 style="background: url(adm/arquivos/<?=$colecao->arquivo;?>) no-repeat;
+								 				background-size: 100%;"
+				>
+					
 				</section>
 				<section class="row section section-volume">
-					<div class="row-content buffer even clear-after">	
+					<!-- <div class="row-content buffer even clear-after">	 -->
 						<div class="text-center">
-							<h2>NOme</h2>
-						
-							<!-- <a class="button transparent aqua" href="#">Full Collection</a> -->
+							<h2><?=$colecao->nome;?></h2>
+							<?=$colecao->descricao;?>
+							<h3>Professional Line</h3>
+							<br>
+							<br>
+							<?php $count = 1; $produtos = listaProdutoFront($soller, $idcol); 
+								  foreach ($produtos as $produto) {?>
+										<?php if ($produto->idlinha_prod == '4'){?>
+											<?php if ($GLOBALS['total'] == 3) {?>
+												<div class="column third">
+											<?php } else {?>
+												<div class="column four">
+											<?php } ?>
+												<figure>
+													<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
+												</figure>
+												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
+												<br>
+												<div class="peso">
+													<?php if ($produto->peso_unico == '') { ?>
+														<ul>
+															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+														</ul>
+													<?php } else {?>
+														<ul>
+															<li><?=$produto->peso_unico;?></li>
+														</ul>
+													<?php }?>
+												</div>
+											</div>
+										<?php } else {?>
+											<?php if ($count == 1) {?>
+												<br>
+												<div style="width: 90%; margin-left: 5%;">
+													<hr>
+												</div>
+												<br>
+												<h3>Maintenance Line</h3>
+												<br>
+											<?php } $count++;?>
+											<div class="column third">
+												<figure>
+													<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
+												</figure>
+												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong> <?=$produto->descricao;?></p>
+												<br>
+												<div class="peso">
+													<?php if ($produto->peso_unico == '') { ?>
+														<ul>
+															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+														</ul>
+													<?php } else {?>
+														<ul>
+															<li><?=$produto->peso_unico;?></li>
+														</ul>
+													<?php }?>
+												</div>
+											</div>
+										<?php }?>
+								<?php }?>
 						</div>
-					</div>	
 				</section>
-			
-
-				
+				<?php $i++; ?>
+				<?php } ?>
 				
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
