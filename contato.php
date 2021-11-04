@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="The Page Description">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
-		<title>Talk with us | S'ollér Brasil</title>
+		<title>Contact Us | S'ollér Brasil</title>
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
 		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
 		<link rel="stylesheet" href="style.css" media="screen">

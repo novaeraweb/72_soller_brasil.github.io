@@ -13,10 +13,10 @@ $categorias = listaCategoriaEn($soller);
 			<nav>
 				<ul class="reset" role="navigation">
 					<li class="menu-item"><a href="index.php">Home</a></li>
-					<li class="menu-item"><a href="company.php">The S'ollér</a>
+					<li class="menu-item"><a href="company.php">S'ollér</a>
 						<ul class="sub-menu">
 							<li><a href="company.php">The company</a></li>
-							<li><a href="comex.php">S'ollér Internacional</a></li>
+							<li><a href="comex.php">S'ollér International</a></li>
 						</ul>
 					</li>
 					<li class="menu-item">
@@ -27,7 +27,7 @@ $categorias = listaCategoriaEn($soller);
 							<?php }?>
 						</ul>
 					</li>
-					<li class="menu-item"><a href="contato.php">Talk whit us</a></li>
+					<li class="menu-item"><a href="contato.php">Contact us</a></li>
 					<li class="menu-item revenda"><a href="reseller.php">Be a reseller</a></li>
 					<li><a href=""> <img src="img/icon-brazil.png"></a></li>
 					<li><a href=""> <img src="img/icon-usa.png"></a></li>

@@ -35,4 +35,4 @@
 	</div><!-- row -->
 	<?php require_once "whatsapp.php" ?>
 </footer>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:200,400,700|Open+Sans:400italic,700italic,200,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Open+Sans:400italic,700italic,200,400,700' rel='stylesheet' type='text/css'>
