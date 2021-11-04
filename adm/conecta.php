@@ -2,7 +2,7 @@
 
 $URL_ATUAL= "$_SERVER[SERVER_NAME]";
 
-if (strpos($URL_ATUAL, 'soller') !== false) {
+if (strpos($URL_ATUAL, 'soller') !== false OR strpos($URL_ATUAL, 'novaeraweb') !== false) {
   $soller = mysqli_connect('mysql745.umbler.com', 'sollerbrasil', 'sb*010203', 'sollerbrasil');
 } else {
 	$soller = mysqli_connect('localhost', 'root', 'root', 'sollerbrasil');
