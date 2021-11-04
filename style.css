@@ -611,8 +611,11 @@ nav ul.sub-menu > li:last-child > a {
 .section-finishing {
     height:600px;
 }
+
+
+/* Configurações da Seção de Produtos */
 .section-volume {
-    height:500px;
+    height: auto;
 }
 
 .section-volume.bg{
@@ -622,6 +625,40 @@ nav ul.sub-menu > li:last-child > a {
 .section-volume .text-center{
     text-align: center;
 }
+
+
+.section-volume .column.four{
+    width: 20%;
+}
+
+.section-volume .column.third{
+    width: 28%;
+}
+
+.section-volume .column.third:first-of-type, .section-volume .column.four:first-of-type{
+    margin-left: 4%;
+}
+
+div.column:nth-child(13){
+    margin-left: 4%;
+}
+
+.section-volume .column.four h2, .section-volume .column.third h2{
+    font-size: 1.2em;
+}
+
+.section-volume .column.four .peso ul li, .section-volume .column.third .peso ul li{
+    text-align: center;
+    font-size: 0.9em;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.section-volume .column.third > figure img{
+    width: 65%;
+}
+
+
 
 #intro-wrap {
     position: relative;

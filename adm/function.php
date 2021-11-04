@@ -433,12 +433,12 @@ function listaProduto($soller){
 }
 
 function listaProdutoFront($soller, $colecao){
-	$query = "SELECT p.*, l.*, c.*, i.*
+	$query = "SELECT p.*, l.idlinha, c.idcolecao, i.ididioma
 			FROM produto p
 			INNER JOIN linha l ON (l.idlinha = p.idlinha_prod)
 			INNER JOIN colecao c ON (c.idcolecao = p.idcolecao_prod)
 			INNER JOIN idioma i ON (i.ididioma = p.ididioma_prod)
-			WHERE p.ididioma_prod='1' AND p.idcolecao_prod = '$colecao'
+			WHERE p.ididioma_prod=1 AND p.idcolecao_prod = '$colecao'
 			ORDER BY p.idproduto ASC";
 	$resultado = mysqli_query($soller, $query);
 	$produtos = array();
@@ -465,6 +465,17 @@ function listaProdutoFront($soller, $colecao){
 
 		array_push($produtos, $produto);
 	}
+
+	$query_tt = "SELECT p.*, l.idlinha, c.idcolecao, i.ididioma
+						FROM produto p
+						INNER JOIN linha l ON (l.idlinha = p.idlinha_prod)
+						INNER JOIN colecao c ON (c.idcolecao = p.idcolecao_prod)
+						INNER JOIN idioma i ON (i.ididioma = p.ididioma_prod)
+						WHERE p.ididioma_prod=1 AND p.idcolecao_prod = '$colecao' AND p.idlinha_prod = '4'
+						ORDER BY p.idproduto ASC";
+	$resultado_tt = mysqli_query($soller, $query_tt);
+	$GLOBALS['total'] = mysqli_num_rows($resultado_tt);
+
 	return $produtos;
 }
 

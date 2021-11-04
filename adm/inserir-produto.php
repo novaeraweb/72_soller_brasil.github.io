@@ -118,7 +118,7 @@ $linhas = listaLinha($soller);
                         <br>
                         <div class="form-group">
                             <label for="colecao">A qual Coleção pertence este Produto?</label>
-                            <select name="colecao" id="colecao" class="form-control selectpicker" data-style="btn btn-link">
+                            <select name="colecao" id="colecao" class="form-control selectpicker" data-style="btn btn-link" required>
                               <option value="0">Seleciona uma Coleção</option>
                                 <?php foreach ($colecoes as $colecao){?>
                                   <option value="<?=$colecao->idcolecao;?>"><?=$colecao->nome;?></option>
