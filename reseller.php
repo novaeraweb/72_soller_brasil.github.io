@@ -22,8 +22,10 @@
 	<?php require_once "header.php" ?>
 		<main role="main">
 			<div class="banner-reseller" style="color:white; text-align: center;padding-top:4%;">
+			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
 				<h2 style="color:white;">Be representative</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
+				</div>
 			</div><!-- intro-wrap -->
 
 			<div id="main">

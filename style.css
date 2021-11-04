@@ -627,19 +627,19 @@ nav ul.sub-menu > li:last-child > a {
 }
 
 
-.section-volume .column.four{
+.section-volume .column.four.produto{
     width: 20%;
 }
 
-.section-volume .column.third{
+.section-volume .column.third.produto{
     width: 28%;
 }
 
-.section-volume .column.third:first-of-type, .section-volume .column.four:first-of-type{
+.section-volume .column.third.produto:first-of-type, .section-volume .column.four.produto:first-of-type{
     margin-left: 4%;
 }
 
-div.column:nth-child(13){
+div.produto:nth-child(12){
     margin-left: 4%;
 }
 

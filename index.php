@@ -73,21 +73,21 @@
 					<div class="intro-item" style="background-image:url(img/agi-max-plus-banner.png);">		
 						<div class="intro-mockup-wrapper">		
 							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Read More</a>
+								<a class="button white transparent" href="#">Know more</a>
 							</div><!-- caption -->						
 						</div><!-- intro-mockup-wrapper -->
 					</div>		
 					<div class="intro-item" style="background-image:url(img/radiance-plus.jpg);">		
 						<div class="intro-mockup-wrapper">		
 							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Read More</a>
+								<a class="button white transparent" href="#">Know more</a>
 							</div>						
 						</div>
 					</div>	
 					<div class="intro-item" style="background-image:url(img/agi-one.jpg);">		
 						<div class="intro-mockup-wrapper">		
 							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Read More</a>
+								<a class="button white transparent" href="#">Know more</a>
 							</div>						
 						</div>
 					</div>					
@@ -98,7 +98,7 @@
 
 			<div id="main">
 				<section class="row section text-light fundo-black">
-					<div class="row-content buffer even clear-after">
+				<div class="row-content buffer even clear-after"  style="padding-top:4%;">
 						<div class="slogan animation" style="width:70%;" >
 							<h2>YOUR BEAUTY GOT POWER</h2>	
 							<p>S’ollér Brasil is a brazilian overseas cosmetic company present in over 40 countries and with distributors throughout the national territory.</p>

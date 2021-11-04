@@ -89,7 +89,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 					<div class="intro-item" style="background-image:url(img/black-back.jpg);">
 					<div class="section-title">
 						<h2><?=$result['nome'];?></h2>
-						<?=$result['descricao_breve'];?>
+						<?=strtoupper($result['descricao_breve']);?>
 					</div>	
 				</div>					
 			
@@ -104,7 +104,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 					</div>	
 				</section>	
 
-				<?php $i = 1; foreach ($colecoes as $colecao) {?>	
+				<?php foreach ($colecoes as $colecao) {?>	
 				<?php $idcol = $colecao->idcolecao;?>
 				<section class="row section section-volume bg"
 								 style="background: url(adm/arquivos/<?=$colecao->arquivo;?>) no-repeat;
@@ -115,18 +115,19 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 				<section class="row section section-volume">
 					<!-- <div class="row-content buffer even clear-after">	 -->
 						<div class="text-center">
-							<h2><?=$colecao->nome;?></h2>
 							<?=$colecao->descricao;?>
 							<h3>Professional Line</h3>
 							<br>
 							<br>
-							<?php $count = 1; $produtos = listaProdutoFront($soller, $idcol); 
+							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
+										// A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
+									$count = 1; $produtos = listaProdutoFront($soller, $idcol); 
 								  foreach ($produtos as $produto) {?>
 										<?php if ($produto->idlinha_prod == '4'){?>
 											<?php if ($GLOBALS['total'] == 3) {?>
-												<div class="column third">
+												<div class="column third produto">
 											<?php } else {?>
-												<div class="column four">
+												<div class="column four produto">
 											<?php } ?>
 												<figure>
 													<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
@@ -134,7 +135,8 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
 												<br>
 												<div class="peso">
-													<?php if ($produto->peso_unico == '') { ?>
+													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
+													if ($produto->peso_unico == '') { ?>
 														<ul>
 															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
 															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
@@ -148,7 +150,8 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 												</div>
 											</div>
 										<?php } else {?>
-											<?php if ($count == 1) {?>
+											<?php // Esse contador apenas permite a divisória com um hr e o título da linha de manutenção quando for == 1
+												if ($count == 1) {?>
 												<br>
 												<div style="width: 90%; margin-left: 5%;">
 													<hr>
@@ -157,7 +160,8 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 												<h3>Maintenance Line</h3>
 												<br>
 											<?php } $count++;?>
-											<div class="column third">
+											<?php // Produz os resultados da linha manutenção quando existirem?>
+											<div class="column third produto">
 												<figure>
 													<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
 												</figure>
@@ -181,7 +185,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 								<?php }?>
 						</div>
 				</section>
-				<?php $i++; ?>
+			
 				<?php } ?>
 				
 				<section class="row section call-to-action">

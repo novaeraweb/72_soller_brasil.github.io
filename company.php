@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
 		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
 		<link rel="stylesheet" href="style.css" media="screen">
-		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
@@ -24,9 +23,11 @@
 <?php require_once "header.php" ?>
 
 		<main role="main">
-			<div class="banner-company" style="color:white; text-align: center;padding-top:4%;">
+			<div class="banner-company" style="color:white; text-align: center;padding-top:2%;">
+			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
 				<h2 style="color:white;">The Company</h2>
-				<p>In order to bring the quality of S'ollér Brazil products to every corner of the world, we dream higher<br>and start our international opening in 2008, with partners who believe<br>in the brand and gain space in other continents.</p>
+				<p>In order to bring the quality of S'ollér Brazil products to every corner of the world, <br>we dream higher and start our international opening in 2008, with partners who<br>believe in the brand and gain space in other continents.</p>
+			</div>
 			</div><!-- intro-wrap -->
 
 			<div id="main">							
@@ -151,7 +152,7 @@
 						</div><!-- timeline -->
 					</div>	
 				</section>
-			<div class="banner-infra" style="color:white; text-align: center;padding-top:4%;">
+				<div class="banner-infra" style="color:white; text-align: center;padding-top:2%;height:230px;">
 				<h2 style="color:white;">INFRAESTRUCTURE</h2>
 				<p>We are located in a wide production park that allows us to<br>produce products of differentiated quality and with exclusive formulas.</p>
 			</div><!-- intro-wrap -->							
@@ -197,7 +198,7 @@
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
 						<p>WANT TO BE OUR REPRESENTATIVE?</p>
-						<a class="button red" href="#">Contact us</a>
+						<a class="button red" href="reseller.php">Contact us</a>
 					</div>
 				</section>	
 			</div><!-- id-main -->

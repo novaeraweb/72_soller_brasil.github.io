@@ -25,9 +25,11 @@
 
 		<main role="main">
 
-			<div class="banner-comex" style="color:white; text-align: center;padding-top:4%;">
+		<div class="banner-comex" style="color:white; text-align: center;padding-top:2.5%;">
+			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
 				<h2 style="color:white;">S'ollér Internacional</h2>
 				<p>In order to bring the quality of S'ollér Brazil products to every corner of the world, we dream higher<br>and start our international opening in 2008, with partners who believe<br>in the brand and gain space in other continents.</p>
+      </div>
 			</div><!-- intro-wrap -->
 
 			<div id="main">
