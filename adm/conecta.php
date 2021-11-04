@@ -1,4 +1,13 @@
-<?php $soller = mysqli_connect('localhost', 'root', 'root', 'sollerbrasil');
+<?php 
+
+$URL_ATUAL= "$_SERVER[SERVER_NAME]";
+
+if (strpos($URL_ATUAL, 'soller') !== false) {
+  $soller = mysqli_connect('mysql745.umbler.com', 'sollerbrasil', 'sb*010203', 'sollerbrasil');
+} else {
+	$soller = mysqli_connect('localhost', 'root', 'root', 'sollerbrasil');
+}
+
 mysqli_query($soller, "SET NAMES 'utf8'");
 mysqli_query($soller,'SET character_set_connection=utf8');
 mysqli_query($soller,'SET character_set_client=utf8');
