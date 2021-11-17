@@ -22,8 +22,6 @@ $hora = time();
         $$nomevar = $arquivo_teste;
     }
 
-
-
 	$diretorio = "arquivos/";
 	
 
@@ -60,4 +58,4 @@ $hora = time();
     $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
 
 
-header("Location: editar-imagens-banner.php?id=$id");
+header("Location: editar-imagens-banner.php?alterado=true&id=$id");

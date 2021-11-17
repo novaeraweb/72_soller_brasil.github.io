@@ -7,6 +7,7 @@ require_once "class.php";
 require_once "function.php"; 
 mysqli_select_db($soller,$database_soller);
 $produtos = listaProduto($soller);
+
 ?>
 <head>
   <title>Administração S'ollér Brasil</title>

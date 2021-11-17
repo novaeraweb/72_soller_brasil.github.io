@@ -79,7 +79,7 @@ $produtos = listaProdutoId($soller, $id);
                                     <img src="arquivos/<?=$produto->arquivo;?>" alt="" width="240" height="160"/> 
                                     <?php } ?>
                                     <br>
-                                    <label for="arquivo1">Selecione a nova imagem</label>
+                                    <label for="arquivo">Selecione a nova imagem</label>
                                     <br>
                                     <button type="button" class="btn btn-warning"><input type="file" name="arquivo" id="arquivo"/>Foto 1</button>
                                     </td>
