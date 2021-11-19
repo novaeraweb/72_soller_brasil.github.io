@@ -78,17 +78,15 @@
 						<div class="section-title"><h3>Want to be our representative?</h3></div>	
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus.</p>
 						<div class="column nine">
-							<form id="contact-form" class="contact-section" method="post" action="">
+						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
-								<input class="name plain buffer" type="text" name="name" placeholder="Full name">
+								<input class="name plain buffer" type="text" name="nome" placeholder="Full name">
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
-								<span class="pre-input"><i class="icon icon-smartphone"></i></span>
-								<input class="email plain buffer" type="text" name="cel" placeholder="Cell phone">
-								<span class="pre-input"><i class="icon "></i></span>
-								<input class="email plain buffer" type="text" name="cel" placeholder="Country for representation">
 								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
-								<input id="send" class="plain button red" type="button" value="Send a Message">
+								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
+								<button id="send" class="plain button red">Send a Message</button>
+								
 							</form>	
 							<div id="success"></div>
 						</div>
@@ -116,5 +114,14 @@
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
 <script src="js/plugins.js"></script>
 <script src="js/beetle.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+		<script type="text/javascript">
+			function validaCaptcha() {
+			if(document.querySelector('#g-recaptcha-response').value == '') {
+				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+			}
+		}
+		</script>
 </body>
 </html>

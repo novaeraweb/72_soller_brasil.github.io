@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
+		<meta name="description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
-		<title>Be a Reseller | S'ollér Brasil'</title>
-		<link rel="stylesheet" href="css/layers.min.css" media="screen">
-		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
-		<link rel="stylesheet" href="style.css" media="screen">
+		<title>Contato | S'ollér Brasil</title>
+		<link rel="stylesheet" href="../css/layers.min.css" media="screen">
+		<link rel="stylesheet" href="../css/font-awesome.min.css" media="screen"> 
+		<link rel="stylesheet" href="../style.css" media="screen">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
@@ -31,17 +31,17 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Schema.org markup -->
-    <meta itemprop="name" content="Be a Reseller | S'ollér Brasil'">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/reseller.php"/>
+    <meta itemprop="name" content="Contato | S'ollér Brasil">
+    <meta itemprop="url" content="https://www.sollerbrasil.com/contato.php"/>
     <meta itemprop="image" content="img/soller_shared.jpg" >
-    <meta itemprop="description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
+    <meta itemprop="description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
 
     <!-- facebook -->
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="Be a Reseller | S'ollér Brasil'">
-    <meta property="og:description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
-    <meta property="og:site_name" content="Be a Reseller | S'ollér Brasil'">
-    <meta property="og:url" content="https://www.sollerbrasil.com/reseller.php">
+    <meta property="og:title" content="Contato | S'ollér Brasil">
+    <meta property="og:description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
+    <meta property="og:site_name" content="Contato | S'ollér Brasil">
+    <meta property="og:url" content="https://www.sollerbrasil.com/contato.php">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
     <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
@@ -49,43 +49,44 @@
     <meta property="og:image:width" content="2720">
     <meta property="og:image:height" content="960">
     <meta property="fb:app_id" content="819613408060975" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body class="page">
 	<?php require_once "header.php" ?>
 		<main role="main">
-			<div class="banner-reseller" style="color:white; text-align: center;padding-top:4%;">
+			<div class="banner-contato" style="color:white; text-align: center;padding-top:4%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">Be representative</h2>
+				<h2 style="color:white;">Contact Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
-				</div>
+			</div>
 			</div><!-- intro-wrap -->
 
 			<div id="main">
 
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
-						<div class="section-title"><h3>Want to be our representative?</h3></div>	
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu 
+ 						</p>
 						<div class="column nine">
-						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+							<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
 								<input class="name plain buffer" type="text" name="nome" placeholder="Full name">
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
 								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
 								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
-								<button id="send" class="plain button red">Send a Message</button>
+								<button id="send" class="plain button red">Enviar Mensagem</button>
 								
 							</form>	
 							<div id="success"></div>
 						</div>
 						<div class="column three last">
 							<div class="widget">
-								<h4>Location</h4>
+								<h4>Localização</h4>
 								<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, 18608-590<br> Botucatu/SP | Brasil</p>
 							</div>
 							<div class="widget">
-								<h4>Social Media</h4>
+								<h4>Mídias Sociais</h4>
 								<ul class="inline meta-social">
 									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
 									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -103,9 +104,9 @@
 <?php require_once "footer.php" ?>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
-		<script src="js/plugins.js"></script>
-		<script src="js/beetle.js"></script>
-		<script>
+		<script src="../js/plugins.js"></script>
+		<script src="../js/beetle.js"></script>
+		<!-- <script>
 		$(document).ready(function(){
 			$('#send').click(function(){
 				$(this).val('Sending ...');
@@ -118,6 +119,15 @@
 				return false;
 			});
 		});
-		</script>		
+		</script>		 -->
+
+		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+		<script type="text/javascript">
+			function validaCaptcha() {
+			if(document.querySelector('#g-recaptcha-response').value == '') {
+				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+			}
+		}
+		</script>
 	</body>
 </html>
