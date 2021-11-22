@@ -45,7 +45,7 @@ if(isset($recaptcha_response)){
       $mail->IsSMTP(); // Define que a mensagem será SMTP
       $mail->Host = "email-ssl.com.br"; // Endereço do servidor SMTP (caso queira utilizar a autenticação, utilize o host smtp.seudomínio.com.br)
       $mail->SMTPAuth = true; // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
-      $mail->Port = 587; // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
+      $mail->Port = 465; // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
       $mail->Username = 'site@sollerbrasil.com'; // Usuário do servidor SMTP (endereço de email)
       $mail->Password = 'S0ller#C0mex@2021'; // Senha do servidor SMTP (senha do email usado)
       $mail->SMTPSecure = "ssl"; // Senha do servidor SMTP (senha do email usado)
@@ -61,9 +61,8 @@ if(isset($recaptcha_response)){
       $mail->From = 'site@sollerbrasil.com'; // Seu e-mail
       $mail->Sender = 'site@sollerbrasil.com'; // Seu e-mail
       $mail->FromName = $nome; // Seu nome
-      // $mail->AddAddress('site@sollerbrasil.com'); // Copia
+      $mail->AddAddress('site@sollerbrasil.com'); // Copia
       $mail->AddBCC('contato@novaeraweb.com.br'); // Cópia Oculta
-      $mail->AddBCC('site@novaeraweb.com.br'); // Cópia Oculta
       $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 
       // Define a mensagem (Texto e Assunto)

@@ -6,9 +6,9 @@
 		<meta name="description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
 		<title>Contact Us | S'ollér Brasil</title>
-		<link rel="stylesheet" href="../css/layers.min.css" media="screen">
-		<link rel="stylesheet" href="../css/font-awesome.min.css" media="screen"> 
-		<link rel="stylesheet" href="../style.css" media="screen">
+		<link rel="stylesheet" href="css/layers.min.css" media="screen">
+		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
+		<link rel="stylesheet" href="style.css" media="screen">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
@@ -103,8 +103,8 @@
 <?php require_once "footer.php" ?>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
-		<script src="../js/plugins.js"></script>
-		<script src="../js/beetle.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/beetle.js"></script>
 		<!-- <script>
 		$(document).ready(function(){
 			$('#send').click(function(){
