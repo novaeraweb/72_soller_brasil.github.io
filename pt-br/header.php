@@ -31,8 +31,8 @@ $pgAtual = basename($_SERVER['SCRIPT_NAME']);
 					<li class="menu-item"><a href="contato.php">Contato</a></li>
 					<li class="menu-item revenda"><a href="reseller.php">Seja um revendedor</a></li>
 					<li><a href="#"> <img src="../img/icon-brazil.png"></a></li>
-					<li><a href="../<?php if ($pgAtual = 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-usa.png"></a></li>
-					<li><a href="../es/<?php if ($pgAtual = 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-spain.png"></a></li>
+					<li><a href="../<?php if ($pgAtual == 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-usa.png"></a></li>
+					<li><a href="../es/<?php if ($pgAtual == 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-spain.png"></a></li>
 				</ul>
 			</nav>
 		</div><!-- row-content -->	

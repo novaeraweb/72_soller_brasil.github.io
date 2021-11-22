@@ -219,7 +219,7 @@
 								<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, 18608-590<br> Botucatu/SP | Brasil</p>
 							</div>
 							<div class="widget">
-								<h4>Social Media</h4>
+								<h4>Mídias Sociales</h4>
 								<ul class="inline meta-social">
 									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
 									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>

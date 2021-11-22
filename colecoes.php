@@ -89,7 +89,9 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 					<div class="intro-item" style="background-image:url(img/black-back.jpg);">
 					<div class="section-title">
 						<h2><?=$result['nome'];?></h2>
+						<div class="row-content buffer" style="padding-top: 0;">
 						<?=mb_strtoupper($result['descricao_breve'], 'UTF-8');?>
+						</div>
 					</div>	
 				</div>					
 			
@@ -106,7 +108,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 
 				<?php foreach ($colecoes as $colecao) {?>	
 				<?php $idcol = $colecao->idcolecao;?>
-				<section class="row section section-volume bg"
+				<section class="row section section-volume bg" id="<?=str_replace(' ', '', $colecao->nome);?>"
 								 style="background: url(adm/arquivos/<?=$colecao->arquivo;?>) no-repeat;
 								 				background-size: 100%;"
 				>

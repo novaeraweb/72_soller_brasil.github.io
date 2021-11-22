@@ -136,14 +136,14 @@
 
 
 				<div class="owl-carousel">
-				  <div><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Australian Finisher Line" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Resistance Faultless Seal" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Agi Max" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Agi Max Plus" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="S'ollér Brasil" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Agi One Intenseliss" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Treat System" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Radiance Plus" class="sombra"></div>
+				  <div><a href="colecoes.php?id=26#AustralianFinisherLine"><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Australian Finisher Line" class="sombra" alt="Finisher"></a></div>
+				  <div><a href=""><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Resistance Faultless Seal" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=17#AgiMax"><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Agi Max" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=17#AgiMaxPlus"><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="AgiMaxPlus" class="sombra"></div>
+				  <div><a href="company.php"><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="S'ollér Brasil" class="sombra"></div>
+				  <div><a href="colecoes.php?id=17#AgiOne"><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Agi One Intenseliss" class="sombra"></div>
+				  <div><a href="colecoes.php?id=17#DaybyDay"><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Treat System" class="sombra"></div>
+				  <div><a href="colecoes.php?id=17#RadiancePlus"><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Radiance Plus" class="sombra"></div>
 				</div>
 
 				</section>	

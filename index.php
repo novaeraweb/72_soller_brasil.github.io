@@ -135,14 +135,14 @@
 
 
 				<div class="owl-carousel">
-				  <div><img src="img/colecoes-rotativo/rotativo-australian.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-resistance.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-agimax.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-agione.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-dbd.png" alt="Casting & Bleaching" class="sombra"></div>
-				  <div><img src="img/colecoes-rotativo/rotativo-radiance.png" alt="Casting & Bleaching" class="sombra"></div>
+				  <div><a href="colecoes.php?id=22#AustralianFinisherLine"><img src="img/colecoes-rotativo/rotativo-australian.png" alt="Finishing" class="sombra"></a></div>
+				  <div><a href="#"><img src="img/colecoes-rotativo/rotativo-resistance.png" alt="Casting & Bleaching" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=16#AgiMax"><img src="img/colecoes-rotativo/rotativo-agimax.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=16#AgiMaxPlus"><img src="img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="company.php"><img src="img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="The Company" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=16#AgiOne"><img src="img/colecoes-rotativo/rotativo-agione.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=16#DaybyDay"><img src="img/colecoes-rotativo/rotativo-dbd.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=16#RadiancePlus"><img src="img/colecoes-rotativo/rotativo-radiance.png" alt="Volume Reduction" class="sombra"></a></div>
 				</div>
 
 				</section>	

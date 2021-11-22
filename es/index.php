@@ -136,14 +136,14 @@
 
 
 				<div class="owl-carousel">
-				  <div><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Australian Finisher Line" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Resistance Faultless Seal" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Agi Max" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Agi Max Plus" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="S'ollér Brasil" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Agi One Intenseliss" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Treat System" class="sombra"></div>
-				  <div><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Radiance Plus" class="sombra"></div>
+				<div><a href="colecoes.php?id=28#AustralianFinisherLine"><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Australian Finisher Line" class="sombra" alt="Finisher"></a></div>
+				  <div><a href=""><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Resistance Faultless Seal" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=18#AgiMax"><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Agi Max" class="sombra"></a></div>
+				  <div><a href="colecoes.php?id=18#AgiMaxPlus"><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="AgiMaxPlus" class="sombra"></div>
+				  <div><a href="company.php"><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="S'ollér Brasil" class="sombra"></div>
+				  <div><a href="colecoes.php?id=18#AgiOne"><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Agi One Intenseliss" class="sombra"></div>
+				  <div><a href="colecoes.php?id=18#DaybyDay"><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Treat System" class="sombra"></div>
+				  <div><a href="colecoes.php?id=18#RadiancePlus"><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Radiance Plus" class="sombra"></div>
 				</div>
 
 				</section>	
@@ -196,7 +196,7 @@
 				<section class="row section">
 					<div class="row-content buffer even clear-after">	
 						<div class="column six push-six last-special">
-							<h2>Coloração & Descoloração</h2>
+							<h2>Coloración & Decoloración</h2>
 							<p>La colección <strong>Radiance Plus</strong> és considerada una de las más completes líneas de coloración y decoloración disponibles en el mercado. Fue desarrollada especialmente para colorir y descolorir sin dañar los hilos, tratando y proporcionando brillo y una mayor durabilidad de la color. </p>
 							<a class="button transparent aqua" href="colecoes.php?id=27">Coleccíon Completa</a>
 						</div>							
@@ -214,8 +214,8 @@
 				
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
-						<p>Quer se tornar nosso representante?</p>
-						<a class="button red" href="#">Entre em contato</a>
+						<p>¿Quieres ser representante?</p>
+						<a class="button red" href="#">Entre en contacto</a>
 					</div>
 				</section>				
 

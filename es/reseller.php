@@ -64,7 +64,7 @@
 
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
-						<div class="section-title"><h3>¿Quieres ser representante? </h3></div>	
+						<div class="section-title"><h3>¿Quieres ser representante?</h3></div>	
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu</p>
 						<div class="column nine">
 						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
