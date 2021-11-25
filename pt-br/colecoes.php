@@ -15,11 +15,11 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 
 ?>
 
-<html lang="pt">
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="Fabricação própria e não testado em animais (cruelty free). Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
+		<meta name="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
 		<title><?=$result['nome'];?> | S'ollér Brasil</title>
 		<link rel="stylesheet" href="../css/layers.min.css" media="screen">
@@ -48,16 +48,16 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 
     <!-- Schema.org markup -->
     <meta itemprop="name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/pt-br/colecoes.php?id=<?=$result['id'];?>"/>
+    <meta itemprop="url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['id'];?>"/>
     <meta itemprop="image" content="../img/soller_shared.jpg" >
-    <meta itemprop="description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
+    <meta itemprop="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
 
     <!-- facebook -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:title" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta property="og:description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
+    <meta property="og:description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
     <meta property="og:site_name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta property="og:url" content="https://www.sollerbrasil.com/pt-br/colecoes.php?id=<?=$result['id'];?>">
+    <meta property="og:url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['id'];?>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
     <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
@@ -92,6 +92,7 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 						<div class="row-content buffer" style="padding-top: 0;">
 						<?=mb_strtoupper($result['descricao_breve'], 'UTF-8');?>
 						</div>
+					</div>	
 				</div>					
 			
 				</div><!-- intro -->
@@ -106,7 +107,7 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 				</section>	
 
 				<?php foreach ($colecoes as $colecao) {?>	
-				<?php $idcol = $colecao->idcolecao;?>
+				<?php $idcol = $colecao->idcolecao;?> 
 				<section class="row section section-volume bg" id="<?=str_replace(' ', '', $colecao->nome);?>"
 								 style="background: url(../adm/arquivos/<?=$colecao->arquivo;?>) no-repeat;
 								 				background-size: 100%;"
@@ -116,7 +117,9 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 				<section class="row section section-volume">
 					<!-- <div class="row-content buffer even clear-after">	 -->
 						<div class="text-center">
-							<?=$colecao->descricao;?>
+							<div class="row-content buffer even clear-after">
+								<?=$colecao->descricao;?>
+							</div>
 							<h3>Linha Profissional</h3>
 							<br>
 							<br>
@@ -139,9 +142,15 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
 													if ($produto->peso_unico == '') { ?>
 														<ul>
-															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+															<?php if ($produto->peso_p_br || $produto->peso_p_en){?>
+															<li><?=$produto->peso_p_br?> | <?=$produto->peso_p_en;?> </li>
+															<?php }?>
+															<?php if ($produto->peso_m_br || $produto->peso_m_en){?>
 															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+															<?php }?>
+															<?php if ($produto->peso_g_br || $produto->peso_g_en){?>
 															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+															<?php }?>
 														</ul>
 													<?php } else {?>
 														<ul>
