@@ -184,7 +184,7 @@ $linhas = listaLinha($soller);
                         </div>
                         <br>
                         <div id="dvFile">
-                          <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem do Produto <strong>(200px | 200px)</strong></label>
+                          <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem do Produto <strong>(400px X 400px)</strong></label>
                           <input type="file" name="arquivo" id="arquivo" required>
                         </div>
                         <br>

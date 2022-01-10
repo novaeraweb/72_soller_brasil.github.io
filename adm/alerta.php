@@ -7,7 +7,7 @@
                 <p>Successo!</p>
             </div>
             <div class="modal-card-text">
-                <p>Conteúdo inserido com sucesso.</p>
+                <p>Conteúdo inserido!</p>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
                 <p>Successo!</p>
             </div>
             <div class="modal-card-text">
-                <p>Conteúdo editado com sucesso.</p>
+                <p>Conteúdo editado!</p>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
                 <p>Successo!</p>
             </div>
             <div class="modal-card-text">
-                <p>Conteúdo excluído com sucesso.</p>
+                <p>Conteúdo excluído!</p>
             </div>
         </div>
     </div>

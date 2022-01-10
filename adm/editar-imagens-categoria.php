@@ -82,7 +82,10 @@ $categorias = listaCategoriaId($soller, $id);
                                     <br>
                                     <label for="arquivo1">Selecione a nova imagem</label>
                                     <br>
-                                    <button type="button" class="btn btn-warning"><input type="file" name="arquivo" id="arquivo"/>Foto 1</button>
+                                    <button type="button" class="btn btn-warning">
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto 1</label>
+                                      <input type="file" name="arquivo" id="arquivo"/>
+                                    </button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -135,8 +138,5 @@ $categorias = listaCategoriaId($soller, $id);
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
-
-
 </body>
-
 </html>

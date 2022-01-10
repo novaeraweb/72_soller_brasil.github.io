@@ -56,4 +56,4 @@ $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));
 $updateSQL = "UPDATE linha SET nome = '$nome_es', descricao = '$descricao_es', video = '$video' , ativo = '$ativo' WHERE idlinha ='$id_es' AND ididioma_li = '3'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
-header("Location: home.php?editado=true");
+header("Location: listar-linha.php?editado=true");

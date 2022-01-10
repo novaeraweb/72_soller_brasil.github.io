@@ -50,8 +50,6 @@ mysqli_select_db($soller, 'sollerbrasil');
 
     require "adicionar-imagens.php";
 
-
-
-$insertSQL = "INSERT INTO banner (nome, descricao, local, arquivo, arquivo_mobile, ativo, data, user) VALUES ('$nome', '$descricao', '$local', '$novo', '$novo_mobile', '$ativo', '$data', '$user' )";           
+$insertSQL = "INSERT INTO banner (nome, descricao, local, arquivo, arquivo_mobile, ativo, hora, data, user) VALUES ('$nome', '$descricao', '$local', '$novo', '$novo_mobile', '$ativo', '$hora','$data', '$user' )";           
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));  
-header("Location: home.php?inserido=true");
+header("Location: listar-banner.php?inserido=true");

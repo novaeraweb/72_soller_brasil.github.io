@@ -67,11 +67,11 @@ mysqli_select_db($soller, "sollerbrasil");
                         </div>
                         <br>
                         <div id="dvFile">
-                          <label for="arquivo" style="width: 100%; margin-top: 15px;" data-toggle="tooltip" data-placement="top" title="Arquivos aceitos em formato .JPG ou .PNG">Banner <strong>(200px | 200px)</strong></label>
+                          <label for="arquivo" style="width: 100%; margin-top: 15px;" data-toggle="tooltip" data-placement="top" title="Arquivos aceitos em formato .JPG ou .PNG">Banner Desktop<strong>(2000px X 1270px)</strong></label>
                           <input type="file" name="arquivo" id="arquivo" required>
                         </div>
                         <br>  
-                        <label for="arquivo_mobile" style="width: 100%; margin-top: 15px;" data-toggle="tooltip" data-placement="top" title="Arquivos aceitos em formato .JPG ou .PNG">Banner mobile <strong>(200px | 200px)</strong></label>
+                        <label for="arquivo_mobile" style="width: 100%; margin-top: 15px;" data-toggle="tooltip" data-placement="top" title="Arquivos aceitos em formato .JPG ou .PNG">Banner Mobile <strong>(500px X 420px)</strong></label>
                         <input type="file" name="arquivo_mobile" id="arquivo_mobile" required>
                         <br>
 

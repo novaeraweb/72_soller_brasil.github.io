@@ -19,6 +19,7 @@ $linhas = listaLinha($soller);
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
+  <link rel="stylesheet" href="assets/css/modal.css">
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <link href="assets/css/alerta.css" rel="stylesheet" />
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
@@ -61,7 +62,7 @@ $linhas = listaLinha($soller);
                           <table class="table" id="tabela">
                             <thead>
                                 <tr class="text-center">
-                                    <th>Imagem</th>
+<!--                                     <th>Imagem</th> -->
                                     <th>Nome</th>
                                     <th>Descrição</th>
                                     <th>Ativo</th>
@@ -71,7 +72,7 @@ $linhas = listaLinha($soller);
                           <tbody>
                               <?php foreach ($linhas as $linha){?>
                                 <tr class="text-center">
-                                    <td><img src="arquivos/<?=$linha->arquivo;?>" style="width: 80px;"></td>
+<!--                                     <td><img src="arquivos/<?=$linha->arquivo;?>" style="width: 80px;"></td> -->
                                     <td><?=$linha->nome;?></td>
                                     <td style="max-width:100px;"><?=$linha->descricao;?></td>
                                     <td><?=$linha->ativo;?></td>

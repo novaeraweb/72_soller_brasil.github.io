@@ -157,13 +157,13 @@ $cat_br = listaCategoria($soller);
                         </div>
                         <br>
                         <div id="dvFile">
-                          <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Coleção <strong>(200px | 200px)</strong></label>
+                          <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Coleção | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 2000px X 450px)</span></strong></label>
                           <input type="file" name="arquivo" id="arquivo">
                         </div>
                         <br>
                         <br>
                         <div class="form-group">
-                          <label for="video">Vídeo</label>
+                          <label for="video">Vídeo <span style="font-size:0.9em;">(*opcional)</span></label>
                           <input type="text" class="form-control" name="video" id="video" data-toggle="tooltip" data-placement="top" title="Insira aqui um link para vídeo do YouTube/Vimeo/ou outras plataformas">
                         </div>
                         <br>  

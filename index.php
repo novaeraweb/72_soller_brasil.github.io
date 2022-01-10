@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php 
+require_once "adm/conecta.php";
+require_once "adm/class.php";
+require_once "adm/function.php";
+$banners = listaBannerHome($soller); ?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -70,34 +75,26 @@
 		<main role="main">
 			<div id="intro-wrap">
 				<div id="intro" class="preload" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fade">	
-					<div class="intro-item" style="background-image:url(img/agi-max-plus-banner.png);">		
-						<div class="intro-mockup-wrapper">		
+					<?php foreach ($banners as $banner) { ?>	
+					<div class="intro-item">		
+						<!-- style="background-image:url(adm/arquivos/<?=$banner->arquivo;?>);" -->
+                         <!-- 	<div class="intro-mockup-wrapper">		
 							<div class="caption-mockup caption-right column six last-special">
 								<a class="button white transparent" href="#">Know more</a>
-							</div><!-- caption -->						
-						</div><!-- intro-mockup-wrapper -->
-					</div>		
-					<div class="intro-item" style="background-image:url(img/radiance-plus.jpg);">		
-						<div class="intro-mockup-wrapper">		
-							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Know more</a>
-							</div>						
-						</div>
-					</div>	
-					<div class="intro-item" style="background-image:url(img/agi-one.jpg);">		
-						<div class="intro-mockup-wrapper">		
-							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Know more</a>
-							</div>						
-						</div>
-					</div>					
-
+							</div>					
+						</div> -->
+						<picture>
+							<source media="(min-width:768px)" srcset="adm/arquivos/<?=$banner->arquivo;?>">
+							<source media="(min-width:320px)" srcset="adm/arquivos/<?=$banner->arquivo_mobile;?>">
+							<img src="adm/arquivos/<?=$banner->arquivo;?>" alt="Flowers" style="width:auto;">
+						</picture> 
+					</div>
+					<?php } ?>					
 				</div><!-- intro -->
-
 			</div><!-- intro-wrap -->
 
 			<div id="main">
-				<section class="row section text-light fundo-black">
+				<section class="row section fundo-black">
 				<div class="row-content buffer even clear-after"  style="padding-top:4%;">
 						<div class="slogan animation" style="width:70%;" >
 							<h2>YOUR BEAUTY GOT POWER</h2>	
@@ -135,14 +132,14 @@
 
 
 				<div class="owl-carousel">
-				  <div><a href="colecoes.php?id=22#AustralianFinisherLine"><img src="img/colecoes-rotativo/rotativo-australian.png" alt="Finishing" class="sombra"></a></div>
+				  <div><a href="*"><img src="img/colecoes-rotativo/rotativo-australian.png" alt="Finishing" class="sombra"></a></div>
 				  <div><a href="#"><img src="img/colecoes-rotativo/rotativo-resistance.png" alt="Casting & Bleaching" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=16#AgiMax"><img src="img/colecoes-rotativo/rotativo-agimax.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=16#AgiMaxPlus"><img src="img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="img/colecoes-rotativo/rotativo-agimax.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Volume Reduction" class="sombra"></a></div>
 				  <div><a href="company.php"><img src="img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="The Company" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=16#AgiOne"><img src="img/colecoes-rotativo/rotativo-agione.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=16#DaybyDay"><img src="img/colecoes-rotativo/rotativo-dbd.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=16#RadiancePlus"><img src="img/colecoes-rotativo/rotativo-radiance.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="img/colecoes-rotativo/rotativo-agione.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="img/colecoes-rotativo/rotativo-dbd.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="img/colecoes-rotativo/rotativo-radiance.png" alt="Volume Reduction" class="sombra"></a></div>
 				</div>
 
 				</section>	
@@ -152,7 +149,7 @@
 						<div class="column six">
 							<h2>Volume Reduction</h2>
 							<p>Our volume reductors realign hair without damage them, providing intense moisturizing. Each collection have actives which fits better to each kind of hair, performing the correct treatment.</p>
-							<a class="button transparent aqua" href="#">Full Collection</a>
+							<a class="button transparent aqua" href="colecoes.php?id=16">Full Collection</a>
 						</div>
 						<div class="side-mockup right-mockup animation">
 								<figure>
@@ -167,7 +164,7 @@
 						<div class="column six push-six last-special">
 							<h2>Treatments</h2>
 							<p>Our treatments were developed to rescue hair from all day long damages. Our collections are focused on different damage levels at maximum efficiency to solve the problem.</p>
-							<a class="button transparent aqua" href="#">Full Collection</a>
+							<a class="button transparent aqua" href="colecoes.php?id=19">Full Collection</a>
 						</div>							
 						<div class="side-mockup left-mockup animation">
 								<figure>
@@ -182,7 +179,7 @@
 						<div class="column six">
 							<h2>Finishing</h2>
 							<p>Our finishing collection is perfect for you set your creativity free and keep your hairstyle as long as you wish. Besides modelling, the products contain natural actives which treat your hair while using.</p>
-							<a class="button transparent aqua" href="#">Full Collection</a>
+							<a class="button transparent aqua" href="colecoes.php?id=22">Full Collection</a>
 						</div>
 						<div class="side-mockup right-mockup animation">
 							<figure>
@@ -197,7 +194,7 @@
 						<div class="column six push-six last-special">
 							<h2>Casting & Bleaching</h2>
 							<p><strong>Radiance Plus</strong> collection is considered one of the most complete casting and bleaching collections in the market. It was specially developed to color and bleach without damage hair, treating and providing shine and long last color stand.</p>
-							<a class="button transparent aqua" href="#">Full Collection</a>
+							<a class="button transparent aqua" href="colecoes.php?id=25">Full Collection</a>
 						</div>							
 						<div class="side-mockup left-mockup animation">
 							<figure>

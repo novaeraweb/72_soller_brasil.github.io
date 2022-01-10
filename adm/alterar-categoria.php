@@ -38,8 +38,6 @@ mysqli_select_db($soller, 'sollerbrasil');
     $descricao_longa_es = $_POST["descricao_longa_es"];
     $descricao_longa_es = trim($descricao_longa_es);
 
-    $video = $_POST["video"];
-    $video = trim($video);
 
     $ativo = $_POST["ativo"];
     $ativo = trim($ativo);
@@ -49,17 +47,17 @@ mysqli_select_db($soller, 'sollerbrasil');
     $id_es = $id + 1;
 
 // Insert EN
-$updateSQL = "UPDATE categoria SET nome = '$nome_en', descricao_breve = '$descricao_breve_en', descricao_longa = '$descricao_longa_en', video = '$video' , ativo = '$ativo' WHERE idcategoria ='$id_en' AND ididioma_cat = '1'"; 
+$updateSQL = "UPDATE categoria SET nome = '$nome_en', descricao_breve = '$descricao_breve_en', descricao_longa = '$descricao_longa_en', ativo = '$ativo' WHERE idcategoria ='$id_en' AND ididioma_cat = '1'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 
 // Insert PT
-$updateSQL = "UPDATE categoria SET nome = '$nome_pt', descricao_breve = '$descricao_breve_pt', descricao_longa = '$descricao_longa_pt', video = '$video' , ativo = '$ativo' WHERE idcategoria ='$id' AND ididioma_cat = '2'"; 
+$updateSQL = "UPDATE categoria SET nome = '$nome_pt', descricao_breve = '$descricao_breve_pt', descricao_longa = '$descricao_longa_pt', ativo = '$ativo' WHERE idcategoria ='$id' AND ididioma_cat = '2'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 
 // Insert ES
-$updateSQL = "UPDATE categoria SET nome = '$nome_es', descricao_breve = '$descricao_breve_es', descricao_longa = '$descricao_longa_es', video = '$video' , ativo = '$ativo' WHERE idcategoria ='$id_es' AND ididioma_cat = '3'"; 
+$updateSQL = "UPDATE categoria SET nome = '$nome_es', descricao_breve = '$descricao_breve_es', descricao_longa = '$descricao_longa_es', ativo = '$ativo' WHERE idcategoria ='$id_es' AND ididioma_cat = '3'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
-header("Location: home.php?editado=true");
+header("Location: listar-categoria.php?editado=true");

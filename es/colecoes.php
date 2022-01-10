@@ -48,7 +48,7 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 
     <!-- Schema.org markup -->
     <meta itemprop="name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['id'];?>"/>
+    <meta itemprop="url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['idcategoria'];?>"/>
     <meta itemprop="image" content="../img/soller_shared.jpg" >
     <meta itemprop="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
 
@@ -57,7 +57,7 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
     <meta property="og:title" content="<?=$result['nome'];?> | S'ollér Brasil">
     <meta property="og:description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
     <meta property="og:site_name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta property="og:url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['id'];?>">
+    <meta property="og:url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['idcategoria'];?>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
     <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
@@ -100,11 +100,13 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 
 			<div id="main">
 				
-					<section class="row section">
+				<?php if (isset($result['descricao_longa'])) { ?>
+				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<?=$result['descricao_longa'];?>
 					</div>	
 				</section>	
+				<?php } ?>
 
 				<?php foreach ($colecoes as $colecao) {?>	
 				<?php $idcol = $colecao->idcolecao;?> 
@@ -118,9 +120,17 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 					<!-- <div class="row-content buffer even clear-after">	 -->
 						<div class="text-center">
 							<?=$colecao->descricao;?>
-							<h3>Linha Profissional</h3>
-							<br>
-							<br>
+							<?php $id = $colecao->idcolecao;?>
+							<?php 
+			
+$query_professional = "SELECT * FROM produto WHERE idcolecao_prod = '$id' AND idlinha_prod = '6' AND ativo = 'Sim' ";
+$resultado_professional = mysqli_query($soller, $query_professional);
+$result_professional = mysqli_fetch_assoc($resultado_professional);
+
+							 ?>
+							<?php if(isset($result_professional)) { ?>
+						  	<h3>Professional Line</h3><br><br>
+							<?php } ?>
 							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
 										// A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
 									$count = 1; $produtos = listaProdutoFrontEs($soller, $idcol); 

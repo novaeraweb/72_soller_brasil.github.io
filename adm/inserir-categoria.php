@@ -129,15 +129,15 @@ mysqli_select_db($soller, "sollerbrasil");
                       </div>
                   </div>
                         <br>
-                        <div id="dvFile">
+<!--                         <div id="dvFile">
                           <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Categoria <strong>(200px | 200px)</strong></label>
                           <input type="file" name="arquivo" id="arquivo">
                         </div>
-                        <br>
-                        <div class="form-group">
+                        <br> -->
+<!--                         <div class="form-group">
                           <label for="video">Vídeo</label>
                           <input type="text" class="form-control" name="video" id="video" data-toggle="tooltip" data-placement="top" title="Links para vídeos do YouTube/Vimeo/etc">
-                        </div>
+                        </div> -->
                         <br>  
                         <input type="hidden" name="data" id="data" value="<?php echo date('d/m/Y'); ?>">
                         <input type="hidden" name="user" id="user" value=<?php echo $_SESSION["usuario_logado"];?>>

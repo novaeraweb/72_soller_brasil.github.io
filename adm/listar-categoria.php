@@ -20,8 +20,9 @@ $categorias = listaCategoria($soller);
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
+  <link rel="stylesheet" href="assets/css/modal.css">
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-  <link href="assets/css/alerta.css" rel="stylesheet" />
+  <link href="assets/css/alerta.css" rel="stylesheet"/>
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="assets/css/jquery.dataTables.css">
   <script type="text/javascript" charset="utf8" src="assets/js/jquery.dataTables.js"></script>
@@ -45,16 +46,7 @@ $categorias = listaCategoria($soller);
             <div class="card card-nav-tabs card-plain">
                 <div class="card-header card-header-info">
                     <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                    <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                            <ul class="nav nav-tabs" data-tabs="tabs">
-                            
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#" data-toggle="tab">Categorias</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h4 class="card-title" style="width:100%;height:100%;">Categorias</h4>       
                 </div>
                 <div class="card-body ">
                     <div class="tab-content text-center">
@@ -62,7 +54,7 @@ $categorias = listaCategoria($soller);
                           <table class="table" id="tabela">
                             <thead>
                                 <tr class="text-center">
-                                    <th>Imagem</th>
+<!--                                     <th>Imagem</th> -->
                                     <th>Nome</th>
                                     <th>Ativo</th>
                                     <th>Ações</th>
@@ -71,14 +63,11 @@ $categorias = listaCategoria($soller);
                           <tbody>
                               <?php foreach ($categorias as $categoria){?>
                                 <tr class="text-center">
-                                    <td><img src="arquivos/<?=$categoria->arquivo;?>" style="width: 80px;"></td>
+<!--                                     <td><img src="arquivos/<?=$categoria->arquivo;?>" style="width: 80px;"></td> -->
                                     <td><?=$categoria->nome;?></td>
                                     <td><?=$categoria->ativo;?></td>
                                     <td class="td-actions text-right">
                                     <a href="editar-imagens-categoria.php?id=<?php echo $categoria->idcategoria;?>" style="margin-top: 10px; margin-right: 10px;" class="text-right">
-                                      <button type="button" rel="tooltip" class="btn btn-warning btn-round" data-toggle="tooltip" data-placement="top" title="Editar fotos">
-                                        <i class="material-icons">camera_enhance</i>
-                                      </button>
                                     </a>
 
                                     <a href="editar-categoria.php?id=<?php echo $categoria->idcategoria;?>" class="info" style="margin-top: 10px; margin-right: 10px;">

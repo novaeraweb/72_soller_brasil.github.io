@@ -144,22 +144,22 @@ $produtos_es = listaProdutoIdEs($soller, $id);
                               <label for="" id="tam_gbr">Tamanho grande <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: ml ou g)</span></label>
                               <input type="text" class="form-control" name="peso_g_br" id="peso_g_br" value="<?=$produto->peso_g_br;?>">
                             </div>
-                            </div>
+                          </div>
                             <br>
                             <div class="form-row">
-                            <div class="col">
-                            <label for="" id="tam_pen">Tamanho pequeno <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: fl oz)</span></label>
-                              <input type="text" class="form-control" name="peso_p_en" id="peso_p_en" value="<?=$produto->peso_p_en;?>">
-                            </div>
-                            <div class="col" >
-                            <label for="" id="tam_men">Tamanho médio <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: fl oz)</span></label>
-                              <input type="text" class="form-control" name="peso_m_en" id="peso_m_en" value="<?=$produto->peso_m_en;?>">
-                            </div>
-                            <div class="col">
-                            <label for="" id="tam_gen">Tamanho grande <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: fl oz)</span></label>
-                              <input type="text" class="form-control" name="peso_g_en" id="peso_g_en" value="<?=$produto->peso_g_en;?>">
-                            </div>
-                            </div>
+                              <div class="col">
+                                <label for="" id="tam_pen">Tamanho pequeno <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: fl oz)</span></label>
+                                <input type="text" class="form-control" name="peso_p_en" id="peso_p_en" value="<?=$produto->peso_p_en;?>">
+                              </div>
+                              <div class="col" >
+                                <label for="" id="tam_men">Tamanho médio <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: fl oz)</span></label>
+                                <input type="text" class="form-control" name="peso_m_en" id="peso_m_en" value="<?=$produto->peso_m_en;?>">
+                              </div>
+                              <div class="col">
+                                <label for="" id="tam_gen">Tamanho grande <br> <span style="font-size: 0.8em"> (Inserir também a unidade de medida: fl oz)</span></label>
+                                <input type="text" class="form-control" name="peso_g_en" id="peso_g_en" value="<?=$produto->peso_g_en;?>">
+                              </div>
+                          </div>
                         <?php } else {?>
                           <label for="peso_unico" id="tam_unico">Tamanho (ml/g)</label>
                           <input type="text" name="peso_unico" id="peso_unico" class="form-control" value="<?=$produto->peso_unico;?>">

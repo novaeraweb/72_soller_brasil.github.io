@@ -13,11 +13,39 @@ mysqli_select_db($soller, 'sollerbrasil');
     $descricao_en = $_POST["descricao_en"];
     $descricao_en = trim($descricao_en);
 
-    $peso_br_en = $_POST["peso_br_en"];
-    $peso_br_en = trim($peso_br_en);
+    
+    if (isset($_POST['peso_p_en'])){
+        $peso_p_en = $_POST['peso_p_en'];
+        $peso_p_en = trim($peso_p_en);
+    } else {
+        $peso_p_en = NULL;
+    }
+    
 
-    $peso_en_en = $_POST["peso_en_en"];
-    $peso_en_en = trim($peso_en_en);
+    if (isset($_POST['peso_m_en'])){
+        $peso_m_en = $_POST['peso_m_en'];
+        $peso_m_en = trim($peso_m_en);
+    } else {
+        $peso_m_en = NULL;
+    }
+    
+    if (isset($_POST['peso_g_en'])){
+        $peso_g_en = $_POST['peso_g_en'];
+        $peso_g_en = trim($peso_g_en);
+    } else {
+        $peso_g_en = NULL;
+    }
+    
+
+    
+    if (isset($_POST['peso_unico'])){
+        $peso_unico = $_POST['peso_unico'];
+        $peso_unico = trim($peso_unico);
+    } else {
+        $peso_unico = NULL;
+    }
+    
+
 
     // Dados português
     
@@ -27,11 +55,30 @@ mysqli_select_db($soller, 'sollerbrasil');
     $descricao_pt = $_POST["descricao_pt"];
     $descricao_pt = trim($descricao_pt);
 
-    $peso_br_pt = $_POST["peso_br_pt"];
-    $peso_br_pt = trim($peso_br_pt);
+   
+    if (isset($_POST['peso_p_br'])){
+        $peso_p_br = $_POST['peso_p_br'];
+        $peso_p_br = trim($peso_p_br);
+    } else {
+        $peso_p_br = NULL;
+    }
+    
 
-    $peso_en_pt = $_POST["peso_en_pt"];
-    $peso_en_pt = trim($peso_en_pt);
+    if (isset($_POST['peso_m_br'])){
+        $peso_m_br = $_POST['peso_m_br'];
+        $peso_m_br = trim($peso_m_br);
+    } else {
+        $peso_m_br = NULL;
+    }
+    
+    if (isset($_POST['peso_g_br'])){
+        $peso_g_br = $_POST['peso_g_br'];
+        $peso_g_br = trim($peso_g_br);
+    } else {
+        $peso_g_br = NULL;
+    }
+    
+
 
     // Dados espanhol
 
@@ -40,12 +87,6 @@ mysqli_select_db($soller, 'sollerbrasil');
 
     $descricao_es = $_POST["descricao_es"];
     $descricao_es = trim($descricao_es);
-
-    $peso_br_es = $_POST["peso_br_es"];
-    $peso_br_es = trim($peso_br_es);
-    
-    $peso_en_es = $_POST["peso_en_es"];
-    $peso_en_es = trim($peso_en_es);
 
 
     // Gerais
@@ -60,17 +101,17 @@ mysqli_select_db($soller, 'sollerbrasil');
     $id_es = $id + 1;
 
 // Insert EN
-$updateSQL = "UPDATE produto SET nome = '$nome_en', descricao = '$descricao_en', peso_br = '$peso_br_en', peso_en = '$peso_en_en', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_en' AND ididioma_prod = '1'"; 
+$updateSQL = "UPDATE produto SET nome = '$nome_en', descricao = '$descricao_en', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en', peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br' , peso_unico = '$peso_unico', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_en' AND ididioma_prod = '1'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 
 // Insert PT
-$updateSQL = "UPDATE produto SET nome = '$nome_pt', descricao = '$descricao_pt', peso_br = '$peso_br_pt', peso_en = '$peso_en_pt', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id' AND ididioma_prod = '2'"; 
+$updateSQL = "UPDATE produto SET nome = '$nome_pt', descricao = '$descricao_pt', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en' , peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br', peso_unico = '$peso_unico', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id' AND ididioma_prod = '2'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 
 // Insert ES
-$updateSQL = "UPDATE produto SET nome = '$nome_es', descricao = '$descricao_es', peso_br = '$peso_br_es', peso_en = '$peso_en_es', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_es' AND ididioma_prod = '3'"; 
+$updateSQL = "UPDATE produto SET nome = '$nome_es', descricao = '$descricao_es', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en' , peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br', peso_unico = '$peso_unico', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_es' AND ididioma_prod = '3'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
-header("Location: home.php?editado=true");
+header("Location: listar-produto.php?editado=true");

@@ -4,7 +4,7 @@
 			<section id="top-footer">
 				<div class="widget column four"><!-- la class="widget" è forse generata utomaticamente da wp -->
 					<h4>Address</h4>
-					<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, Botucatu/SP<br> 18608-590</p>
+					<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, Botucatu/SP<br> 18608-590 | Brasil</p>
 				</div>
 				<div class="widget column three">
 					<h4>Contact</h4>

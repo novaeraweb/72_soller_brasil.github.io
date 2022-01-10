@@ -3,18 +3,12 @@
 require_once "adm/conecta.php";
 require_once "adm/class.php";
 require_once "adm/function.php";
-
 $categoria_get = $_GET['id'];
-
 $query_categorias = "SELECT c.*, i.ididioma FROM categoria c LEFT JOIN idioma i ON (i.ididioma = c.ididioma_cat) WHERE c.idcategoria = '$categoria_get' AND c.ididioma_cat = '1'";
 $resultado_categorias = mysqli_query($soller, $query_categorias);
 $result = mysqli_fetch_assoc($resultado_categorias);
-
-
 $colecoes = listaColecaoFrontEn($soller, $categoria_get);
-
 ?>
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -99,33 +93,41 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 			</div><!-- intro-wrap -->
 
 			<div id="main">
-				
-					<section class="row section">
+				<?php if (isset($result['descricao_longa'])) { ?>
+				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<?=$result['descricao_longa'];?>
 					</div>	
 				</section>	
+				<?php } ?>
 
 				<?php foreach ($colecoes as $colecao) {?>	
 				<?php $idcol = $colecao->idcolecao;?>
-				<section class="row section section-volume bg" id="<?=str_replace(' ', '', $colecao->nome);?>"
-								 style="background: url(adm/arquivos/<?=$colecao->arquivo;?>) no-repeat;
-								 				background-size: 100%;"
-				>
-					
+				<section class="row section section-volume bg" id="<?=str_replace(' ', '', $colecao->nome);?>" style="background: url(adm/arquivos/<?=$colecao->arquivo;?>) no-repeat; background-size: 100%;">
 				</section>
 				<section class="row section section-volume">
 					<!-- <div class="row-content buffer even clear-after">	 -->
 						<div class="text-center">
 							<?=$colecao->descricao;?>
-							<h3>Professional Line</h3>
-							<br>
-							<br>
+							<?php $id = $colecao->idcolecao;?>
+							<?php 
+			
+$query_professional = "SELECT * FROM produto WHERE idcolecao_prod = '$id' AND idlinha_prod = '4' AND ativo = 'Sim' ";
+$resultado_professional = mysqli_query($soller, $query_professional);
+$result_professional = mysqli_fetch_assoc($resultado_professional);
+
+							 ?>
+							<?php if(isset($result_professional)) { ?>
+						  	<h3>Professional Line</h3><br><br>
+							<?php } ?>
+
+
 							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
 										// A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
 									$count = 1; $produtos = listaProdutoFront($soller, $idcol); 
 								  foreach ($produtos as $produto) {?>
 										<?php if ($produto->idlinha_prod == '4'){?>
+
 											<?php if ($GLOBALS['total'] == 3) {?>
 												<div class="column third produto">
 											<?php } else {?>

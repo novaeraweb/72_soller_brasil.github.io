@@ -73,4 +73,4 @@ $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));
 $updateSQL = "UPDATE colecao SET nome = '$nome_es', descricao = '$descricao_es', indicacao = '$indicacao_es', acao = '$acao_es', video = '$video' , ativo = '$ativo' WHERE idcolecao ='$id_es' AND ididioma_col = '3'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
-header("Location: home.php?editado=true");
+header("Location: listar-colecao.php?editado=true");

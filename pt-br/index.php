@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php 
+require_once "../adm/conecta.php";
+require_once "../adm/class.php";
+require_once "../adm/function.php";
+$banners = listaBannerHome($soller); ?>
 <html lang="pt">
 	<head>
 		<meta charset="utf-8">
@@ -70,32 +75,23 @@
 		<main role="main">
 			<div id="intro-wrap">
 				<div id="intro" class="preload" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fade">	
-					<div class="intro-item" style="background-image:url(../img/agi-max-plus-banner.png);">		
-						<div class="intro-mockup-wrapper">		
+					<?php foreach ($banners as $banner) { ?>	
+					<div class="intro-item">
+								<!--style="background-image:url(../adm/arquivos/<?=$banner->arquivo;?>);"  -->
+                         <!-- 	<div class="intro-mockup-wrapper">		
 							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Saiba Mais</a>
-							</div><!-- caption -->						
-						</div><!-- intro-mockup-wrapper -->
-					</div>		
-					<div class="intro-item" style="background-image:url(../img/radiance-plus.jpg);">		
-						<div class="intro-mockup-wrapper">		
-							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Saiba Mais</a>
-							</div>						
-						</div>
-					</div>	
-					<div class="intro-item" style="background-image:url(../img/agi-one.jpg);">		
-						<div class="intro-mockup-wrapper">		
-							<div class="caption-mockup caption-right column six last-special">
-								<a class="button white transparent" href="#">Saiba Mais</a>
-							</div>						
-						</div>
-					</div>					
-
+								<a class="button white transparent" href="#">Know more</a>
+							</div>					
+						</div> -->
+						<picture>
+							<source media="(min-width:768px)" srcset="../adm/arquivos/<?=$banner->arquivo;?>">
+							<source media="(min-width:320px)" srcset="../adm/arquivos/<?=$banner->arquivo_mobile;?>">
+							<img src="../adm/arquivos/<?=$banner->arquivo;?>" alt="Flowers" style="width:auto;">
+						</picture> 
+					</div>
+					<?php } ?>					
 				</div><!-- intro -->
-
 			</div><!-- intro-wrap -->
-
 			<div id="main">
 				<section class="row section text-light fundo-black">
 				<div class="row-content buffer even clear-after"  style="padding-top:4%;">
@@ -136,14 +132,14 @@
 
 
 				<div class="owl-carousel">
-				  <div><a href="colecoes.php?id=26#AustralianFinisherLine"><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Australian Finisher Line" class="sombra" alt="Finisher"></a></div>
-				  <div><a href=""><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Resistance Faultless Seal" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=17#AgiMax"><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Agi Max" class="sombra"></a></div>
-				  <div><a href="colecoes.php?id=17#AgiMaxPlus"><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="AgiMaxPlus" class="sombra"></div>
-				  <div><a href="company.php"><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="S'ollér Brasil" class="sombra"></div>
-				  <div><a href="colecoes.php?id=17#AgiOne"><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Agi One Intenseliss" class="sombra"></div>
-				  <div><a href="colecoes.php?id=17#DaybyDay"><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Treat System" class="sombra"></div>
-				  <div><a href="colecoes.php?id=17#RadiancePlus"><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Radiance Plus" class="sombra"></div>
+				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Finishing" class="sombra"></a></div>
+				  <div><a href="#"><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Casting & Bleaching" class="sombra"></a></div>
+				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="company.php"><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="The Company" class="sombra"></a></div>
+				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Volume Reduction" class="sombra"></a></div>
+				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Volume Reduction" class="sombra"></a></div>
 				</div>
 
 				</section>	

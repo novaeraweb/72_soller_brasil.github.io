@@ -46,28 +46,6 @@ mysqli_select_db($soller, "sollerbrasil");
           </ul>
           </div>
         </ul>
-
-        <ul class="nav">
-          <li class="nav-item active"  data-toggle="tooltip" data-placement="top" title="Coleções de produtos que estarão disponíveis para visualização no site, como Agi Max, Nutrimax, entre outras.">
-            <a class="nav-link" data-toggle="collapse" href="#menu-colecao" aria-expanded="false" aria-controls="menu-colecao">
-              <i class="material-icons">view_list</i>
-              <p>Coleção <i class="material-icons" style="float: right;">keyboard_arrow_down </i></p>
-            </a>
-          </li>
-          <!-- your sidebar here -->
-          <div class="collapse" id="menu-colecao">
-          <ul class="nav flex-column">
-            <li class="nav-item" style="height:25px;">  
-                <a class="nav-link active" href="inserir-colecao.php"><i class="material-icons">add</i> Inserir</a>
-            </li>
-            <li class="nav-item" style="height: 25px;">
-                <a class="nav-link active" href="listar-colecao.php"><i class="material-icons">search</i> Visualizar</a>
-            </li>   
-            <br>         
-          </ul>
-          </div>
-        </ul>
-
         <ul class="nav">
           <li class="nav-item active"  data-toggle="tooltip" data-placement="top" title="Linhas dos produtos cadastrados, como Profissional e Manutenção.">
             <a class="nav-link" data-toggle="collapse" href="#menu-linha" aria-expanded="false" aria-controls="menu-colecao">
@@ -83,6 +61,26 @@ mysqli_select_db($soller, "sollerbrasil");
             </li>
             <li class="nav-item" style="height: 25px;">
                 <a class="nav-link active" href="listar-linha.php"><i class="material-icons">search</i> Visualizar</a>
+            </li>   
+            <br>         
+          </ul>
+          </div>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active"  data-toggle="tooltip" data-placement="top" title="Coleções de produtos que estarão disponíveis para visualização no site, como Agi Max, Nutrimax, entre outras.">
+            <a class="nav-link" data-toggle="collapse" href="#menu-colecao" aria-expanded="false" aria-controls="menu-colecao">
+              <i class="material-icons">view_list</i>
+              <p>Coleção <i class="material-icons" style="float: right;">keyboard_arrow_down </i></p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+          <div class="collapse" id="menu-colecao">
+          <ul class="nav flex-column">
+            <li class="nav-item" style="height:25px;">  
+                <a class="nav-link active" href="inserir-colecao.php"><i class="material-icons">add</i> Inserir</a>
+            </li>
+            <li class="nav-item" style="height: 25px;">
+                <a class="nav-link active" href="listar-colecao.php"><i class="material-icons">search</i> Visualizar</a>
             </li>   
             <br>         
           </ul>

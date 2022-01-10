@@ -69,6 +69,7 @@ $banners = listaBannerId($soller, $id);
                             <thead>
                                 <tr class="text-center">
                                     <th>Foto 1</th>
+                                    <th>Foto Mobile</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -81,8 +82,26 @@ $banners = listaBannerId($soller, $id);
                                     <br>
                                     <label for="arquivo">Selecione a nova imagem</label>
                                     <br>
-                                    <button type="button" class="btn btn-warning">Foto 1<input type="file" name="arquivo" id="arquivo"></button>
+                                    <button type="button" class="btn btn-warning">
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto 1</label>
+                                      <input type="file" name="arquivo" id="arquivo">
+                                    </button>
                                     </td>
+                                    <td>
+                                  <?php if ($banner->arquivo_mobile == Null) {  ?>
+                                    <img src="arquivos/sem-imagem.png" alt="" width="100" height="100" />             
+                                    <?php } else { ?>
+                                    <img src="arquivos/<?=$banner->arquivo_mobile;?>" alt="" width="240" height="auto"/> 
+                                    <?php } ?>
+                                    <br>
+                                    <label for="arquivo_mobile">Selecione a nova imagem</label>
+                                    <br>
+                                    <button type="button" class="btn btn-warning">
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto Mobile</label>
+                                      <input type="file" name="arquivo_mobile" id="arquivo_mobile">
+                                    </button>
+                                    </td>
+                                  </td>
                                 </tr>
                             </tbody>
                         </table>

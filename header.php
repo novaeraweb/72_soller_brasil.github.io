@@ -2,7 +2,6 @@
 require_once "adm/class.php";
 require_once "adm/function.php";
 $categorias = listaCategoriaEn($soller);
-
 $pgAtual = basename($_SERVER['SCRIPT_NAME']);
 ?>
 <header role="banner" class="transparent light">

@@ -92,4 +92,4 @@ $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));
 //Insert espanhol
 $insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_es', '$descricao_es', '$indicacao_es', '$acao_es', '3', '$novo', '$video', '$cat_es', '$ativo', '$data', '$hora', '$user' )";           
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));  
-header("Location: home.php?inserido=true");
+header("Location: listar-colecao.php?inserido=true");

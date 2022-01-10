@@ -144,11 +144,7 @@ $categorias_es = listaCategoriaIdEs($soller, $id);
                     <!-- Fim corpo tabs -->
                       <br><br>
                         <?php foreach ($categorias as $categoria){?>
-                        <input type="hidden" name="id" id="id" value="<?=$categoria->idcategoria;?>">
-                        <div class="form-group">
-                          <label for="video"> <i class="material-icons" style="float: left;">play_circle_filled</i> Vídeo </label>
-                          <input type="text" class="form-control" name="video" id="video" value="<?=$categoria->video;?>"> 
-                        </div>                        
+                        <input type="hidden" name="id" id="id" value="<?=$categoria->idcategoria;?>">                      
                         <div class="form-group">
                           <label for="ativo">A Categoria está ativa?</label>
                           <select class="form-control selectpicker" data-style="btn btn-link" name="ativo" id="ativo">
@@ -231,5 +227,4 @@ CKEDITOR.replace('descricao_longa_es',{
 
 </script>   
 </body>
-
 </html>

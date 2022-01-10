@@ -15,8 +15,6 @@ function listaCategoria ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
-		$categoria->video = $array['video'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -42,8 +40,6 @@ function listaCategoriaEn ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
-		$categoria->video = $array['video'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -69,8 +65,6 @@ function listaCategoriaPt ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
-		$categoria->video = $array['video'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -96,8 +90,6 @@ function listaCategoriaEs ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
-		$categoria->video = $array['video'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -122,8 +114,6 @@ function listaCategoriaId ($soller, $id) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
-		$categoria->video = $array['video'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -150,8 +140,6 @@ function listaCategoriaIdEn ($soller, $id) {
 		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
-		$categoria->video = $array['video'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -177,8 +165,6 @@ function listaCategoriaIdEs ($soller, $id) {
 		$categoria->nome = $array['nome'];
 	   $categoria->descricao_breve = $array['descricao_breve'];
 	   $categoria->descricao_longa = $array['descricao_longa'];
-	   $categoria->arquivo = $array['arquivo'];
-	   $categoria->video = $array['video'];
 	   $categoria->ativo = $array['ativo'];
 	   $categoria->ididioma_cat = $array['ididioma_cat'];
 	   $categoria->data = $array['data'];
@@ -195,7 +181,7 @@ function listaColecao($soller){
 	$query = "SELECT c.*, i.ididioma
 			  FROM colecao c
 			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
-			  WHERE c.ativo='Sim' AND c.ididioma_col = '2'
+			  WHERE (c.ativo='Sim' OR c.ativo='Não') AND c.ididioma_col = '2'
 			  ORDER BY c.nome ASC";
 	$resultado = mysqli_query($soller, $query);
 	$colecoes = array();
@@ -225,7 +211,7 @@ function listaColecaoId($soller, $id){
 			  FROM colecao c
 			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
 			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
-			  WHERE c.ativo='Sim' and c.idcolecao='$id'
+			  WHERE c.idcolecao='$id'
 			  ORDER BY c.nome ASC";
 
 	$resultado = mysqli_query($soller, $query);
@@ -257,7 +243,7 @@ function listaColecaoIdEn($soller, $id){
 			  FROM colecao c
 			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
 			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
-			  WHERE c.ativo='Sim' and c.idcolecao='$id'
+			  WHERE c.idcolecao='$id'
 			  ORDER BY c.nome ASC";
 
 	$resultado = mysqli_query($soller, $query);
@@ -282,6 +268,39 @@ function listaColecaoIdEn($soller, $id){
 	}
 	return $colecoes;
 }
+
+function listaColecaoIdEs($soller, $id){
+	$id = $id+1;
+	$query = "SELECT c.*, cat.idcategoria, i.ididioma
+			  FROM colecao c
+			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
+			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
+			  WHERE c.idcolecao='$id'
+			  ORDER BY c.nome ASC";
+
+	$resultado = mysqli_query($soller, $query);
+	$colecoes = array();
+	while ($array = mysqli_fetch_assoc($resultado)){
+		$colecao = new Colecao();
+		$colecao->idcolecao = $array['idcolecao'];
+		$colecao->nome = $array['nome'];
+		$colecao->descricao = $array['descricao'];
+		$colecao->indicacao = $array['indicacao'];
+		$colecao->acao = $array['acao'];
+		$colecao->arquivo = $array['arquivo'];
+		$colecao->video = $array['video'];
+		$colecao->ativo = $array['ativo'];
+		$colecao->idcategoria = $array['idcategoria'];
+		$colecao->ididioma_col = $array['ididioma_col'];
+		$colecao->data = $array['data'];
+		$colecao->user = $array['user'];
+		$colecao->hora = $array['hora'];
+
+		array_push($colecoes, $colecao);
+	}
+	return $colecoes;
+}
+
 
 function listaColecaoFrontEn($soller, $idcategoria){
 	$query = "SELECT c.*, cat.idcategoria
@@ -354,38 +373,6 @@ function listaColecaoFrontEs($soller, $idcategoria){
 	$resultado = mysqli_query($soller, $query);
 	$colecoes = array();
 	while ($array = mysqli_fetch_assoc($resultado)){	
-		$colecao = new Colecao();
-		$colecao->idcolecao = $array['idcolecao'];
-		$colecao->nome = $array['nome'];
-		$colecao->descricao = $array['descricao'];
-		$colecao->indicacao = $array['indicacao'];
-		$colecao->acao = $array['acao'];
-		$colecao->arquivo = $array['arquivo'];
-		$colecao->video = $array['video'];
-		$colecao->ativo = $array['ativo'];
-		$colecao->idcategoria = $array['idcategoria'];
-		$colecao->ididioma_col = $array['ididioma_col'];
-		$colecao->data = $array['data'];
-		$colecao->user = $array['user'];
-		$colecao->hora = $array['hora'];
-
-		array_push($colecoes, $colecao);
-	}
-	return $colecoes;
-}
-
-function listaColecaoIdEs($soller, $id){
-	$id = $id+1;
-	$query = "SELECT c.*, cat.idcategoria, i.ididioma
-			  FROM colecao c
-			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
-			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
-			  WHERE c.ativo='Sim' and c.idcolecao='$id'
-			  ORDER BY c.nome ASC";
-
-	$resultado = mysqli_query($soller, $query);
-	$colecoes = array();
-	while ($array = mysqli_fetch_assoc($resultado)){
 		$colecao = new Colecao();
 		$colecao->idcolecao = $array['idcolecao'];
 		$colecao->nome = $array['nome'];
@@ -802,7 +789,7 @@ function listaProdutoIdEs($soller, $id){
 function listaBanner($soller){
 	$query = "SELECT b.*
 			  FROM banner b
-			  WHERE b.ativo='Sim'
+			  WHERE b.ativo='Sim' OR b.ativo='Não'
 			  ORDER BY b.nome ASC";
 	$resultado = mysqli_query($soller, $query);
 	$banners = array();
@@ -816,16 +803,16 @@ function listaBanner($soller){
 		$banner->user = $array['user'];
 		$banner->arquivo_mobile = $array['arquivo_mobile'];
 		$banner->hora = $array['hora'];
+		$banner->ativo = $array['ativo'];
 
 		array_push($banners, $banner);
 	}
 	return $banners;
 }
-
-function listaBannerId($soller, $id){
+function listaBannerHome($soller){
 	$query = "SELECT b.*
 			  FROM banner b
-			  WHERE b.ativo='Sim' AND b.idbanner='$id'
+			  WHERE b.ativo='Sim' and b.local = 'Home'
 			  ORDER BY b.nome ASC";
 	$resultado = mysqli_query($soller, $query);
 	$banners = array();
@@ -839,6 +826,30 @@ function listaBannerId($soller, $id){
 		$banner->user = $array['user'];
 		$banner->arquivo_mobile = $array['arquivo_mobile'];
 		$banner->hora = $array['hora'];
+		$banner->ativo = $array['ativo'];
+
+		array_push($banners, $banner);
+	}
+	return $banners;
+}
+function listaBannerId($soller, $id){
+	$query = "SELECT b.*
+			  FROM banner b
+			  WHERE b.idbanner='$id'
+			  ORDER BY b.nome ASC";
+	$resultado = mysqli_query($soller, $query);
+	$banners = array();
+	while ($array = mysqli_fetch_assoc($resultado)){
+		$banner = new Banner();
+		$banner->idbanner = $array['idbanner'];
+		$banner->nome = $array['nome'];
+		$banner->arquivo = $array['arquivo'];
+		$banner->descricao = $array['descricao'];
+		$banner->local = $array['local'];
+		$banner->user = $array['user'];
+		$banner->arquivo_mobile = $array['arquivo_mobile'];
+		$banner->hora = $array['hora'];
+		$banner->ativo = $array['ativo'];
 
 		array_push($banners, $banner);
 	}
@@ -846,23 +857,23 @@ function listaBannerId($soller, $id){
 }
 
 function listaGeral($soller){
-	$query = "SELECT p.nome, p.data, p.arquivo, p.user, p.hora
+	$query = "SELECT p.nome, p.data, p.user, p.hora
 			  FROM produto p WHERE idproduto >= '1'
 			  UNION ALL
 
-			  SELECT cat.nome, cat.data, cat.arquivo, cat.user, cat.hora
+			  SELECT cat.nome, cat.data, cat.user, cat.hora
 			  FROM categoria cat WHERE idcategoria >= '1'
 			  UNION ALL
 
-			  SELECT col.nome, col.data, col.arquivo, col.user, col.hora 
+			  SELECT col.nome, col.data, col.user, col.hora 
 			  FROM colecao col WHERE idcolecao >= '1'
 			  UNION ALL
 
-			  SELECT l.nome, l.data, l.arquivo, l.user, l.hora 
+			  SELECT l.nome, l.data, l.user, l.hora 
 			  FROM linha l WHERE idlinha >='1'
 			  UNION ALL
 
-			  SELECT b.nome, b.data, b.arquivo, b.user, b.hora 
+			  SELECT b.nome, b.data,b.user, b.hora 
 			  FROM banner b 
 
 			  ORDER BY data DESC";
@@ -873,7 +884,6 @@ function listaGeral($soller){
 		$geral = new Geral();
 		$geral->nome = $array['nome'];
 		$geral->data = $array['data'];
-		$geral->arquivo = $array['arquivo'];
 		$geral->user = $array['user'];
 		$geral->hora = $array['hora'];
 		
@@ -892,6 +902,11 @@ $total_categorias = mysqli_num_rows($resultado_categorias);
 $query_colecoes = "SELECT * FROM colecao WHERE ativo = 'Sim' AND ididioma_col = '2'";
 $resultado_colecoes = mysqli_query($soller, $query_colecoes);
 $total_colecoes = mysqli_num_rows($resultado_colecoes);
+
+// Query para números de produtos
+$query_produtos = "SELECT * FROM produto WHERE ativo = 'Sim' AND ididioma_prod = '2'";
+$resultado_produtos = mysqli_query($soller, $query_produtos);
+$total_produtos = mysqli_num_rows($resultado_produtos);
 
 // Query para números de linhas
 $query_linhas = "SELECT * FROM linha WHERE ativo = 'Sim' AND ididioma_li = '2'";
