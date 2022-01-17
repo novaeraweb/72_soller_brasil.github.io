@@ -161,8 +161,13 @@ $produtos_es = listaProdutoIdEs($soller, $id);
                               </div>
                           </div>
                         <?php } else {?>
-                          <label for="peso_unico" id="tam_unico">Tamanho (ml/g)</label>
-                          <input type="text" name="peso_unico" id="peso_unico" class="form-control" value="<?=$produto->peso_unico;?>">
+                          <div class="col">
+                            <label for="peso_unico" id="tam_unico">Tamanho (ml/g)</label>
+                            <input type="text" name="peso_unico" id="peso_unico" class="form-control" value="<?=$produto->peso_unico;?>">
+                            <br>
+                            <label for="peso_unico" id="tam_unico">Tamanho (fl. oz)</label>
+                            <input type="text" name="peso_unico_en" id="peso_unico_en" class="form-control" value="<?=$produto->peso_unico_en;?>">
+                          </div>
                         <?php } ?>
                         <br>
                         <br>

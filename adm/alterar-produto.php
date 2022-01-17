@@ -95,23 +95,29 @@ mysqli_select_db($soller, 'sollerbrasil');
 
     $ativo = $_POST["ativo"];
     $ativo = trim($ativo);
+
+    $peso_unico = $_POST["peso_unico"];
+    $peso_unico = trim($peso_unico);
+
+    $peso_unico_en = $_POST["peso_unico_en"];
+    $peso_unico_en = trim($peso_unico_en);
     
 
     $id_en = $id - 1;
     $id_es = $id + 1;
 
 // Insert EN
-$updateSQL = "UPDATE produto SET nome = '$nome_en', descricao = '$descricao_en', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en', peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br' , peso_unico = '$peso_unico', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_en' AND ididioma_prod = '1'"; 
+$updateSQL = "UPDATE produto SET nome = '$nome_en', descricao = '$descricao_en', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en', peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br' , peso_unico = '$peso_unico', peso_unico_en = '$peso_unico_en', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_en' AND ididioma_prod = '1'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 
 // Insert PT
-$updateSQL = "UPDATE produto SET nome = '$nome_pt', descricao = '$descricao_pt', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en' , peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br', peso_unico = '$peso_unico', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id' AND ididioma_prod = '2'"; 
+$updateSQL = "UPDATE produto SET nome = '$nome_pt', descricao = '$descricao_pt', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en' , peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br', peso_unico = '$peso_unico', peso_unico_en = '$peso_unico_en', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id' AND ididioma_prod = '2'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 
 // Insert ES
-$updateSQL = "UPDATE produto SET nome = '$nome_es', descricao = '$descricao_es', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en' , peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br', peso_unico = '$peso_unico', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_es' AND ididioma_prod = '3'"; 
+$updateSQL = "UPDATE produto SET nome = '$nome_es', descricao = '$descricao_es', peso_p_en = '$peso_p_en', peso_m_en = '$peso_m_en', peso_g_en = '$peso_g_en' , peso_p_br = '$peso_p_br', peso_m_br = '$peso_m_br', peso_g_br = '$peso_g_br', peso_unico = '$peso_unico', peso_unico_en = '$peso_unico_en', video = '$video' , ativo = '$ativo' WHERE idproduto ='$id_es' AND ididioma_prod = '3'"; 
 
 $Result = mysqli_query($soller, $updateSQL) or die(mysqli_error($soller));  
 header("Location: listar-produto.php?editado=true");

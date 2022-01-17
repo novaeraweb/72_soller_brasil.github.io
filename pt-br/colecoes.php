@@ -157,18 +157,18 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 													if ($produto->peso_unico == '') { ?>
 														<ul>
 															<?php if ($produto->peso_p_br || $produto->peso_p_en){?>
-															<li><?=$produto->peso_p_br?> | <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_p_br; echo "| "?>  <?=$produto->peso_p_en;?> </li>
 															<?php }?>
 															<?php if ($produto->peso_m_br || $produto->peso_m_en){?>
-															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_m_br; echo "| "?>  <?=$produto->peso_m_en;?></li>
 															<?php }?>
 															<?php if ($produto->peso_g_br || $produto->peso_g_en){?>
-															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+															<li><?=$produto->peso_g_br; echo "| "?>  <?=$produto->peso_g_en;?></li>
 															<?php }?>
 														</ul>
 													<?php } else {?>
 														<ul>
-															<li><?=$produto->peso_unico;?></li>
+															<li><?=$produto->peso_unico; echo "| " echo $produto->peso_unico_en; ?></li>
 														</ul>
 													<?php }?>
 												</div>
@@ -194,9 +194,9 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 												<div class="peso">
 													<?php if ($produto->peso_unico == '') { ?>
 														<ul>
-															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+															<li><?=$produto->peso_p_br; echo "| "?> <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br; echo "| "?> <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br; echo "| "?> <?=$produto->peso_g_en;?></li>
 														</ul>
 													<?php } else {?>
 														<ul>

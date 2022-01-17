@@ -108,7 +108,7 @@ $produtos = listaProduto($soller);
                                         </thead>
                                       </table>
                                       <?php } else {?>
-                                        <?=$produto->peso_unico;?>
+                                        <?=$produto->peso_unico;?> | <?=$produto->peso_unico_en;?>
                                       <?php }?>
                                     </td>
                                     <td style="max-width:70px;"><?=$produto->ativo;?></td>

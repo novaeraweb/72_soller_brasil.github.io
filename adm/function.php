@@ -521,6 +521,7 @@ function listaProduto($soller){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -556,6 +557,7 @@ function listaProdutoFront($soller, $colecao){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -604,6 +606,7 @@ function listaProdutoFrontPt($soller, $colecao){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -653,6 +656,7 @@ function listaProdutoFrontEs($soller, $colecao){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -701,6 +705,7 @@ function listaProdutoId($soller, $id){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -737,6 +742,7 @@ function listaProdutoIdEn($soller, $id){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -773,6 +779,7 @@ function listaProdutoIdEs($soller, $id){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
+		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
