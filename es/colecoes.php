@@ -150,13 +150,13 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
 													if ($produto->peso_unico == '') { ?>
 														<ul>
-															<li><?=$produto->peso_p_br; echo "| " ?> <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br; echo "| " ?> <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br; echo "| " ?> <?=$produto->peso_g_en;?></li>
+															<li><?=$produto->peso_p_br; echo " | " ?> <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br; echo " | " ?> <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br; echo " | " ?> <?=$produto->peso_g_en;?></li>
 														</ul>
 													<?php } else {?>
 														<ul>
-															<li><?=$produto->peso_unico;  echo "| " echo $produto->peso_unico_en;?></li>
+															<li><?=$produto->peso_unico;  echo " | "; echo $produto->peso_unico_en;?></li>
 														</ul>
 													<?php }?>
 												</div>

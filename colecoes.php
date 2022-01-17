@@ -42,7 +42,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
 
     <!-- Schema.org markup -->
     <meta itemprop="name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/colecoes.php?id=<?=$result['id'];?>"/>
+    <meta itemprop="url" content="https://www.sollerbrasil.com/colecoes.php?id=<?=$result['idcategoria'];?>"/>
     <meta itemprop="image" content="img/soller_shared.jpg" >
     <meta itemprop="description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
 
@@ -51,7 +51,7 @@ $colecoes = listaColecaoFrontEn($soller, $categoria_get);
     <meta property="og:title" content="<?=$result['nome'];?> | S'ollér Brasil">
     <meta property="og:description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
     <meta property="og:site_name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta property="og:url" content="https://www.sollerbrasil.com/colecoes.php?id=<?=$result['id'];?>">
+    <meta property="og:url" content="https://www.sollerbrasil.com/colecoes.php?id=<?=$result['idcategoria'];?>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
     <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
@@ -142,13 +142,13 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
 													if ($produto->peso_unico == '') { ?>
 														<ul>
-															<li><?=$produto->peso_p_br; echo "| "?> <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br; echo "| "?> <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br; echo "| "?> <?=$produto->peso_g_en;?></li>
+															<li><?=$produto->peso_p_br; echo " | "?> <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br; echo " | "?> <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br; echo " | "?> <?=$produto->peso_g_en;?></li>
 														</ul>
 													<?php } else {?>
 														<ul>
-															<li><?=$produto->peso_unico;  echo "| " echo $produto->peso_unico_en;?></li>
+															<li><?=$produto->peso_unico;  echo " | "; echo $produto->peso_unico_en;?></li>
 														</ul>
 													<?php }?>
 												</div>
