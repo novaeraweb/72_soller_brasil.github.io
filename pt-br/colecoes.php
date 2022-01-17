@@ -139,9 +139,9 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
 													if ($produto->peso_unico == '') { ?>
 														<ul>
-															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+															<li><?=$produto->peso_p_br; echo "| " ?> <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br; echo "| " ?> <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br; echo "| " ?> <?=$produto->peso_g_en;?></li>
 														</ul>
 													<?php } else {?>
 														<ul>
@@ -171,9 +171,9 @@ $colecoes = listaColecaoFrontPt($soller, $categoria_get);
 												<div class="peso">
 													<?php if ($produto->peso_unico == '') { ?>
 														<ul>
-															<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+															<li><?=$produto->peso_p_br; echo "| "?> <?=$produto->peso_p_en;?> </li>
+															<li><?=$produto->peso_m_br; echo "| "?> <?=$produto->peso_m_en;?></li>
+															<li><?=$produto->peso_g_br; echo "| "?> <?=$produto->peso_g_en;?></li>
 														</ul>
 													<?php } else {?>
 														<ul>

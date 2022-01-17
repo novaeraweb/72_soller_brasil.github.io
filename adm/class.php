@@ -35,6 +35,7 @@ class Produto{
 	public $peso_m_en;
 	public $peso_p_en;
 	public $peso_unico;
+	public $peso_unico_en;
 	public $arquivo;
 	public $video;
 	public $ativo;
