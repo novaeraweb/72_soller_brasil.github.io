@@ -156,7 +156,7 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 														</ul>
 													<?php } else {?>
 														<ul>
-															<li><?=$produto->peso_unico;?></li>
+															<li><?=$produto->peso_unico;  echo "| " echo $produto->peso_unico_en;?></li>
 														</ul>
 													<?php }?>
 												</div>
