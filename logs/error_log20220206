@@ -1,0 +1,210 @@
+[Sun Feb 06 00:24:42 2022] [error] [client 77.75.76.163] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 00:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/8rS3wRdfmNmKUFeUKg9AQ6eyafgMpjdo8RyI_IDbeOY
+[Sun Feb 06 00:40:06 2022] [error] [client 18.192.36.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/8rS3wRdfmNmKUFeUKg9AQ6eyafgMpjdo8RyI_IDbeOY
+[Sun Feb 06 00:40:06 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/8rS3wRdfmNmKUFeUKg9AQ6eyafgMpjdo8RyI_IDbeOY
+[Sun Feb 06 00:52:20 2022] [error] [client 186.4.56.106] mod_mime_magic: invalid type 0 in mconvert()., referer: https://sollerbrasil.com/assets/socicon/css/styles.css
+[Sun Feb 06 00:52:20 2022] [error] [client 186.4.56.106] mod_mime_magic: invalid type 0 in mconvert()., referer: https://sollerbrasil.com/assets/web/assets/mobirise-icons/mobirise-icons.css
+[Sun Feb 06 01:25:51 2022] [error] [client 77.75.76.167] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 01:40:08 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/qKP2uOCvRwVkfrNe1jrGEGGfS_yDCS75CBx4uokQfk8
+[Sun Feb 06 01:40:08 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/qKP2uOCvRwVkfrNe1jrGEGGfS_yDCS75CBx4uokQfk8
+[Sun Feb 06 01:40:08 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/qKP2uOCvRwVkfrNe1jrGEGGfS_yDCS75CBx4uokQfk8
+[Sun Feb 06 01:40:09 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/qKP2uOCvRwVkfrNe1jrGEGGfS_yDCS75CBx4uokQfk8
+[Sun Feb 06 01:50:46 2022] [error] [client 114.119.135.136] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 01:56:31 2022] [error] [client 66.249.66.68] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 02:40:06 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/efSFsCt90EeLP8JS0MgG9ziKaQrU2bzf4bfVwmNzzC0
+[Sun Feb 06 02:40:07 2022] [error] [client 34.219.87.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/efSFsCt90EeLP8JS0MgG9ziKaQrU2bzf4bfVwmNzzC0
+[Sun Feb 06 02:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/efSFsCt90EeLP8JS0MgG9ziKaQrU2bzf4bfVwmNzzC0
+[Sun Feb 06 02:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/efSFsCt90EeLP8JS0MgG9ziKaQrU2bzf4bfVwmNzzC0
+[Sun Feb 06 02:40:21 2022] [error] [client 114.119.136.254] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 03:00:39 2022] [error] [client 44.194.222.119] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.cez-verify, referer: http://sollerbrasil.com/.cez-verify/12fedc9791a595ccedb8b2b4b2179d8094f8424a3cae4f353db97b3c
+[Sun Feb 06 03:37:08 2022] [error] [client 194.38.20.161] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/admin
+[Sun Feb 06 03:40:07 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/cMVWjUKmRRTcMsNY0BThUk29re7Z45XYtYGRdPJq5KY
+[Sun Feb 06 03:40:07 2022] [error] [client 52.39.4.59] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/cMVWjUKmRRTcMsNY0BThUk29re7Z45XYtYGRdPJq5KY
+[Sun Feb 06 03:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/cMVWjUKmRRTcMsNY0BThUk29re7Z45XYtYGRdPJq5KY
+[Sun Feb 06 03:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/cMVWjUKmRRTcMsNY0BThUk29re7Z45XYtYGRdPJq5KY
+[Sun Feb 06 03:55:14 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/wp-includes
+[Sun Feb 06 03:55:16 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/xmlrpc.php
+[Sun Feb 06 03:55:21 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/blog
+[Sun Feb 06 03:55:26 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/web
+[Sun Feb 06 03:55:29 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/wordpress
+[Sun Feb 06 03:55:35 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/website
+[Sun Feb 06 03:55:44 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/wp
+[Sun Feb 06 03:55:48 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/news
+[Sun Feb 06 03:55:53 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/2018
+[Sun Feb 06 03:55:55 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/2019
+[Sun Feb 06 03:55:59 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/shop
+[Sun Feb 06 03:56:01 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/wp1
+[Sun Feb 06 03:56:05 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/test
+[Sun Feb 06 03:56:12 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/media
+[Sun Feb 06 03:56:16 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/wp2
+[Sun Feb 06 03:56:25 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/site
+[Sun Feb 06 03:56:29 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/cms
+[Sun Feb 06 03:56:38 2022] [error] [client 20.24.17.73] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/sito
+[Sun Feb 06 04:08:40 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 04:08:41 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 04:08:43 2022] [error] [client 157.55.39.4] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/btx-capilar
+[Sun Feb 06 04:40:06 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FghNZWHEXbEyT_jQGHENTrt8eOhaCfswIrq3lhkGQpM
+[Sun Feb 06 04:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FghNZWHEXbEyT_jQGHENTrt8eOhaCfswIrq3lhkGQpM
+[Sun Feb 06 04:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FghNZWHEXbEyT_jQGHENTrt8eOhaCfswIrq3lhkGQpM
+[Sun Feb 06 04:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FghNZWHEXbEyT_jQGHENTrt8eOhaCfswIrq3lhkGQpM
+[Sun Feb 06 04:49:39 2022] [error] [client 44.194.222.119] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.cez-verify, referer: http://sollerbrasil.com/.cez-verify/12fedc9791a595ccedb8b2b4b2179d8094f8424a3cae4f353db97b3c
+[Sun Feb 06 05:01:13 2022] [error] [client 192.29.97.49] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt, referer: http://sollerbrasil.com/robots.txt
+[Sun Feb 06 05:01:15 2022] [error] [client 192.29.97.49] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt, referer: http://sollerbrasil.com/robots.txt
+[Sun Feb 06 05:01:17 2022] [error] [client 192.29.97.49] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 05:01:18 2022] [error] [client 192.29.97.49] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 05:12:00 2022] [error] [client 114.119.130.110] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 05:40:06 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FbN4ibIBjq9L8nZWRWFL_T8-a3KVvj7g40cucklD-ZU
+[Sun Feb 06 05:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FbN4ibIBjq9L8nZWRWFL_T8-a3KVvj7g40cucklD-ZU
+[Sun Feb 06 05:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FbN4ibIBjq9L8nZWRWFL_T8-a3KVvj7g40cucklD-ZU
+[Sun Feb 06 05:40:07 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/FbN4ibIBjq9L8nZWRWFL_T8-a3KVvj7g40cucklD-ZU
+[Sun Feb 06 06:16:01 2022] [error] [client 162.55.85.217] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Sun Feb 06 06:19:33 2022] [error] [client 82.135.224.18] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/web/assets/mobirise-icons/mobirise-icons.css
+[Sun Feb 06 06:19:33 2022] [error] [client 82.135.224.18] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/socicon/css/styles.css
+[Sun Feb 06 06:39:25 2022] [error] [client 201.43.44.137] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 06:40:07 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/LzZHkj2gHTIwFeJkhNj6JKhluV0_OUPVZ4TL9lU10zg
+[Sun Feb 06 06:40:07 2022] [error] [client 18.192.36.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/LzZHkj2gHTIwFeJkhNj6JKhluV0_OUPVZ4TL9lU10zg
+[Sun Feb 06 06:40:07 2022] [error] [client 34.219.87.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/LzZHkj2gHTIwFeJkhNj6JKhluV0_OUPVZ4TL9lU10zg
+[Sun Feb 06 06:40:08 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/LzZHkj2gHTIwFeJkhNj6JKhluV0_OUPVZ4TL9lU10zg
+[Sun Feb 06 07:02:36 2022] [error] [client 5.45.207.71] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 07:40:06 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/jtPrR-DQc0KQdI89vDqtNw0IBkT13ef8G9XReqhZNQs
+[Sun Feb 06 07:40:06 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/jtPrR-DQc0KQdI89vDqtNw0IBkT13ef8G9XReqhZNQs
+[Sun Feb 06 08:01:40 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/app-ads.txt
+[Sun Feb 06 08:01:40 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/ads.txt
+[Sun Feb 06 08:01:41 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/app-ads.txt
+[Sun Feb 06 08:01:41 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/ads.txt
+[Sun Feb 06 08:01:43 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/ads.txt
+[Sun Feb 06 08:01:43 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/app-ads.txt
+[Sun Feb 06 08:01:44 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/ads.txt
+[Sun Feb 06 08:01:44 2022] [error] [client 34.245.89.123] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/app-ads.txt
+[Sun Feb 06 08:40:07 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/aLLLCNbgOuW3W-HGPNzkg6UiVuCbX7aXHtnAia3aWnI
+[Sun Feb 06 08:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/aLLLCNbgOuW3W-HGPNzkg6UiVuCbX7aXHtnAia3aWnI
+[Sun Feb 06 08:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/aLLLCNbgOuW3W-HGPNzkg6UiVuCbX7aXHtnAia3aWnI
+[Sun Feb 06 08:40:07 2022] [error] [client 18.192.36.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/aLLLCNbgOuW3W-HGPNzkg6UiVuCbX7aXHtnAia3aWnI
+[Sun Feb 06 08:55:51 2022] [error] [client 144.52.142.1] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/aria-expanded
+[Sun Feb 06 08:55:51 2022] [error] [client 144.52.142.1] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/data-toggle
+[Sun Feb 06 08:55:52 2022] [error] [client 144.52.142.1] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/next
+[Sun Feb 06 09:17:30 2022] [error] [client 188.166.174.212] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.env
+[Sun Feb 06 09:29:18 2022] [error] [client 17.121.112.175] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Sun Feb 06 09:29:19 2022] [error] [client 17.121.113.149] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Sun Feb 06 09:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/UT7_71uFMeoEgYyR18D3wFVwSmLW02y-j5APsHDrrB4
+[Sun Feb 06 09:40:07 2022] [error] [client 34.219.87.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/UT7_71uFMeoEgYyR18D3wFVwSmLW02y-j5APsHDrrB4
+[Sun Feb 06 09:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/UT7_71uFMeoEgYyR18D3wFVwSmLW02y-j5APsHDrrB4
+[Sun Feb 06 09:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/UT7_71uFMeoEgYyR18D3wFVwSmLW02y-j5APsHDrrB4
+[Sun Feb 06 10:00:41 2022] [error] [client 95.163.255.214] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 10:17:24 2022] [error] [client 186.224.10.181] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/
+[Sun Feb 06 10:17:24 2022] [error] [client 186.224.10.181] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/
+[Sun Feb 06 10:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/easUmF50FvTknMslaFMGdxEvf0JHDt--AUdRAuWO2iM
+[Sun Feb 06 10:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/easUmF50FvTknMslaFMGdxEvf0JHDt--AUdRAuWO2iM
+[Sun Feb 06 10:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/easUmF50FvTknMslaFMGdxEvf0JHDt--AUdRAuWO2iM
+[Sun Feb 06 10:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/easUmF50FvTknMslaFMGdxEvf0JHDt--AUdRAuWO2iM
+[Sun Feb 06 11:21:27 2022] [error] [client 179.118.247.77] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 11:40:06 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pOD3s-1mDH9AFCyCMvb9Is04vgpmp3tWrAgVYytSaV8
+[Sun Feb 06 11:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pOD3s-1mDH9AFCyCMvb9Is04vgpmp3tWrAgVYytSaV8
+[Sun Feb 06 11:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pOD3s-1mDH9AFCyCMvb9Is04vgpmp3tWrAgVYytSaV8
+[Sun Feb 06 11:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pOD3s-1mDH9AFCyCMvb9Is04vgpmp3tWrAgVYytSaV8
+[Sun Feb 06 12:11:23 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 12:11:24 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 12:11:43 2022] [error] [client 162.55.85.217] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Sun Feb 06 12:37:22 2022] [error] [client 5.255.253.137] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 12:40:06 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/ReVXvkBf5F49tgfL_YO4OIjVyzA4So9CMY5FEyroQDk
+[Sun Feb 06 12:40:07 2022] [error] [client 52.39.4.59] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/ReVXvkBf5F49tgfL_YO4OIjVyzA4So9CMY5FEyroQDk
+[Sun Feb 06 12:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/ReVXvkBf5F49tgfL_YO4OIjVyzA4So9CMY5FEyroQDk
+[Sun Feb 06 12:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/ReVXvkBf5F49tgfL_YO4OIjVyzA4So9CMY5FEyroQDk
+[Sun Feb 06 12:41:04 2022] [error] [client 87.250.224.127] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 12:44:43 2022] [error] [client 177.0.199.21] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 12:54:30 2022] [error] [client 177.0.199.21] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 13:39:14 2022] [error] [client 104.211.17.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.env
+[Sun Feb 06 13:39:20 2022] [error] [client 104.211.17.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/wp-content
+[Sun Feb 06 13:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/bvYckKs0-jWtXbmCESKqbKgDRmBoPk4K6H3yjeugWjg
+[Sun Feb 06 13:40:06 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/bvYckKs0-jWtXbmCESKqbKgDRmBoPk4K6H3yjeugWjg
+[Sun Feb 06 14:40:07 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/5EGsOMC31eS9r8dq6ZFypIBNEYJgaO779HnEAEtzvx4
+[Sun Feb 06 14:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/5EGsOMC31eS9r8dq6ZFypIBNEYJgaO779HnEAEtzvx4
+[Sun Feb 06 14:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/5EGsOMC31eS9r8dq6ZFypIBNEYJgaO779HnEAEtzvx4
+[Sun Feb 06 14:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/5EGsOMC31eS9r8dq6ZFypIBNEYJgaO779HnEAEtzvx4
+[Sun Feb 06 15:12:24 2022] [error] [client 186.212.148.139] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 15:13:03 2022] [error] [client 186.212.148.139] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 15:22:34 2022] [error] [client 207.46.13.237] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 15:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YR0Jtek5eBnWfjFrWMIkEpHN-tbGcBeUxn8mwbybxok
+[Sun Feb 06 15:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YR0Jtek5eBnWfjFrWMIkEpHN-tbGcBeUxn8mwbybxok
+[Sun Feb 06 15:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YR0Jtek5eBnWfjFrWMIkEpHN-tbGcBeUxn8mwbybxok
+[Sun Feb 06 15:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YR0Jtek5eBnWfjFrWMIkEpHN-tbGcBeUxn8mwbybxok
+[Sun Feb 06 15:44:19 2022] [error] [client 66.249.66.70] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 16:26:00 2022] [error] [client 179.118.247.77] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 16:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Vw0sBlkcS8fKq0_Vta32ZDvqmYeThxUwE7hj5JC7tFw
+[Sun Feb 06 16:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Vw0sBlkcS8fKq0_Vta32ZDvqmYeThxUwE7hj5JC7tFw
+[Sun Feb 06 16:40:07 2022] [error] [client 18.192.36.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Vw0sBlkcS8fKq0_Vta32ZDvqmYeThxUwE7hj5JC7tFw
+[Sun Feb 06 16:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Vw0sBlkcS8fKq0_Vta32ZDvqmYeThxUwE7hj5JC7tFw
+[Sun Feb 06 16:40:43 2022] [error] [client 34.74.41.187] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 16:41:40 2022] [error] [client 34.74.41.187] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 16:41:41 2022] [error] [client 34.74.41.187] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 17:07:19 2022] [error] [client 191.40.191.15] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 17:20:32 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 17:20:33 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 17:20:39 2022] [error] [client 40.77.167.60] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 17:20:39 2022] [error] [client 40.77.167.60] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 17:21:49 2022] [error] [client 157.55.39.4] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 17:21:49 2022] [error] [client 157.55.39.4] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 17:21:59 2022] [error] [client 66.249.66.151] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 17:23:01 2022] [error] [client 39.105.56.236] ModSecurity: Access denied with code 403 (phase 1). String match "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0" at REQUEST_HEADERS:User-Agent. [file "/etc/modsecurity/locaweb-rules/activated_rules/Locaweb_98_wordpress.conf"] [line "49"] [id "99036"] [msg "Locaweb Custom Rules: malicious user-agent login attempt 1"] [hostname "sollerbrasil.com"] [uri "/wp-login.php"] [unique_id "YgAuJbrKmbIAAKPOCIsAAAAL"]
+[Sun Feb 06 17:23:01 2022] [error] [client 39.105.56.236] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Sun Feb 06 17:40:06 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Uh1KEwPyAGeX0EIRi5WnFn0IXukdzttPkN5oZg2ciGw
+[Sun Feb 06 17:40:06 2022] [error] [client 52.39.4.59] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Uh1KEwPyAGeX0EIRi5WnFn0IXukdzttPkN5oZg2ciGw
+[Sun Feb 06 17:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/Uh1KEwPyAGeX0EIRi5WnFn0IXukdzttPkN5oZg2ciGw
+[Sun Feb 06 17:56:56 2022] [error] [client 35.231.10.247] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 18:00:59 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 18:01:00 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 18:11:29 2022] [error] [client 162.55.85.217] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Sun Feb 06 18:40:06 2022] [error] [client 18.116.86.117] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pe_zZEDcivdu2Zix66h5c_ooUe5LGVXIwpwSoioSpZ4
+[Sun Feb 06 18:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pe_zZEDcivdu2Zix66h5c_ooUe5LGVXIwpwSoioSpZ4
+[Sun Feb 06 18:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pe_zZEDcivdu2Zix66h5c_ooUe5LGVXIwpwSoioSpZ4
+[Sun Feb 06 18:40:08 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/pe_zZEDcivdu2Zix66h5c_ooUe5LGVXIwpwSoioSpZ4
+[Sun Feb 06 18:54:57 2022] [error] [client 37.43.125.255] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/socicon/css/styles.css
+[Sun Feb 06 19:16:51 2022] [error] [client 54.36.148.182] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 19:16:57 2022] [error] [client 195.154.123.86] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/web/assets/mobirise-icons/mobirise-icons.css
+[Sun Feb 06 19:16:57 2022] [error] [client 195.154.123.86] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/socicon/css/styles.css
+[Sun Feb 06 19:40:06 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/D0iuTpqBrbgiP3vPbN3TDH8Rv318C0a9O5X8r4VEqt8
+[Sun Feb 06 19:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/D0iuTpqBrbgiP3vPbN3TDH8Rv318C0a9O5X8r4VEqt8
+[Sun Feb 06 19:40:07 2022] [error] [client 18.159.196.172] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/D0iuTpqBrbgiP3vPbN3TDH8Rv318C0a9O5X8r4VEqt8
+[Sun Feb 06 19:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/D0iuTpqBrbgiP3vPbN3TDH8Rv318C0a9O5X8r4VEqt8
+[Sun Feb 06 20:24:24 2022] [error] [client 35.237.248.37] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/web/assets/mobirise-icons/mobirise-icons.css
+[Sun Feb 06 20:24:24 2022] [error] [client 35.237.248.37] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/socicon/css/styles.css
+[Sun Feb 06 20:40:07 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/oXrXGWlx3D6rguArJOnUK084ObWSsOjkeW1VPdLB3tA
+[Sun Feb 06 20:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/oXrXGWlx3D6rguArJOnUK084ObWSsOjkeW1VPdLB3tA
+[Sun Feb 06 20:40:07 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/oXrXGWlx3D6rguArJOnUK084ObWSsOjkeW1VPdLB3tA
+[Sun Feb 06 20:40:07 2022] [error] [client 18.192.36.99] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/oXrXGWlx3D6rguArJOnUK084ObWSsOjkeW1VPdLB3tA
+[Sun Feb 06 20:58:39 2022] [error] [client 13.78.215.92] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.env
+[Sun Feb 06 21:02:56 2022] [error] [client 54.36.149.69] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 21:10:41 2022] [error] [client 173.252.127.118] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/radiance-color-60g
+[Sun Feb 06 21:10:41 2022] [error] [client 173.252.127.15] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/radiance-color-60g
+[Sun Feb 06 21:29:25 2022] [error] [client 189.35.121.240] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known
+[Sun Feb 06 21:31:54 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 21:31:54 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 21:32:03 2022] [error] [client 157.55.39.4] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 21:32:03 2022] [error] [client 157.55.39.4] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 21:34:09 2022] [error] [client 54.36.148.96] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 21:40:06 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/hTMSxfvICpVpvk_j71_KwRNzpiCXDH9W4QJNj7FyMkA
+[Sun Feb 06 21:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/hTMSxfvICpVpvk_j71_KwRNzpiCXDH9W4QJNj7FyMkA
+[Sun Feb 06 21:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/hTMSxfvICpVpvk_j71_KwRNzpiCXDH9W4QJNj7FyMkA
+[Sun Feb 06 21:40:07 2022] [error] [client 66.133.109.36] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/hTMSxfvICpVpvk_j71_KwRNzpiCXDH9W4QJNj7FyMkA
+[Sun Feb 06 21:45:09 2022] [error] [client 40.77.167.27] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 21:45:09 2022] [error] [client 40.77.167.27] Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Sun Feb 06 21:45:25 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 21:45:25 2022] [error] [client 157.55.39.132] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 21:56:15 2022] [error] [client 186.54.208.67] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/
+[Sun Feb 06 21:56:15 2022] [error] [client 186.54.208.67] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/
+[Sun Feb 06 22:38:18 2022] [error] [client 114.119.143.226] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 22:40:06 2022] [error] [client 3.19.56.43] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YeFDNVEbHzMHiv1dGBfNA6HycAxTGKNe4bqt2V5fYbM
+[Sun Feb 06 22:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YeFDNVEbHzMHiv1dGBfNA6HycAxTGKNe4bqt2V5fYbM
+[Sun Feb 06 22:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YeFDNVEbHzMHiv1dGBfNA6HycAxTGKNe4bqt2V5fYbM
+[Sun Feb 06 22:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/YeFDNVEbHzMHiv1dGBfNA6HycAxTGKNe4bqt2V5fYbM
+[Sun Feb 06 22:42:14 2022] [error] [client 34.139.18.168] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/web/assets/mobirise-icons/mobirise-icons.css
+[Sun Feb 06 22:42:14 2022] [error] [client 34.139.18.168] mod_mime_magic: invalid type 0 in mconvert()., referer: https://www.sollerbrasil.com/assets/socicon/css/styles.css
+[Sun Feb 06 23:17:24 2022] [error] [client 192.99.10.170] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 23:28:03 2022] [error] [client 114.119.136.24] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/robots.txt
+[Sun Feb 06 23:40:06 2022] [error] [client 3.142.122.14] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/WcQdb7w5VvB_rpVqQk3evfuz_f_yGKrzv-CnbytF24k
+[Sun Feb 06 23:40:07 2022] [error] [client 64.78.149.164] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/WcQdb7w5VvB_rpVqQk3evfuz_f_yGKrzv-CnbytF24k
+[Sun Feb 06 23:40:07 2022] [error] [client 34.221.255.206] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/WcQdb7w5VvB_rpVqQk3evfuz_f_yGKrzv-CnbytF24k
+[Sun Feb 06 23:40:07 2022] [error] [client 3.120.130.29] File does not exist: /home/storage/4/9f/62/sollerbrasil3/public_html/.well-known, referer: http://sollerbrasil.com/.well-known/acme-challenge/WcQdb7w5VvB_rpVqQk3evfuz_f_yGKrzv-CnbytF24k
+[Sun Feb 06 23:47:35 2022] [error] [client 162.55.85.217] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Mon Feb 07 00:03:52 2022] [error] [client 17.121.114.197] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
+[Mon Feb 07 00:03:53 2022] [error] [client 17.121.112.72] (2)No such file or directory: cannot access type map file: /home/httpd/error/noindex.html.var
