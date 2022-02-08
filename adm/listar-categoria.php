@@ -54,7 +54,7 @@ $categorias = listaCategoria($soller);
                           <table class="table" id="tabela">
                             <thead>
                                 <tr class="text-center">
-<!--                                     <th>Imagem</th> -->
+                                    <th>Imagem</th>
                                     <th>Nome</th>
                                     <th>Ativo</th>
                                     <th>Ações</th>
@@ -63,13 +63,15 @@ $categorias = listaCategoria($soller);
                           <tbody>
                               <?php foreach ($categorias as $categoria){?>
                                 <tr class="text-center">
-<!--                                     <td><img src="arquivos/<?=$categoria->arquivo;?>" style="width: 80px;"></td> -->
-                                    <td><?=$categoria->nome;?></td>
-                                    <td><?=$categoria->ativo;?></td>
+                                    <td><img src="arquivos/<?=$categoria->arquivo;?>" style="width: auto; height: 80px;"></td>
+                                    <td style="max-width:70px;"><?=$categoria->nome;?></td>
+                                    <td style="max-width:40px;"><?=$categoria->ativo;?></td>
                                     <td class="td-actions text-right">
                                     <a href="editar-imagens-categoria.php?id=<?php echo $categoria->idcategoria;?>" style="margin-top: 10px; margin-right: 10px;" class="text-right">
+                                    <button type="button" rel="tooltip" class="btn btn-warning btn-round" data-toggle="tooltip" data-placement="top" title="Editar fotos">
+                                        <i class="material-icons">camera_enhance</i>
+                                      </button>
                                     </a>
-
                                     <a href="editar-categoria.php?id=<?php echo $categoria->idcategoria;?>" class="info" style="margin-top: 10px; margin-right: 10px;">
                                       <button type="button" rel="tooltip" class="btn btn-success btn-round" data-toggle="tooltip" data-placement="top" title="Editar">
                                             <i class="material-icons">edit</i>

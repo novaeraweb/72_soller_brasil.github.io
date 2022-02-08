@@ -15,6 +15,7 @@ function listaCategoria ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
+		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -40,6 +41,7 @@ function listaCategoriaEn ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
+		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -65,6 +67,7 @@ function listaCategoriaPt ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
+		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -90,6 +93,7 @@ function listaCategoriaEs ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
+		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -114,6 +118,7 @@ function listaCategoriaId ($soller, $id) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
+		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];

@@ -80,8 +80,6 @@ $categorias = listaCategoriaId($soller, $id);
                                     <img src="arquivos/<?=$categoria->arquivo;?>" alt="" width="240" height="160"/> 
                                     <?php } ?>
                                     <br>
-                                    <label for="arquivo1">Selecione a nova imagem</label>
-                                    <br>
                                     <button type="button" class="btn btn-warning">
                                       <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto 1</label>
                                       <input type="file" name="arquivo" id="arquivo"/>

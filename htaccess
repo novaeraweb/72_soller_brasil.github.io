@@ -1,0 +1,16 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php7-script .php
+suPHP_ConfigPath /home/sollerbrasil3/
+##### LOCAWEB - NAO REMOVER #####
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.sollerbrasil.com/$1 [R,L]
+
+# REMOVE PHP FROM URL
+# REMOVE PHP EXTENSION
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
+
