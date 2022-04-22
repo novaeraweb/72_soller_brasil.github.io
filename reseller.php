@@ -32,7 +32,7 @@
 
     <!-- Schema.org markup -->
     <meta itemprop="name" content="Be a Reseller | S'ollér Brasil'">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/reseller.php"/>
+    <meta itemprop="url" content="https://www.sollerbrasilinternational.com/reseller.php"/>
     <meta itemprop="image" content="img/soller_shared.jpg" >
     <meta itemprop="description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
 
@@ -41,10 +41,10 @@
     <meta property="og:title" content="Be a Reseller | S'ollér Brasil'">
     <meta property="og:description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
     <meta property="og:site_name" content="Be a Reseller | S'ollér Brasil'">
-    <meta property="og:url" content="https://www.sollerbrasil.com/reseller.php">
+    <meta property="og:url" content="https://www.sollerbrasilinternational.com/reseller.php">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
-    <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+    <meta property="og:image" content="https://www.sollerbrasilinternational.com/img/soller_shared.jpg">
+    <meta property="og:image:secure_url" content="https://www.sollerbrasilinternational.com/img/soller_shared.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="2720">
     <meta property="og:image:height" content="960">
@@ -55,8 +55,7 @@
 		<main role="main">
 			<div class="banner-reseller" style="color:white; text-align: center;padding-top:4%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">Be representative</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
+				<h2 style="color:white;">BE REPRESENTATIVE</h2>
 				</div>
 			</div><!-- intro-wrap -->
 
@@ -65,7 +64,6 @@
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="section-title"><h3>Want to be our representative?</h3></div>	
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu</p>
 						<div class="column nine">
 						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
@@ -73,7 +71,7 @@
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
 								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
-								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
+								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Send a Message</button>
 								
 							</form>	
@@ -87,10 +85,10 @@
 							<div class="widget">
 								<h4>Social Media</h4>
 								<ul class="inline meta-social">
-									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>
@@ -99,25 +97,24 @@
 
 			</div><!-- id-main -->
 		</main><!-- main -->
-
 <?php require_once "footer.php" ?>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
-		<script src="js/plugins.js"></script>
-		<script src="js/beetle.js"></script>
-		<script>
-		$(document).ready(function(){
-			$('#send').click(function(){
-				$(this).val('Sending ...');
-				$('#success p').remove();
-				$.post('contact/contact.php', $('#contact-form').serialize(), function(response) {
-					$('#success').html(response);
-					//$('#success').hide('slow');
-					$('#send').val('Send a Message');
-				});
-				return false;
-			});
-		});
-		</script>		
-	</body>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="js/plugins.js"></script>
+<script src="js/beetle.js"></script>
+<script>
+$(document).ready(function(){
+$('#send').click(function(){
+	$(this).val('Sending ...');
+	$('#success p').remove();
+	$.post('contact/contact.php', $('#contact-form').serialize(), function(response) {
+		$('#success').html(response);
+		//$('#success').hide('slow');
+		$('#send').val('Send a Message');
+	});
+	return false;
+});
+});
+</script>		
+</body>
 </html>

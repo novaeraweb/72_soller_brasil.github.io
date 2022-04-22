@@ -159,6 +159,13 @@ $cat_br = listaCategoria($soller);
                         <div id="dvFile">
                           <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Coleção | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 2000px X 450px)</span></strong></label>
                           <input type="file" name="arquivo" id="arquivo">
+                          <br>
+                          <label for="arquivo_home" style="width: 100%; margin-top: 15px;">Imagem da Coleção na Home | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 400px X 460px)</span></strong></label>
+                          <input type="file" name="arquivo_home" id="arquivo_home">
+                          <br>
+                          <!-- <label for="arquivo_mobile" style="width: 100%; margin-top: 15px;">Imagem da Coleção na Home | Mobile<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 400px X 460px)</span></strong></label>
+                          <input type="file" name="arquivo_mobile" id="arquivo_mobile">
+                          <br> -->
                         </div>
                         <br>
                         <br>

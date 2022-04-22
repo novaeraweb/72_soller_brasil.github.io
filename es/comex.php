@@ -1,100 +1,160 @@
 <!DOCTYPE html>
-<html>
-    <?php include 'includes/header.php'; ?>
-    <?php include 'includes/gtm-head.php'; ?>
-    <title>Presente en más de 40 países - Cosméticos S'ollér Brasil</title>
-    <meta name="description" content="Nossas coleções são produzidas com expertise superior para sempre oferecer produtos diferenciados para os profissionais e consumidores.">
-</head>
-<body>
-<?php include 'includes/gtm-body.php'; ?>
-<?php $source = "organico"; ?>
-<?php if (isset($_GET['source'])): ?>
-<?php $source = $_GET['source']; ?>
-<?php endif; ?>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
+		<style type="text/css">@-ms-viewport{width: device-width;}</style>
+		<title>COMEX | S'ollér Brasil</title>
+		<link rel="stylesheet" href="../css/layers.min.css" media="screen">
+		<link rel="stylesheet" href="../css/font-awesome.min.css" media="screen"> 
+		<link rel="stylesheet" href="../style.css" media="screen">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+    <!-- Favico -->
+    <link rel="shortcut icon" href="../img/fav/favicon.ico" type="image/x-icon">
+    <link rel="apple-icon" sizes="57x57" href="../img/fav/apple-icon-57x57.png">
+    <link rel="apple-icon" sizes="72x72" href="../img/fav/apple-icon-72x72.png">
+    <link rel="apple-icon" sizes="76x76" href="../img/fav/apple-icon-76x76.png">
+    <link rel="apple-icon" sizes="114x114" href="../img/fav/apple-icon-114x114.png">
+    <link rel="apple-icon" sizes="120x120" href="../img/fav/apple-icon-120x120.png">
+    <link rel="apple-icon" sizes="144x144" href="../img/fav/apple-icon-144x144.png">
+    <link rel="apple-icon" sizes="152x152" href="../img/fav/apple-icon-152x152.png">
+    <link rel="apple-icon" sizes="180x180" href="../img/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../img/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/fav/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-<?php include 'includes/navbar.php' ?>
+    <!-- Schema.org markup -->
+    <meta itemprop="name" content="COMEX | S'ollér Brasil">
+    <meta itemprop="url" content="https://www.sollerbrasil.com/es/comex.php"/>
+    <meta itemprop="image" content="../img/soller_shared.jpg" >
+    <meta itemprop="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
 
-<section class="mbr-section content5 cid-qvC4ePNet9 mbr-parallax-background" id="content5-1y" data-rv-view="480">
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
-    </div>
+    <!-- facebook -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="COMEX | S'ollér Brasil">
+    <meta property="og:description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
+    <meta property="og:site_name" content="COMEX | S'ollér Brasil">
+    <meta property="og:url" content="https://www.sollerbrasil.com/es/comex.php">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+    <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="2720">
+    <meta property="og:image:height" content="960">
+    <meta property="fb:app_id" content="819613408060975" />	
+	</head>
+	<body class="page">
 
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
-                    <br>Comex</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-7">Para llevar la calidad de los productos S'ollér Brasil a todos los rincones del mundo, soñamos más alto e iniciamos nuestra apertura internacional en 2008, con socios que creen en la marca y ganan espacio en otros continentes.</h3>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
+<?php require_once "header.php" ?>
 
-<section class="mbr-section article content1 cid-qvC4B31fBF" id="content1-1z" data-rv-view="486">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-4">
-            	<p>
-            		<span style="font-size: 1rem; text-align: right;">Hoy, los productos S'ollér Brasil están presentes en más de 40 países. Exportamos 200 toneladas de belleza al año para diversos continentes. Trabajamos con importación de materias primas y poseemos profesionales calificados para todas las etapas necesarias para esas transacciones.
-            		</span>
-            	</p>
-            	<p>
-            		<span style="font-size: 1rem; text-align: right;">Con mucho afinco y determinación, el Comercio Internacional sólo crece.<br>
-            		</span>
-            	</p>
-                <p>
-                    <img width="100%" src="assets/images/mapa-mundi-soller.jpg">
-                </p>
-                <P>
-                    <span style="font-size: 1rem; text-align: right;"><strong>Conozca algunos de nuestros Distribuidores:<br></strong></span>
-                </P>
-                <p>
-                    <li style="font-size: 1rem">Australia</li>
-                    <li style="font-size: 1rem">Bélgica</li>
-                    <li style="font-size: 1rem">Canadá</li>
-                    <li style="font-size: 1rem">Caribe</li>
-                    <li style="font-size: 1rem">Centroamérica</li>
-                    <li style="font-size: 1rem">Colombia</li>
-                    <li style="font-size: 1rem">Irán</li>
-                    <li style="font-size: 1rem">Emiratos Árabes</li>
-                    <li style="font-size: 1rem">Unidos de Dubai</li>
-                    <li style="font-size: 1rem">Italia</li>
-                    <li style="font-size: 1rem">Marruecos</li>
-                    <li style="font-size: 1rem">MexicoPanamá</li>
-                    <li style="font-size: 1rem">Mongolia</li>
-                    <li style="font-size: 1rem">Kazajstán</li>
-                    <li style="font-size: 1rem">Paraguay</li>
-                    <li style="font-size: 1rem">Rusia</li>
-                    <li style="font-size: 1rem">España</li>
-                    <li style="font-size: 1rem">Portugal</li>
-                    <li style="font-size: 1rem">Túnez</li>
-                    <li style="font-size: 1rem">Uruguay</li>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+		<main role="main">
 
+		<div class="banner-comex" style="color:white; text-align: center;padding-top:2.5%;">
+			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
+				<h2 style="color:white;">S'OLLER INTERNACIONAL</h2>
+				<p>Para llevar la calidad de los productos S'ollér Brasil a todos los rincones del mundo, soñamos más alto e<br> iniciamos nuestra apertura internacional en 2008, con socios que creen en la marca y ganan espacio en otros continentes.</p>
+      </div>
+			</div><!-- intro-wrap -->
 
+			<div id="main">
+							
+				<section class="row section">
+					<div class="row-content buffer even clear-after">
+						<div class="column" style="text-align:justify;">
+							<h4>COMEX</h4>
+							<p>Hoy, los productos S'ollér Brasil están presentes en más de 40 países. Exportamos 200 toneladas de belleza al año para diversos continentes. Trabajamos con importación de materias primas y poseemos profesionales calificados para todas las etapas necesarias para esas transacciones. </p>
 
-<section class="mbr-section info1 cid-qvBZcn2Bly" id="info1-1w" data-rv-view="491">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="media-container-column title col-12 col-lg-7 col-md-6">
-                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-7"><strong>¿Quieres formar parte de la historia de Sóllér Brasil?</strong></h3>
-                <h2 class="align-left mbr-bold mbr-fonts-style display-2">
-                    SEA UN DISTRIBUIDOR OFICIAL DE SU PAÍS</h2>
-            </div>
-            <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-right py-4">
-                    <a class="btn btn-black display-4 typeform-share" href="https://formtool.typeform.com/to/B1qttC?source=<?php echo $source ?>" data-mode="drawer_right" target="_blank" aria-expanded="true">
-                        HABLE CON NOSOTROS
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+							<p>Con mucho afinco y determinación, el Comercio Internacional sólo crece.</p>
+							<img src="../img/mapa-mundi-soller.jpeg" style="margin:0 auto">
+							<p><strong>Conozca algunos de nuestros Distribuidores:</strong></p>
+							<div class="column six">
+								<ul>
+									<li>Australia</li>
+									<li>Bélgica</li>
+									<li>Canada</li>
+									<li>Caribe</li>
+									<li>Centroamérica</li>
+									<li>Colombia</li>
+									<li>Costa Rica</li>
+									<li>España</li>
+									<li>Emiratos Árabes Unidos</li>
+									<li>Irán</li>
+									<li>Irak</li>
+								</ul>
+							</div>
+							<div class="column third">
+								<ul>
+									<li>Italia</li>
+									<li>Marruecos</li>
+									<li>Mexico</li>
+									<li>Mongolia</li>
+									<li>Panama</li>
+									<li>Paraguay</li>
+									<li>Portugal</li>
+									<li>Rusia</li>
+									<li>Túnez</li>
+									<li>USA</li>
+									<li>Uruguay</li>
+								</ul>
+							</div>
+						</div><!-- timeline-label -->		
+					</div>	
+				</section>							
 
-<?php include 'includes/footer.php' ?>
+				<section class="row section">
+					<div class="row-content buffer even clear-after">
+						<div class="section-title"><h3>¿Quieres ser nuestro representante?</h3></div>	
+						<div class="column nine">
+						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+								<span class="pre-input"><i class="icon icon-user"></i></span>
+								<input class="name plain buffer" type="text" name="nome" placeholder="Nombre">
+								<span class="pre-input"><i class="icon icon-email"></i></span>
+								<input class="email plain buffer" type="email" name="email" placeholder="Correo electrónico">
+								<textarea class="plain buffer" name="message" placeholder="Mensaje"></textarea>
+								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
+								<button id="send" class="plain button red">Enviar Mensaje</button>
+								
+							</form>	
+							<div id="success"></div>
+						</div>
+						<div class="column three last">
+							<div class="widget">
+								<h4>Dirección</h4>
+								<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, 18608-590<br> Botucatu/SP | Brasil</p>
+							</div>
+							<div class="widget">
+								<h4>Redes Sociales</h4>
+								<ul class="inline meta-social">
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+								</ul>
+							</div>								
+						</div>
+					</div>
+				</section>
+			</div><!-- id-main -->
+		</main><!-- main -->
+<?php require_once "footer.php" ?>
+<script src="https://code.jquery.com/jquery.js"></script>	
+<script src="../js/plugins.js"></script>
+<script src="../js/beetle.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+		<script type="text/javascript">
+			function validaCaptcha() {
+			if(document.querySelector('#g-recaptcha-response').value == '') {
+				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+			}
+		}
+		</script>
+</body>
+</html>

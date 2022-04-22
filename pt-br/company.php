@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt_br">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -57,7 +57,7 @@
 		<main role="main">
 			<div class="banner-company" style="color:white; text-align: center;padding-top:2%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">A Empresa</h2>
+				<h2 style="color:white;">A EMPRESA</h2>
 				<p>A S’ollér produz suas coleções com expertise superior
 					para sempre oferecer produtos diferenciados.</p>
 			</div>
@@ -169,19 +169,7 @@
 										<p></p>
 									</div><!-- experience-info -->
 								</div><!-- experience -->								
-							</div><!-- year -->	
-							<div class="year">
-								<time datetime="2016">2021</time>
-								<div class="experience">
-									<span class="circle"></span>
-								
-									<div class="experience-info clear-after">
-										<h5>TEXT</h5>
-										<div class="role">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque.</div>
-										<p></p>
-									</div><!-- experience-info -->
-								</div><!-- experience -->								
-							</div><!-- year -->									
+							</div><!-- year -->								
 						</div><!-- timeline -->
 					</div>	
 				</section>
@@ -221,10 +209,10 @@
 							<div class="widget">
 								<h4>Redes Sociais</h4>
 								<ul class="inline meta-social">
-									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>
@@ -239,18 +227,17 @@
 			</div><!-- id-main -->
 		</main><!-- main -->
 <?php require_once "footer.php" ?>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+<script src="https://code.jquery.com/jquery.js"></script>	
 <script src="../js/plugins.js"></script>
 <script src="../js/beetle.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
-		<script type="text/javascript">
-			function validaCaptcha() {
-			if(document.querySelector('#g-recaptcha-response').value == '') {
-				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
-			}
-		}
-		</script>
+<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+<script type="text/javascript">
+function validaCaptcha() {
+if(document.querySelector('#g-recaptcha-response').value == '') {
+swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+}
+}
+</script>
 </body>
 </html>

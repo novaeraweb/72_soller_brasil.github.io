@@ -1,7 +1,7 @@
 <?php 
 $URL_ATUAL= "$_SERVER[SERVER_NAME]";
 if (strpos($URL_ATUAL, 'soller') !== false OR strpos($URL_ATUAL, 'novaeraweb') !== false) {
-  $soller = mysqli_connect('sollerbrasil.mysql.dbaas.com.br', 'sollerbrasil', 'Sb*010203', 'sollerbrasil');
+  $soller = mysqli_connect('sollerbrasil2.mysql.dbaas.com.br', 'sollerbrasil2', 'Sb*010203', 'sollerbrasil2');
 } else {
 	$soller = mysqli_connect('localhost', 'root', 'root', 'sollerbrasil');
 }

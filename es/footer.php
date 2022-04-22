@@ -4,32 +4,32 @@
 			<section id="top-footer">
 				<div class="widget column four"><!-- la class="widget" è forse generata utomaticamente da wp -->
 					<h4>Dirección</h4>
-					<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, Botucatu/SP<br> 18608-590</p>
+					<p>R. Dr. Napoleão Laureano, 707 <br> Vila Antartica, Botucatu/SP<br> 18608-590 | Brasil</p>
 				</div>
 				<div class="widget column three">
-					<h4>Contato</h4>
-					<p><strong>0800 777 57 58</strong><br>(14)3813-5758<br>sac@sollerbrasil.com.br</p>
-					<p class="button">Ser un revendedor</p>
+					<h4>Contacto</h4>
+					<p><a href="tel:08007775758" target="_blank" rel="noopener" rel="noreferrer"><strong>0800 777 57 58</strong></a><br><a href="tel:551438135758" target="_blank" rel="noopener" rel="noreferrer">+55 14 3813.5758</a><br><a href="mailto:export@sollerbrasil.com.br" target="_blank" rel="noopener" rel="noreferrer"> export@sollerbrasil.com.br</a></p>
+					<a href="reseller.php"><p class="button">Ser un revendedor</p></a>
 				</div>											
 				<div class="widget meta-social column three">
 					<h4>Redes Sociales</h4>
 					<ul class="inline">
-						<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-						<li><a href="#" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-						<li><a href="#" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-						<li><a href="#" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+						<li><a href="https://www.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+						<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+						<li><a href="https://www.youtube.com/user/sollerbrasil" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 					</ul>
 				</div>	
 				<div class="widget column two">
 					<h4>Idiomas</h4>
-					<a href="../pt-br/<?php if ($pgAtual = 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-brazil.png"></a>
-					<a href="../<?php if ($pgAtual = 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-usa.png"></a>
+					<a href="../pt-br/index.php"> <img src="../img/icon-brazil.png"></a>
+					<a href="../index.php"> <img src="../img/icon-usa.png"></a>
 					<a href="#"> <img src="../img/icon-spain.png"></a>
 				</div>														
 			</section><!-- top-footer -->
 			<section id="bottom-footer">
-				<p class="keep-left">S'ollér Brasil&copy; Beauty Matters | 2021 | All Rights Reserved.</p>
-				<p class="keep-right"><a href="https://www.novaeraweb.com.br"> Desarrollado por NovaEraWeb</a></p>
+				<p class="keep-left">S'ollér Brasil&copy; Beauty Matters | <?php echo date("Y") ?> | todos los derechos reservados.</p>
+				<p class="keep-right"><a href="https://www.novaeraweb.com.br" target="_blank" rel="noopener" rel="noreferrer"> Desarrollado por NovaEraWeb</a></p>
 			</section><!-- bottom-footer -->			
 		</div><!-- row-content -->	
 	</div><!-- row -->

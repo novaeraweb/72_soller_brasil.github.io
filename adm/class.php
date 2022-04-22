@@ -18,6 +18,7 @@ class Colecao{
 	public $indicacao;
 	public $acao;
 	public $arquivo;
+	public $arquivo_home;
 	public $video;
 	public $ativo;
 	public $user;
@@ -35,7 +36,6 @@ class Produto{
 	public $peso_m_en;
 	public $peso_p_en;
 	public $peso_unico;
-	public $peso_unico_en;
 	public $arquivo;
 	public $video;
 	public $ativo;

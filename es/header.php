@@ -24,14 +24,18 @@ $pgAtual = basename($_SERVER['SCRIPT_NAME']);
 						<a href="#">Colecciones</a>
 						<ul class="sub-menu">
 							<?php foreach ($categorias as $categoria) {?>
-								<li><a href="colecoes.php?id=<?=$categoria->idcategoria;?>"><?=$categoria->nome;?></a></li>
+								<?php if ($categoria->idcategoria == 25 or $categoria->idcategoria ==26 or $categoria->idcategoria== 27) { ?>
+									<li><a href="colecoes-h.php?id=<?=$categoria->idcategoria;?>"><?=$categoria->nome;?></a></li>
+								<?php } else  { ?>
+									<li><a href="colecoes.php?id=<?=$categoria->idcategoria;?>"><?=$categoria->nome;?></a></li>
+								<?php } ?>
 							<?php }?>
 						</ul>
 					</li>
 					<li class="menu-item"><a href="contato.php">Contacto</a></li>
 					<li class="menu-item revenda"><a href="reseller.php">Ser un revendedor</a></li>
-					<li><a href="../pt-br/<?php if ($pgAtual == 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-brazil.png"></a></li>
-					<li><a href="../<?php if ($pgAtual == 'colecoes.php'){echo 'index.php';} else {echo $pgAtual;}?>"> <img src="../img/icon-usa.png"></a></li>
+					<li><a href="../pt-br/index.php"> <img src="../img/icon-brazil.png"></a></li>
+					<li><a href="../index.php"> <img src="../img/icon-usa.png"></a></li>
 					<li><a href="#"> <img src="../img/icon-spain.png"></a></li>
 				</ul>
 			</nav>

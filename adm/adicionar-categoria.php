@@ -52,30 +52,30 @@ mysqli_select_db($soller, 'sollerbrasil');
         // $dir = "arquivos/";
         // $dir = strtolower($dir);
     
-    
-    $nomevar = 'arquivo';
-    $dir = "arquivos/";
-    $dir = strtolower($dir);
+    // $i = 1;
 
-    if (isset($_FILES[$nomevar])) {
-        $arquivo_teste = $_FILES[$nomevar]; 
-        $arquivo_teste = $arquivo_teste['name'];
+    // $nomevar = 'arquivo'.$i;
+
+    // if (isset($_FILES[$nomevar])) {
+    //     $arquivo_teste = $_FILES[$nomevar]; 
+    //     $arquivo_teste = $arquivo_teste['name'];
         
-        $$nomevar = $arquivo_teste;
-    }
+    //     $$nomevar = $arquivo_teste;
+    //     $j = $i;
+    // }
 
-    require "adicionar-imagens.php";
+    // require "adicionar-imagens.php";
 
 
 //Insert inglês
-$insertSQL = "INSERT INTO categoria (nome, descricao_breve, descricao_longa, arquivo, ididioma_cat, ativo, data, hora, user) VALUES ('$nome_en', '$descricao_breve_en', '$descricao_longa_en', '$arquivo_novo', '1', '$ativo', '$data', '$hora','$user' )";      
+$insertSQL = "INSERT INTO categoria (nome, descricao_breve, descricao_longa, ididioma_cat, ativo, data, hora, user) VALUES ('$nome_en', '$descricao_breve_en', '$descricao_longa_en', '1', '$ativo', '$data', '$hora','$user' )";      
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller)); 
 
 //Insert português
-$insertSQL = "INSERT INTO categoria (nome, descricao_breve, descricao_longa, arquivo, ididioma_cat, ativo, data, hora, user) VALUES ('$nome_pt', '$descricao_breve_pt', '$descricao_longa_pt', '$arquivo_novo', '2', '$ativo', '$data', '$hora','$user' )";       
+$insertSQL = "INSERT INTO categoria (nome, descricao_breve, descricao_longa, ididioma_cat, ativo, data, hora, user) VALUES ('$nome_pt', '$descricao_breve_pt', '$descricao_longa_pt', '2', '$ativo', '$data', '$hora','$user' )";       
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));     
 
 //Insert espanhol
-$insertSQL = "INSERT INTO categoria (nome, descricao_breve, descricao_longa, arquivo, ididioma_cat, ativo, data, hora, user) VALUES ('$nome_es', '$descricao_breve_es', '$descricao_longa_es', '$arquivo_novo', '3', '$ativo', '$data','$hora', '$user' )";           
+$insertSQL = "INSERT INTO categoria (nome, descricao_breve, descricao_longa, ididioma_cat, ativo, data, hora, user) VALUES ('$nome_es', '$descricao_breve_es', '$descricao_longa_es', '3', '$ativo', '$data','$hora', '$user' )";           
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));  
 header("Location: listar-categoria.php?inserido=true");

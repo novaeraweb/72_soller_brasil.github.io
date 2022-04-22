@@ -55,8 +55,7 @@
 		<main role="main">
 			<div class="banner-reseller" style="color:white; text-align: center;padding-top:4%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">Seja um Representante'</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
+				<h2 style="color:white;">SEJA UM REPRESENTANTE</h2>
 				</div>
 			</div><!-- intro-wrap -->
 
@@ -65,17 +64,15 @@
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="section-title"><h3>Deseja se tornar um representante?</h3></div>	
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu</p>
 						<div class="column nine">
-						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+						<form id="contact-form" class="contact-section" method="post" action="../phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
 								<input class="name plain buffer" type="text" name="nome" placeholder="Full name">
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
 								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
-								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
+								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Enviar Mensagem</button>
-								
 							</form>	
 							<div id="success"></div>
 						</div>
@@ -96,24 +93,21 @@
 						</div>
 					</div>
 				</section>
-
 			</div><!-- id-main -->
 		</main><!-- main -->
-
 <?php require_once "footer.php" ?>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
-		<script src="../js/plugins.js"></script>
-		<script src="../js/beetle.js"></script>
-	
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
-		<script type="text/javascript">
-			function validaCaptcha() {
-			if(document.querySelector('#g-recaptcha-response').value == '') {
-				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
-			}
-		}
-		</script>
-	</body>
+<script src="https://code.jquery.com/jquery.js"></script>	
+<script src="../js/plugins.js"></script>
+<script src="../js/beetle.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+<script type="text/javascript">
+function validaCaptcha() {
+if(document.querySelector('#g-recaptcha-response').value == '') {
+swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+}
+}
+</script>
+</body>
 </html>

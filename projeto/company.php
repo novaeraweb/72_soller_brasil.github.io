@@ -168,19 +168,7 @@
 										<p></p>
 									</div><!-- experience-info -->
 								</div><!-- experience -->								
-							</div><!-- year -->	
-							<div class="year">
-								<time datetime="2016">2021</time>
-								<div class="experience">
-									<span class="circle"></span>
-								
-									<div class="experience-info clear-after">
-										<h5>TEXT</h5>
-										<div class="role">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque.</div>
-										<p></p>
-									</div><!-- experience-info -->
-								</div><!-- experience -->								
-							</div><!-- year -->									
+							</div><!-- year -->							
 						</div><!-- timeline -->
 					</div>	
 				</section>
@@ -192,7 +180,7 @@
 					<div class="row-content buffer even clear-after">
 						<div class="column" style="text-align:justify;">
 							<p>Our products are created and developed by our Research & Development teams, in modern and differentiated structures. Our laboratories count on sectors of Quality Control and automated machinery, reducing the human contact and increasing the quality of our products. In addition, our products are packaged and labeled in the same production park, streamlining logistics and eliminating contact with contaminants.</p>
-							<p>At year-end,<strong>S’ollér Brasil</strong> counts on the production capacity of 900 tons of products, distributed by our logistic structure of more than 10 thousand square meters. It is with this solid and modern structure that we are able to produce innovative collections of exceptional quality to bring beauty products around the world.</p>
+							<p>At year-end,<strong> S’ollér Brasil</strong> counts on the production capacity of 900 tons of products, distributed by our logistic structure of more than 10 thousand square meters. It is with this solid and modern structure that we are able to produce innovative collections of exceptional quality to bring beauty products around the world.</p>
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>	

@@ -51,13 +51,12 @@
     <meta property="fb:app_id" content="819613408060975" />
 	</head>
 	<body class="page">
-
 <?php require_once "header.php" ?>
 
 		<main role="main">
 			<div class="banner-company" style="color:white; text-align: center;padding-top:2%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">La Empresa</h2>
+				<h2 style="color:white;">LA EMPRESA</h2>
 				<p>S’ollér produce sus colecciones con expertise superior
 						para siempre ofrecer productos distintos.</p>
 			</div>
@@ -232,25 +231,24 @@
 				</section>
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
-						<p>Quer ser nosso representante?</p>
-						<a class="button red" href="reseller.php">Entre em contato</a>
+						<p>¿Quieres ser nuestra representante?</p>
+						<a class="button red" href="reseller.php">Contacta con nosotras</a>
 					</div>
-				</section>	
+				</section>
 			</div><!-- id-main -->
 		</main><!-- main -->
 <?php require_once "footer.php" ?>
 <script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
 <script src="../js/plugins.js"></script>
 <script src="../js/beetle.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
-		<script type="text/javascript">
-			function validaCaptcha() {
-			if(document.querySelector('#g-recaptcha-response').value == '') {
-				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
-			}
-		}
-		</script>
+<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+<script type="text/javascript">
+function validaCaptcha() {
+if(document.querySelector('#g-recaptcha-response').value == '') {
+swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+}
+}
+</script>
 </body>
 </html>

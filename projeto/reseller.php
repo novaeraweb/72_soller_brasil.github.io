@@ -55,8 +55,7 @@
 		<main role="main">
 			<div class="banner-reseller" style="color:white; text-align: center;padding-top:4%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">Be representative</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
+				<h2 style="color:white;">BE REPRESENTATIVE</h2>
 				</div>
 			</div><!-- intro-wrap -->
 
@@ -65,7 +64,6 @@
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="section-title"><h3>Want to be our representative?</h3></div>	
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu</p>
 						<div class="column nine">
 						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
@@ -87,10 +85,10 @@
 							<div class="widget">
 								<h4>Social Media</h4>
 								<ul class="inline meta-social">
-									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>

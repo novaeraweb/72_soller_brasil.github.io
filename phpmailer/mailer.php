@@ -8,7 +8,7 @@ require("class.phpmailer.php");
 require("class.smtp.php");
 
 //Defino a Chave do meu site
-$secret_key = '6LfmOUUdAAAAAB2N9wIvIESO1-HcHYbofIDwqk_p';
+$secret_key = '6LfuadEeAAAAAMuEPNnOla-hLUlD7aXLZhvrarF3';
 
 //Pego a validação do Captcha feita pelo usuário
 $recaptcha_response = $_POST['g-recaptcha-response'];
@@ -31,8 +31,6 @@ if(isset($recaptcha_response)){
       $email = $_POST['email'];
       $mensagem = $_POST['message'];
 
-
-
       // Inicia a classe PHPMailer
       $mail = new PHPMailer();
         
@@ -43,11 +41,12 @@ if(isset($recaptcha_response)){
       // Define os dados do servidor e tipo de conexão
       // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
       $mail->IsSMTP(); // Define que a mensagem será SMTP
-      $mail->Host = "email-ssl.com.br"; // Endereço do servidor SMTP (caso queira utilizar a autenticação, utilize o host smtp.seudomínio.com.br)
+      $mail->Host = "email-ssl.com.br"; // Endereço do servidor SMTP
+      // $mail->Host = 'smtplw.com.br';   
       $mail->SMTPAuth = true; // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
       $mail->Port = 465; // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
       $mail->Username = 'site@sollerbrasil.com'; // Usuário do servidor SMTP (endereço de email)
-      $mail->Password = 'S0ller#C0mex@2021'; // Senha do servidor SMTP (senha do email usado)
+      $mail->Password = 'S0ller#C0mex@2022'; // Senha do servidor SMTP (senha do email usado)
       $mail->SMTPSecure = "ssl"; // Senha do servidor SMTP (senha do email usado)
       $mail->SMTPOptions = array(
         'ssl' => array(
@@ -58,10 +57,10 @@ if(isset($recaptcha_response)){
       );
       // Define o remetente
       // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      $mail->From = 'site@sollerbrasil.com'; // Seu e-mail
-      $mail->Sender = 'site@sollerbrasil.com'; // Seu e-mail
+      $mail->From = 'site@sollerbrasilinternational.com'; // Seu e-mail
+      $mail->Sender = 'site@sollerbrasilinternational.com'; // Seu e-mail
       $mail->FromName = $nome; // Seu nome
-      $mail->AddAddress('site@sollerbrasil.com'); // Copia
+      $mail->AddAddress('export@sollerbrasil.com.br'); // Copia
       $mail->AddBCC('contato@novaeraweb.com.br'); // Cópia Oculta
       $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 

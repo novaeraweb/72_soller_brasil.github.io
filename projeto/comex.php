@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="The Page Description">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
-		<title>Company</title>
+		<title>Comex Internacional</title>
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
 		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
 		<link rel="stylesheet" href="style.css" media="screen">
@@ -49,8 +49,10 @@
 									<li>Canada</li>
 									<li>Caribe</li>
 									<li>Central America</li>
+									<li>Costa Rica</li>
 									<li>Colombia</li>
 									<li>Iran</li>
+									<li>Iraq</li>
 									<li>Italy</li>
 									<li>Marroco</li>
 								</ul>
@@ -65,6 +67,7 @@
 									<li>Russia</li>
 									<li>Spain</li>
 									<li>Tunisia</li>
+									<li>USA</li>
 									<li>United Arab Emirates</li>
 									<li>Uruguay</li>
 								</ul>
@@ -72,7 +75,6 @@
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>							
-
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="section-title"><h3>Want to be our representative?</h3></div>	
@@ -98,10 +100,10 @@
 							<div class="widget">
 								<h4>Social Media</h4>
 								<ul class="inline meta-social">
-									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>
@@ -110,8 +112,7 @@
 			</div><!-- id-main -->
 		</main><!-- main -->
 <?php require_once "footer.php" ?>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+<script src="https://code.jquery.com/jquery.js"></script>	
 <script src="js/plugins.js"></script>
 <script src="js/beetle.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>

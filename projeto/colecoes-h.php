@@ -133,9 +133,6 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 									$count = 1; $produtos = listaProdutoFront($soller, $idcol); 
 								  foreach ($produtos as $produto) {?>
 										<?php if ($produto->idlinha_prod == 4){?>
-
-									
-											
 										<div class="column row produto">
 											<div class="column four">
 												<figure>
@@ -206,22 +203,18 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 								<?php }?>
 						</div>
 				</section>
-			
-				<?php } ?>
-				
+				<?php } ?>	
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
 						<p>WANT TO BE OUR REPRESENTATIVE?</p>
-						<a class="button red" href="#">Contact us</a>
+						<a class="button red" href="reseller.php">Contact us</a>
 					</div>
 				</section>					
-
 			</div><!-- id-main -->
-		</main><!-- main -->
-		<?php require_once "footer.php" ?>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
-		<script src="js/plugins.js"></script>
-		<script src="js/beetle.js"></script>
-	</body>
+</main><!-- main -->
+<?php require_once "footer.php" ?>
+<script src="https://code.jquery.com/jquery.js"></script>	
+<script src="js/plugins.js"></script>
+<script src="js/beetle.js"></script>
+</body>
 </html>

@@ -1,7 +1,7 @@
 //FADE AUTO
 $(function(){
     setTimeout(function() {
-    $('#autofade').fadeOut('slow');}, 7000);
+    $('#autofade').fadeOut('slow');}, 3000);
      });
 
 

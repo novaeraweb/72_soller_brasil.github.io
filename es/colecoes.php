@@ -3,18 +3,12 @@
 require_once "../adm/conecta.php";
 require_once "../adm/class.php";
 require_once "../adm/function.php";
-
 $categoria_get = $_GET['id'];
-
 $query_categorias = "SELECT c.*, i.ididioma FROM categoria c LEFT JOIN idioma i ON (i.ididioma = c.ididioma_cat) WHERE c.idcategoria = '$categoria_get' AND c.ididioma_cat = '3'";
 $resultado_categorias = mysqli_query($soller, $query_categorias);
 $result = mysqli_fetch_assoc($resultado_categorias);
-
-
 $colecoes = listaColecaoFrontEs($soller, $categoria_get);
-
 ?>
-
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
@@ -98,120 +92,133 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 				</div><!-- intro -->
 			</div><!-- intro-wrap -->
 
-			<div id="main">
-				
-				<?php if (isset($result['descricao_longa'])) { ?>
-				<section class="row section">
-					<div class="row-content buffer even clear-after">
-						<?=$result['descricao_longa'];?>
-					</div>	
-				</section>	
-				<?php } ?>
+	<div id="main">
+		<?php if (isset($result['descricao_longa'])) { ?>
+			<section class="row section">
+				<div class="row-content buffer even clear-after">
+					<?=$result['descricao_longa'];?>
+				</div>	
+			</section>	
+		<?php } else { ?>
+		<?php } ?>
 
-				<?php foreach ($colecoes as $colecao) {?>	
-				<?php $idcol = $colecao->idcolecao;?> 
-				<section class="row section section-volume bg" id="<?=str_replace(' ', '', $colecao->nome);?>"
-								 style="background: url(../adm/arquivos/<?=$colecao->arquivo;?>) no-repeat;
-								 				background-size: 100%;"
-				>
-					
-				</section>
-				<section class="row section section-volume">
-					<!-- <div class="row-content buffer even clear-after">	 -->
-						<div class="text-center">
-							<?=$colecao->descricao;?>
-							<?php $id = $colecao->idcolecao;?>
-							<?php 
-			
-$query_professional = "SELECT * FROM produto WHERE idcolecao_prod = '$id' AND idlinha_prod = '6' AND ativo = 'Sim' ";
-$resultado_professional = mysqli_query($soller, $query_professional);
-$result_professional = mysqli_fetch_assoc($resultado_professional);
+		<?php foreach ($colecoes as $colecao) {	$idcol = $colecao->idcolecao;?>
 
-							 ?>
-							<?php if(isset($result_professional)) { ?>
-						  	<h3>Professional Line</h3><br><br>
-							<?php } ?>
-							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
-										// A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
-									$count = 1; $produtos = listaProdutoFrontEs($soller, $idcol); 
-								  foreach ($produtos as $produto) {?>
-										<?php if ($produto->idlinha_prod == '6'){?>
-											<?php if ($GLOBALS['total'] == 3) {?>
-												<div class="column third produto">
-											<?php } else {?>
-												<div class="column four produto">
-											<?php } ?>
-												<figure>
-													<img src="../adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
-												</figure>
-												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
-												<br>
-												<div class="peso">
-													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
-													if ($produto->peso_unico == '') { ?>
-														<ul>
-															<li><?=$produto->peso_p_br; echo " | " ?> <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br; echo " | " ?> <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br; echo " | " ?> <?=$produto->peso_g_en;?></li>
-														</ul>
-													<?php } else {?>
-														<ul>
-															<li><?=$produto->peso_unico;  echo " | "; echo $produto->peso_unico_en;?></li>
-														</ul>
-													<?php }?>
-												</div>
-											</div>
-										<?php } else {?>
-											<?php // Esse contador apenas permite a divisória com um hr e o título da linha de manutenção quando for == 1
-												if ($count == 1) {?>
-												<br>
-												<div style="width: 90%; margin-left: 5%;">
-													<hr>
-												</div>
-												<br>
-												<h3>Linha Manutenção</h3>
-												<br>
-											<?php } $count++;?>
-											<?php // Produz os resultados da linha manutenção quando existirem?>
-											<div class="column third produto">
-												<figure>
-													<img src="../adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
-												</figure>
-												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong> <?=$produto->descricao;?></p>
-												<br>
-												<div class="peso">
-													<?php if ($produto->peso_unico == '') { ?>
-														<ul>
-															<li><?=$produto->peso_p_br; echo "| " ?> <?=$produto->peso_p_en;?> </li>
-															<li><?=$produto->peso_m_br; echo "| " ?> <?=$produto->peso_m_en;?></li>
-															<li><?=$produto->peso_g_br; echo "| " ?> <?=$produto->peso_g_en;?></li>
-														</ul>
-													<?php } else {?>
-														<ul> 
-															<li><?=$produto->peso_unico;?></li>
-														</ul>
-													<?php }?>
-												</div>
-											</div>
-										<?php }?>
-								<?php }?>
+			<section class="row section section-volume bg" id="<?=str_replace(' ', '', $colecao->nome);?>" style="background: url(../adm/arquivos/<?=$colecao->arquivo;?>) no-repeat; background-size: 100%;">
+			</section>
+
+
+			<section class="row section section-volume">
+		
+					<div class="text-center">
+
+						<div class="row-content buffer even clear-after" style="padding-top:0;">
+							<?=$colecao->descricao;?><br>
 						</div>
-				</section>
+						<?php $id = $colecao->idcolecao;
+				      	$query_professional = "SELECT * FROM produto WHERE idcolecao_prod = '$id' AND idlinha_prod = '6' AND ativo = 'Sim' ";
+						$resultado_professional = mysqli_query($soller, $query_professional);
+						$result_professional = mysqli_fetch_assoc($resultado_professional);
+						$query_main = "SELECT * FROM produto WHERE idcolecao_prod = '$id' AND idlinha_prod = '3' AND ativo = 'Sim' ";
+						$resultado_main = mysqli_query($soller, $query_main);
+						$result_main = mysqli_fetch_assoc($resultado_main);
+						?>
+
+
+
+						<?php if(isset($result_professional)) { ?>
+					  	<h3>Linea Profissional</h3><br><br>
+						<?php } ?>
+					
+						<div style="margin-left:8%;">
+							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
+								// A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
+								$count = 1; $produtos = listaProdutoFrontEs($soller, $idcol); 
+						  		foreach ($produtos as $produto) { ?>
+									<?php if ($produto->idlinha_prod == '6'){?>
+											<div class="column third produto" style="min-height:550px">
+											<figure>
+												<img src="../adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
+											</figure>
+											<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
+											<div class="peso">
+												<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
+												if ($produto->peso_unico == '') { ?>
+													<ul>
+														<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+														<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+														<?php if ($produto->peso_g_br != '') { ?>
+															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+														<?php } ?>
+														
+													</ul>
+												<?php } else {?>
+													<ul>
+														<li><?=$produto->peso_unico;?></li>
+													</ul>
+												<?php }?>
+											</div>
+										</div>
+									<?php } else {?>
+								<?php }?>
+							<?php }?>
+						</div>
+						<?php if(isset($result_main)) { ?>
+					  	<div><hr></div><h3 style="padding-top: 5%;">Linea Mantenimiento</h3><br><br>
+						<?php } ?>
+						<div style="margin-left:8%;">					
+										<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
+								// A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
+								$count = 1; $produtos = listaProdutoFrontEs($soller, $idcol); 
+						  		foreach ($produtos as $produto) { ?>
+									<?php if ($produto->idlinha_prod == '3'){?>
+
+					
+											<div class="column third produto">
+								
+											<figure>
+												<img src="../adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
+											</figure>
+											<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
+											<div class="peso">
+												<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
+												if ($produto->peso_unico == '') { ?>
+													<ul>
+														<li><?=$produto->peso_p_br;?> | <?=$produto->peso_p_en;?> </li>
+														<li><?=$produto->peso_m_br;?> | <?=$produto->peso_m_en;?></li>
+														<?php if ($produto->peso_g_br != '') { ?>
+															<li><?=$produto->peso_g_br;?> | <?=$produto->peso_g_en;?></li>
+														<?php } ?>
+														
+													</ul>
+												<?php } else {?>
+													<ul>
+														<li><?=$produto->peso_unico;?></li>
+													</ul>
+												<?php }?>
+											</div>
+										</div>
+									<?php } else {?>
+								<?php }?>
+							<?php }?>
 			
-				<?php } ?>
-				
+									
+								
+						</div>
+					</div>
+			
+			</section>
+		<?php } ?>
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
-						<p>QUER SE TORNAR NOSSO REPRESENTANTE?</p>
-						<a class="button red" href="contato.php">Entre em contato!</a>
+						<p>¿Quieres ser nuestra representante?</p>
+						<a class="button red" href="reseller.php">Contacta con nosotras</a>
 					</div>
-				</section>					
-
-			</div><!-- id-main -->
+				</section>						
+	</div><!-- id-main -->
 		</main><!-- main -->
 		<?php require_once "footer.php" ?>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+		<script src="https://code.jquery.com/jquery.js"></script>	
 		<script src="../js/plugins.js"></script>
 		<script src="../js/beetle.js"></script>
 	</body>

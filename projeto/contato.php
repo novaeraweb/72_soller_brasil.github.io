@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -55,8 +55,7 @@
 		<main role="main">
 			<div class="banner-contato" style="color:white; text-align: center;padding-top:4%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">Contato</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
+				<h2 style="color:white;">CONTACT US</h2>
 			</div>
 			</div><!-- intro-wrap -->
 
@@ -64,8 +63,6 @@
 
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu 
- 						</p>
 						<div class="column nine">
 							<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
@@ -73,7 +70,7 @@
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
 								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
-								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
+								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Send a Message</button>
 								
 							</form>	
@@ -87,10 +84,10 @@
 							<div class="widget">
 								<h4>Social Media</h4>
 								<ul class="inline meta-social">
-									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>

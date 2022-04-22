@@ -15,7 +15,6 @@ function listaCategoria ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -41,7 +40,6 @@ function listaCategoriaEn ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -67,7 +65,6 @@ function listaCategoriaPt ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -93,7 +90,6 @@ function listaCategoriaEs ($soller) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -118,7 +114,6 @@ function listaCategoriaId ($soller, $id) {
  		$categoria->nome = $array['nome'];
 		$categoria->descricao_breve = $array['descricao_breve'];
 		$categoria->descricao_longa = $array['descricao_longa'];
-		$categoria->arquivo = $array['arquivo'];
 		$categoria->ativo = $array['ativo'];
 		$categoria->ididioma_cat = $array['ididioma_cat'];
 		$categoria->data = $array['data'];
@@ -229,6 +224,38 @@ function listaColecaoId($soller, $id){
 		$colecao->indicacao = $array['indicacao'];
 		$colecao->acao = $array['acao'];
 		$colecao->arquivo = $array['arquivo'];
+		$colecao->video = $array['video'];
+		$colecao->ativo = $array['ativo'];
+		$colecao->idcategoria = $array['idcategoria'];
+		$colecao->ididioma_col = $array['ididioma_col'];
+		$colecao->data = $array['data'];
+		$colecao->user = $array['user'];
+		$colecao->hora = $array['hora'];
+
+		array_push($colecoes, $colecao);
+	}
+	return $colecoes;
+}
+
+function listaColecaoImgHome($soller){
+	$query = "SELECT c.*, cat.idcategoria, i.ididioma
+			  FROM colecao c
+			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
+			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
+			  WHERE c.ididioma_col = '2'
+			  ORDER BY c.nome ASC";
+
+	$resultado = mysqli_query($soller, $query);
+	$colecoes = array();
+	while ($array = mysqli_fetch_assoc($resultado)){
+		$colecao = new Colecao();
+		$colecao->idcolecao = $array['idcolecao'];
+		$colecao->nome = $array['nome'];
+		$colecao->descricao = $array['descricao'];
+		$colecao->indicacao = $array['indicacao'];
+		$colecao->acao = $array['acao'];
+		$colecao->arquivo = $array['arquivo'];
+		$colecao->arquivo_home = $array['arquivo_home'];
 		$colecao->video = $array['video'];
 		$colecao->ativo = $array['ativo'];
 		$colecao->idcategoria = $array['idcategoria'];
@@ -526,7 +553,6 @@ function listaProduto($soller){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -562,7 +588,6 @@ function listaProdutoFront($soller, $colecao){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -611,7 +636,6 @@ function listaProdutoFrontPt($soller, $colecao){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -661,7 +685,6 @@ function listaProdutoFrontEs($soller, $colecao){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -710,7 +733,6 @@ function listaProdutoId($soller, $id){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -747,7 +769,6 @@ function listaProdutoIdEn($soller, $id){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];
@@ -784,7 +805,6 @@ function listaProdutoIdEs($soller, $id){
 		$produto->peso_m_en = $array['peso_m_en'];
 		$produto->peso_p_en = $array['peso_p_en'];
 		$produto->peso_unico = $array['peso_unico'];
-		$produto->peso_unico_en = $array['peso_unico_en'];
 		$produto->arquivo = $array['arquivo'];
 		$produto->video = $array['video'];
 		$produto->ativo = $array['ativo'];

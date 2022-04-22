@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,7 +32,7 @@
 
     <!-- Schema.org markup -->
     <meta itemprop="name" content="Contact Us | S'ollér Brasil">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/contato.php"/>
+    <meta itemprop="url" content="https://www.sollerbrasilinternational.com/contato.php"/>
     <meta itemprop="image" content="img/soller_shared.jpg" >
     <meta itemprop="description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
 
@@ -41,10 +41,10 @@
     <meta property="og:title" content="Contact Us | S'ollér Brasil">
     <meta property="og:description" content="A S’ollér Brasil produz suas coleções de cosméticos para sempre oferecer produtos diferenciados. Linhas para redução de volumes, tratamentos, finalizadores, colocação e descoloração.">
     <meta property="og:site_name" content="Contact Us | S'ollér Brasil">
-    <meta property="og:url" content="https://www.sollerbrasil.com/contato.php">
+    <meta property="og:url" content="https://www.sollerbrasilinternational.com/contato.php">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
-    <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+    <meta property="og:image" content="https://www.sollerbrasilinternational.com/img/soller_shared.jpg">
+    <meta property="og:image:secure_url" content="https://www.sollerbrasilinternational.com/img/soller_shared.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="2720">
     <meta property="og:image:height" content="960">
@@ -55,8 +55,7 @@
 		<main role="main">
 			<div class="banner-contato" style="color:white; text-align: center;padding-top:4%;">
 			<div class="slogan animation" style="width:70%;font-size: 0.8em;" >
-				<h2 style="color:white;">Contato</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque. Duis quis placerat diam.Nunc fermentum porttitor porttitor. <br>In maximus orci lobortis lectus pellentesque aliquam. </p>
+				<h2 style="color:white;">CONTACT US</h2>
 			</div>
 			</div><!-- intro-wrap -->
 
@@ -64,16 +63,14 @@
 
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus. Aenean molestie nisi vel vestibulum scelerisque. Duis quis placerat diam. Nunc fermentum porttitor porttitor. In maximus orci lobortis lectus pellentesque aliquam. Nunc ut nisi eu 
- 						</p>
 						<div class="column nine">
 							<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
-								<input class="name plain buffer" type="text" name="nome" placeholder="Full name">
+								<input class="name plain buffer" type="text" name="nome" placeholder="Full name" required>
 								<span class="pre-input"><i class="icon icon-email"></i></span>
-								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
-								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
-								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
+								<input class="email plain buffer" type="email" name="email" placeholder="Email address" required>
+								<textarea class="plain buffer" name="message" placeholder="Message" required></textarea>
+								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Send a Message</button>
 								
 							</form>	
@@ -87,10 +84,10 @@
 							<div class="widget">
 								<h4>Social Media</h4>
 								<ul class="inline meta-social">
-									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box"><i class="fa fa-youtube fa-lg"></i></a></li>
+									<li><a href="https://www.instagram.com/sollerinternational/" class="instagram-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-instagram fa-lg"></i></a></li>
+									<li><a href="https://web.facebook.com/sollerinternational" class="facebook-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/company/s'oll%C3%A9rbrasil/" class="linkedin-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCVQPXq5vYtCDXcKTr71pDZg" class="youtube-share border-box" target="_blank" rel="noopener" rel="noreferrer"><i class="fa fa-youtube fa-lg"></i></a></li>
 								</ul>
 							</div>								
 						</div>
@@ -101,33 +98,31 @@
 		</main><!-- main -->
 
 <?php require_once "footer.php" ?>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
-		<script src="js/plugins.js"></script>
-		<script src="js/beetle.js"></script>
-		<!-- <script>
-		$(document).ready(function(){
-			$('#send').click(function(){
-				$(this).val('Sending ...');
-				$('#success p').remove();
-				$.post('contact/contact.php', $('#contact-form').serialize(), function(response) {
-					$('#success').html(response);
-					//$('#success').hide('slow');
-					$('#send').val('Send a Message');
-				});
-				return false;
-			});
-		});
-		</script>		 -->
-
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-		<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
-		<script type="text/javascript">
-			function validaCaptcha() {
-			if(document.querySelector('#g-recaptcha-response').value == '') {
-				swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
-			}
-		}
-		</script>
-	</body>
+<script src="https://code.jquery.com/jquery.js"></script>		
+<script src="js/plugins.js"></script>
+<script src="js/beetle.js"></script>
+<!-- <script>
+$(document).ready(function(){
+$('#send').click(function(){
+$(this).val('Sending ...');
+$('#success p').remove();
+$.post('contact/contact.php', $('#contact-form').serialize(), function(response) {
+$('#success').html(response);
+//$('#success').hide('slow');
+$('#send').val('Send a Message');
+});
+return false;
+});
+});
+</script>		 -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+<script type="text/javascript">
+function validaCaptcha() {
+if(document.querySelector('#g-recaptcha-response').value == '') {
+swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+}
+}
+</script>
+</body>
 </html>

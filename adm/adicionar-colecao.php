@@ -78,18 +78,38 @@ mysqli_select_db($soller, 'sollerbrasil');
         $$nomevar = $arquivo_teste;
     }
 
+    // $nomevar_mobile = 'arquivo_mobile';
+
+    // if (isset($_FILES[$nomevar_mobile])) {
+    //     $arquivo_mobile = $_FILES[$nomevar_mobile]; 
+    //     $arquivo_mobile = $arquivo_mobile['name'];
+        
+    //     $$nomevar_mobile = $arquivo_mobile;
+    // }
+
     require "adicionar-imagens.php";
+
+    $nomevar_home = 'arquivo_home';
+
+    if (isset($_FILES[$nomevar_home])) {
+        $arquivo = $_FILES[$nomevar_home]; 
+        $arquivo = $arquivo['name'];
+        
+        $$nomevar_home = $arquivo;
+    }
+
+    require "adicionar-imagens-colecao-home.php";
 
 
 //Insert inglês
-$insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_en', '$descricao_en', '$indicacao_en', '$acao_en', '1', '$novo', '$video', '$cat_en', '$ativo', '$data', '$hora', '$user' )";      
+$insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, arquivo_home, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_en', '$descricao_en', '$indicacao_en', '$acao_en', '1', '$novo', '$novo_home' , '$video', '$cat_en', '$ativo', '$data', '$hora', '$user' )";      
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller)); 
 
 //Insert português
-$insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_pt', '$descricao_pt', '$indicacao_pt', '$acao_pt', '2', '$novo', '$video', '$categoria', '$ativo', '$data', '$hora', '$user' )";       
+$insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, arquivo_home, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_pt', '$descricao_pt', '$indicacao_pt', '$acao_pt', '2', '$novo', '$novo_home' , '$video', '$categoria', '$ativo', '$data', '$hora', '$user' )";       
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));     
 
 //Insert espanhol
-$insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_es', '$descricao_es', '$indicacao_es', '$acao_es', '3', '$novo', '$video', '$cat_es', '$ativo', '$data', '$hora', '$user' )";           
+$insertSQL = "INSERT INTO colecao (nome, descricao, indicacao, acao, ididioma_col, arquivo, arquivo_home, video, idcategoria, ativo, data, hora, user) VALUES ('$nome_es', '$descricao_es', '$indicacao_es', '$acao_es', '3', '$novo', '$novo_home' , '$video', '$cat_es', '$ativo', '$data', '$hora', '$user' )";           
 $Result = mysqli_query($soller, $insertSQL ) or die(mysqli_error($soller));  
 header("Location: listar-colecao.php?inserido=true");

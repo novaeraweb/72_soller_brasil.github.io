@@ -96,6 +96,7 @@ $colecoes = listaColecao($soller);
                                               </button>
                                           </div>
                                           <div class="modal-body">
+                                              <h3>ATENÇÃO! Essa ação irá excluir a Coleção e todos os produtos relacionados a ela!</h3>
                                               <p>Você tem certeza que deseja apagar esta Coleção?<br>
                                               <b class="text-center">Esta ação é irreversível</b>.</p>
                                           </div>

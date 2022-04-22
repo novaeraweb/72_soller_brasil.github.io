@@ -661,7 +661,7 @@ nav ul.sub-menu > li:last-child > a {
 }
 
 .section-volume .column.third.produto:first-of-type, .section-volume .column.four.produto:first-of-type{
-    margin-left: 4%;
+  /*  margin-left: 4%;*/
 }
 
 div.produto:nth-child(12){
@@ -3005,7 +3005,7 @@ footer {
     z-index: 10;
     background-color:black;
     background-image: url(img/black-back2.jpg);
-    color: #545766;
+    color:white;
 }
 
 footer h1,
@@ -3018,7 +3018,7 @@ footer h6 {
 }
 
 footer a {
-    color: #545766;
+    color:#f9f9f9;
     text-decoration: none;
 }
 

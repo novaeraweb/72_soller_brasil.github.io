@@ -211,7 +211,7 @@ $banners = listaBannerHome($soller); ?>
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
 						<p>WANT TO BE OUR REPRESENTATIVE?</p>
-						<a class="button red" href="#">Contact us</a>
+						<a class="button red" href="reseller.php">Contact us</a>
 					</div>
 				</section>				
 
