@@ -42,3 +42,7 @@ $pgAtual = basename($_SERVER['SCRIPT_NAME']);
 		</div><!-- row-content -->	
 	</div><!-- row -->	
 </header>
+
+<?php
+require "alerta.php";
+?>
