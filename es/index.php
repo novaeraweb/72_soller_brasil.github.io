@@ -3,7 +3,8 @@
 require_once "../adm/conecta.php";
 require_once "../adm/class.php";
 require_once "../adm/function.php";
-$banners = listaBannerHome($soller); ?>
+$banners = listaBannerHome($soller); 
+$col_imgs = listaColecaoImgHome($soller);?>
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
@@ -134,14 +135,11 @@ $banners = listaBannerHome($soller); ?>
 
 
 				<div class="owl-carousel">
-				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-australian.png" alt="Finishing" class="sombra"></a></div>
-				  <div><a href="#"><img src="../img/colecoes-rotativo/rotativo-resistance.png" alt="Casting & Bleaching" class="sombra"></a></div>
-				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-agimax.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-agimaxplus.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="company.php"><img src="../img/colecoes-rotativo/rotativo-sollerbrasil.png" alt="The Company" class="sombra"></a></div>
-				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-agione.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-dbd.png" alt="Volume Reduction" class="sombra"></a></div>
-				  <div><a href="*"><img src="../img/colecoes-rotativo/rotativo-radiance.png" alt="Volume Reduction" class="sombra"></a></div>
+					<?php foreach ($col_imgs as $col_img) { ?>
+						<?php if ($col_img->arquivo_home != '')  {?>
+							<div><a href="#"><img src="../adm/arquivos/<?=$col_img->arquivo_home;?>" alt="<?=$col_img->nome;?>" class="sombra"></a></div>	
+						<?php } ?>
+					<?php } ?>
 				</div>
 
 				</section>	

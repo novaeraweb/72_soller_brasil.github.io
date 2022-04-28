@@ -95,6 +95,6 @@ if(isset($recaptcha_response)){
 // Caso o Captcha não tenha sido validado 
     //retorno uma mensagem de erro. 
     else {
-        header("Location: ../index.php?confirma=true");
+        header("Location: ../index.php?enviado=false");
     }
 }
