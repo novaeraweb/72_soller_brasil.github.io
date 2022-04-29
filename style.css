@@ -641,6 +641,7 @@ nav ul.sub-menu > li:last-child > a {
 /* Configurações da Seção de Produtos */
 .section-volume {
     height: auto;
+    min-height: 440px;
 }
 
 .section-volume.bg{
