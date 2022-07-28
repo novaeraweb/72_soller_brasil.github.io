@@ -15,12 +15,9 @@ $hora = time();
 	$i = 1;
     $nomevar = 'arquivo';
     
-    if (isset($_FILES[$nomevar])) {
-        $arquivo_teste = $_FILES[$nomevar]; 
-        $arquivo_teste = $arquivo_teste["name"];
+    // if (isset($_FILES[$nomevar]) && $_FILES[$nomevar]["error"] == 0) {
         
-        $$nomevar = $arquivo_teste;
-    }
+    // }
 
 
 
@@ -28,7 +25,11 @@ $hora = time();
 	
 
     $hora2 = $hora.$i;
-	if($$nomevar != Null){
+	if(isset($_FILES[$nomevar]) && $_FILES[$nomevar]["error"] == 0){
+        $arquivo_teste = $_FILES[$nomevar]; 
+        $arquivo_teste = $arquivo_teste["name"];
+        
+        $$nomevar = $arquivo_teste;
 	   
 		mysqli_select_db($soller, $database_soller);
 		$query = "SELECT * FROM colecao WHERE idcolecao = $id";
@@ -54,18 +55,29 @@ $hora = time();
         $var_novo = $diretorio.$novo;
 
         rename($var, $var_novo);
+
+        $sql = "UPDATE colecao SET arquivo = '$novo'  WHERE idcolecao=$id";
+        $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
+    
+        $sql = "UPDATE colecao SET arquivo = '$novo' WHERE idcolecao=$id-1";
+        $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
+    
+        $sql = "UPDATE colecao SET arquivo = '$novo' WHERE idcolecao=$id+1";
+        $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
     }
 
     $nomevar_home = 'arquivo_home';
     
-    if (isset($_FILES[$nomevar_home])) {
+    // if (isset($_FILES[$nomevar_home]) && $_FILES[$nomevar_home]["error"] == 0) {
+        
+    // }
+
+	if(isset($_FILES[$nomevar_home]) && $_FILES[$nomevar_home]["error"] == 0){
+
         $arquivo_teste = $_FILES[$nomevar_home]; 
         $arquivo_teste = $arquivo_teste["name"];
         
         $$nomevar_home = $arquivo_teste;
-    }
-
-	if($$nomevar_home != Null){
 	   
 		mysqli_select_db($soller, $database_soller);
 		$query = "SELECT * FROM colecao WHERE idcolecao = $id";
@@ -91,16 +103,17 @@ $hora = time();
         $var_novo_home = $diretorio.$novo_home;
 
         rename($var, $var_novo_home);
+
+        $sql = "UPDATE colecao SET arquivo_home = '$novo_home' WHERE idcolecao=$id";
+        $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
+    
+        $sql = "UPDATE colecao SET arquivo_home = '$novo_home' WHERE idcolecao=$id-1";
+        $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
+    
+        $sql = "UPDATE colecao SET arquivo_home = '$novo_home' WHERE idcolecao=$id+1";
+        $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
     }
 
-    $sql = "UPDATE colecao SET arquivo = '$novo', arquivo_home = '$novo_home' WHERE idcolecao=$id";
-    $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
-
-    $sql = "UPDATE colecao SET arquivo = '$novo', arquivo_home = '$novo_home' WHERE idcolecao=$id-1";
-    $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
-
-    $sql = "UPDATE colecao SET arquivo = '$novo', arquivo_home = '$novo_home' WHERE idcolecao=$id+1";
-    $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
 
 
 header("Location: editar-imagens-colecao.php?id=$id");
