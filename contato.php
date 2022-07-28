@@ -65,6 +65,7 @@
 					<div class="row-content buffer even clear-after">
 						<div class="column nine">
 							<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+								<input type="hidden" name="reseller_en" value="en">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
 								<input class="name plain buffer" type="text" name="nome" placeholder="Full name" required>
 								<span class="pre-input"><i class="icon icon-email"></i></span>
@@ -120,7 +121,7 @@ return false;
 <script type="text/javascript">
 function validaCaptcha() {
 if(document.querySelector('#g-recaptcha-response').value == '') {
-swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+swal('Please validate the reCaptcha!', 'It is required to submit this message', 'error');return false;
 }
 }
 </script>

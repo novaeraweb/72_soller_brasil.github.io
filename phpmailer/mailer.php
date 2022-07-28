@@ -30,11 +30,19 @@ if(isset($recaptcha_response)){
       $nome = $_POST['nome'];
       $email = $_POST['email'];
       $mensagem = $_POST['message'];
-
+      if ($_POST['reseller_en']){
+        $re_en = $_POST['reseller_en'];
+      }
+      if ($_POST['reseller_es']){
+        $re_es = $_POST['reseller_es'];
+      }
+      if ($_POST['reseller_pt']){
+        $re_pt = $_POST['reseller_pt'];
+      }
       // Inicia a classe PHPMailer
       $mail = new PHPMailer();
         
-      // Define os dados técnicos da Mensagem
+      // Define os dados técnicos da Mptsagem
       // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
       $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
       $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
@@ -83,8 +91,15 @@ if(isset($recaptcha_response)){
 
       //Enviando o email 
       //==================================================== 
-      if ($enviado = $mail->Send()){ 
-          header("Location: ../index.php?enviado=true");
+      if ($enviado = $mail->Send()){
+            if ($re_en){
+                header("Location: ../index.php?enviado=true");
+            } else if ($re_es){
+                header("Location: ../es/index.php?enviado=true");
+            } else if ($re_pt){
+                header("Location: ../pt/index.php?enviado=true");
+            }
+          
           } 
       else{ 
           echo "</b>Falha no envio do E-Mail!</b>"; 

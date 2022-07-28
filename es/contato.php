@@ -66,11 +66,12 @@
 					<div class="row-content buffer even clear-after">
 						<div class="column nine">
 							<form id="contact-form" class="contact-section" method="post" action="../phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+								<input type="hidden" name="reseller_es" value="es">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
 								<input class="name plain buffer" type="text" name="nome" placeholder="Nombre" required>
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Correo electrónico" required>
-								<textarea class="plain buffer" name="message" placeholder="Mensaje"></textarea required>
+								<textarea class="plain buffer" name="message" placeholder="Mensaje" required></textarea>
 								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Enviar Mensaje</button>
 								
@@ -119,10 +120,10 @@ $(document).ready(function(){
 
 <script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
 <script type="text/javascript">
-	function validaCaptcha() {
-	if(document.querySelector('#g-recaptcha-response').value == '') {
-		swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
-	}
+function validaCaptcha() {
+if(document.querySelector('#g-recaptcha-response').value == '') {
+swal('¡Valide el reCaptcha!', 'Obligatorio para enviar el mensaje', 'error');return false;
+}
 }
 </script>
 </body>

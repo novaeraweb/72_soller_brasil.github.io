@@ -68,8 +68,8 @@ $banners = listaBannerId($soller, $id);
                         <table class="table">
                             <thead>
                                 <tr class="text-center">
-                                    <th>Foto 1</th>
-                                    <th>Foto Mobile</th>
+                                    <th>Imagem Atual</th>
+                                    <th>Imagem Atual Mobile</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -80,10 +80,11 @@ $banners = listaBannerId($soller, $id);
                                     <img src="arquivos/<?=$banner->arquivo;?>" alt="" width="240" height="160"/> 
                                     <?php } ?>
                                     <br>
-                                    <label for="arquivo">Selecione a nova imagem</label>
+                                    <label for="arquivo">Selecione a nova imagem (Desktop): <br><strong>(2000px X 1270px)</strong>
+                                    </label>
                                     <br>
                                     <button type="button" class="btn btn-warning">
-                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto 1</label>
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Nova Imagem Desktop</label>
                                       <input type="file" name="arquivo" id="arquivo">
                                     </button>
                                     </td>
@@ -94,10 +95,10 @@ $banners = listaBannerId($soller, $id);
                                     <img src="arquivos/<?=$banner->arquivo_mobile;?>" alt="" width="240" height="auto"/> 
                                     <?php } ?>
                                     <br>
-                                    <label for="arquivo_mobile">Selecione a nova imagem</label>
+                                    <label for="arquivo_mobile">Selecione a nova imagem (Mobile): <br><strong>(500px X 420px)</strong></label>
                                     <br>
                                     <button type="button" class="btn btn-warning">
-                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto Mobile</label>
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Nova Imagem Mobile</label>
                                       <input type="file" name="arquivo_mobile" id="arquivo_mobile">
                                     </button>
                                     </td>

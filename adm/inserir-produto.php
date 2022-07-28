@@ -74,12 +74,12 @@ $linhas = listaLinha($soller);
                             <div class="col-md-12">
                               <br>
                               <div class="form-group">
-                                  <label for="nome_en">Nome do Produto</label>
+                                  <label for="nome_en">Product Name</label>
                                   <input type="text" class="form-control" name="nome_en" id="nome_en" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição</label><br>
+                                  <label for="descricao">Description</label><br>
                                   <textarea class="form-control" name="descricao_en" id="descricao_en" rows="4"></textarea>
                               </div>
                             </div>
@@ -102,12 +102,12 @@ $linhas = listaLinha($soller);
                             <div class="col-md-8">
                               <br>
                               <div class="form-group">
-                                  <label for="nome_es">Nome do Produto</label>
+                                  <label for="nome_es">Nombre del Producto</label>
                                   <input type="text" class="form-control" name="nome_es" id="nome_es" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição</label><br>
+                                  <label for="descricao">Descripción</label><br>
                                   <textarea class="form-control" name="descricao_es" id="descricao_es" rows="4"></textarea>
                               </div>
                             </div>

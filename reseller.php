@@ -66,12 +66,13 @@
 						<div class="section-title"><h3>Want to be our representative?</h3></div>	
 						<div class="column nine">
 						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+								<input type="hidden" name="reseller_en" value="en">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
-								<input class="name plain buffer" type="text" name="nome" placeholder="Full name">
+								<input class="name plain buffer" type="text" name="nome" placeholder="Full name" required>
 								<span class="pre-input"><i class="icon icon-email"></i></span>
-								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
-								<textarea class="plain buffer" name="message" placeholder="Message"></textarea>
-								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
+								<input class="email plain buffer" type="email" name="email" placeholder="Email address" required>
+								<textarea class="plain buffer" name="message" placeholder="Message" required></textarea>
+								<div class="g-recaptcha" data-sitekey="6LfmOUUdAAAAAHlg5AkSqbo_d3qw7c6M7_ujem88"></div>
 								<button id="send" class="plain button red">Send a Message</button>
 								
 							</form>	
@@ -102,7 +103,7 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="js/plugins.js"></script>
 <script src="js/beetle.js"></script>
-<script>
+<!-- <script>
 $(document).ready(function(){
 $('#send').click(function(){
 	$(this).val('Sending ...');
@@ -115,6 +116,14 @@ $('#send').click(function(){
 	return false;
 });
 });
-</script>		
+</script>		 -->
+<script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+<script type="text/javascript">
+function validaCaptcha() {
+if(document.querySelector('#g-recaptcha-response').value == '') {
+swal('Please validate the reCaptcha!', 'It is required to submit this message', 'error');return false;
+}
+}
+</script>
 </body>
 </html>

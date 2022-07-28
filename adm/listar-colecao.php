@@ -53,7 +53,8 @@ $colecoes = listaColecao($soller);
                           <table class="table" id="tabela">
                             <thead>
                                 <tr class="text-center">
-                                    <th>Imagem</th>
+                                    <th>Full Banner</th>
+                                    <th>Imagem Home</th>
                                     <th>Nome</th>
                                     <th>Ativo</th>
                                     <th>Ações</th>
@@ -63,6 +64,11 @@ $colecoes = listaColecao($soller);
                               <?php foreach ($colecoes as $colecao){?>
                                 <tr class="text-center">
                                     <td><img src="arquivos/<?=$colecao->arquivo;?>" style="width: 80px;"></td>
+                                    <td>
+                                      <?php if ($colecao->arquivo_home != NULL)
+                                      {echo '<img src="arquivos/'.$colecao->arquivo_home.'" style="width: 80px";>';
+                                      } else {echo '<strong>Sem Imagem</strong>';};?>
+                                    </td>
                                     <td style="max-width:100px;"><?=$colecao->nome;?></td>
                                     <td><?=$colecao->ativo;?></td>
                                     <td class="td-actions text-right">

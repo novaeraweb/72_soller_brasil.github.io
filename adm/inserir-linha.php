@@ -71,12 +71,12 @@ mysqli_select_db($soller, "sollerbrasil");
                             <div class="col-md-12">
                               <br>
                               <div class="form-group">
-                                  <label for="nome">Nome da Linha</label>
+                                  <label for="nome">Line Name</label>
                                   <input type="text" class="form-control" name="nome_en" id="nome_en" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição</label>
+                                  <label for="descricao">Description</label>
                                   <textarea class="form-control" name="descricao_en" id="descricao_en" rows="4"></textarea>
                               </div>
                             </div>
@@ -99,12 +99,12 @@ mysqli_select_db($soller, "sollerbrasil");
                             <div class="col-md-8">
                               <br>
                               <div class="form-group">
-                                  <label for="nome">Nome da Linha</label>
+                                  <label for="nome">Nombre de Línea</label>
                                   <input type="text" class="form-control" name="nome_es" id="nome_es" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição</label>
+                                  <label for="descricao">Descripción</label>
                                   <textarea class="form-control" name="descricao_es" id="descricao_es" rows="4"></textarea>
                               </div>
                             </div>

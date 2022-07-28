@@ -71,17 +71,17 @@ mysqli_select_db($soller, "sollerbrasil");
                             <div class="col-md-12">
                               <br>
                               <div class="form-group">
-                                  <label for="nome">Nome da Categoria</label>
+                                  <label for="nome">Category Name</label>
                                   <input type="text" class="form-control" name="nome_en" id="nome_en" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição breve</label><br>
+                                  <label for="descricao">Brief Description</label><br>
                                   <textarea class="form-control" name="descricao_breve_en" id="descricao_breve_en" rows="4"></textarea>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição longa</label><br>
+                                  <label for="descricao">Extended Description</label><br>
                                   <textarea class="form-control" name="descricao_longa_en" id="descricao_longa_en" rows="4"></textarea>
                               </div>
                             </div>
@@ -110,17 +110,17 @@ mysqli_select_db($soller, "sollerbrasil");
                             <div class="col-md-8">
                               <br>
                               <div class="form-group">
-                                  <label for="nome">Nome da Categoria</label>
+                                  <label for="nome">Nombre de la Categoría</label>
                                   <input type="text" class="form-control" name="nome_es" id="nome_es" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição breve</label><br>
+                                  <label for="descricao">Breve Descripción</label><br>
                                   <textarea class="form-control" name="descricao_breve_es" id="descricao_breve_es" rows="4"></textarea>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição longa</label><br>
+                                  <label for="descricao">Descripción Larga</label><br>
                                   <textarea class="form-control" name="descricao_longa_es" id="descricao_longa_es" rows="4"></textarea>
                               </div>
                               <br>

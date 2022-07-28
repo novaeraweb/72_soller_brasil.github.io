@@ -77,11 +77,11 @@ $linhas = listaLinha($soller);
                                     <td style="max-width:100px;"><?=$linha->descricao;?></td>
                                     <td><?=$linha->ativo;?></td>
                                     <td class="td-actions text-right">
-                                    <a href="editar-imagens-linha.php?id=<?php echo $linha->idlinha;?>" style="margin-top: 10px; margin-right: 10px;">
+                                    <!-- <a href="editar-imagens-linha.php?id=<?php echo $linha->idlinha;?>" style="margin-top: 10px; margin-right: 10px;">
                                       <button type="button" rel="tooltip" class="btn btn-warning btn-round" data-toggle="tooltip" data-placement="top" title="Editar fotos">
                                         <i class="material-icons">camera_enhance</i>
                                       </button>
-                                    </a>
+                                    </a> -->
 
                                     <a href="editar-linha.php?id=<?php echo $linha->idlinha;?>" class="info" style="margin-top: 10px; margin-right: 10px;">
                                       <button type="button" rel="tooltip" class="btn btn-success btn-round" data-toggle="tooltip" data-placement="top" title="Editar">

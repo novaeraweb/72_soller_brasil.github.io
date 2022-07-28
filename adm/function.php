@@ -193,6 +193,7 @@ function listaColecao($soller){
 		$colecao->indicacao = $array['indicacao'];
 		$colecao->acao = $array['acao'];
 		$colecao->arquivo = $array['arquivo'];
+		$colecao->arquivo_home = $array['arquivo_home'];
 		$colecao->video = $array['video'];
 		$colecao->ativo = $array['ativo'];
 		$colecao->idcategoria = $array['idcategoria'];
@@ -224,6 +225,7 @@ function listaColecaoId($soller, $id){
 		$colecao->indicacao = $array['indicacao'];
 		$colecao->acao = $array['acao'];
 		$colecao->arquivo = $array['arquivo'];
+		$colecao->arquivo_home = $array['arquivo_home'];
 		$colecao->video = $array['video'];
 		$colecao->ativo = $array['ativo'];
 		$colecao->idcategoria = $array['idcategoria'];

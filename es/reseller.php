@@ -64,11 +64,12 @@
 						<div class="section-title"><h3>¿Quieres ser representante?</h3></div>	
 						<div class="column nine">
 						<form id="contact-form" class="contact-section" method="post" action="../phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+								<input type="hidden" name="reseller_es" value="es">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
 								<input class="name plain buffer" type="text" name="nome" placeholder="Nombre" required>
 								<span class="pre-input"><i class="icon icon-email"></i></span>
 								<input class="email plain buffer" type="email" name="email" placeholder="Correo electrónico" required>
-								<textarea class="plain buffer" name="message" placeholder="Mensaje"></textarea required>
+								<textarea class="plain buffer" name="message" placeholder="Mensaje" required></textarea>
 								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Enviar mensaje</button>
 							</form>	
@@ -102,7 +103,7 @@
 <script type="text/javascript">
 function validaCaptcha() {
 if(document.querySelector('#g-recaptcha-response').value == '') {
-swal('Valide o reCaptcha!', 'Obrigatório para o envio da mensagem', 'error');return false;
+swal('¡Valide el reCaptcha!', 'Obligatorio para enviar el mensaje', 'error');return false;
 }
 }
 </script>

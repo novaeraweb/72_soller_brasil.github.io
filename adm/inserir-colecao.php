@@ -75,22 +75,22 @@ $cat_br = listaCategoria($soller);
                             <div class="col-md-12">
                               <br>
                               <div class="form-group">
-                                  <label for="nome">Nome da Coleção</label>
+                                  <label for="nome">Collection Name</label>
                                   <input type="text" class="form-control" name="nome_en" id="nome_en" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição</label><br>
+                                  <label for="descricao">Description</label><br>
                                   <textarea class="form-control" name="descricao_en" id="descricao_en" rows="4"></textarea>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Indicação</label><br>
+                                  <label for="descricao">Indication</label><br>
                                   <textarea class="form-control" name="indicacao_en" id="indicacao_en" rows="4"></textarea>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Ação</label><br>
+                                  <label for="descricao">Action</label><br>
                                   <textarea class="form-control" name="acao_en" id="acao_en" rows="4"></textarea>
                               </div>
                             </div>
@@ -123,22 +123,22 @@ $cat_br = listaCategoria($soller);
                             <div class="col-md-8">
                               <br>
                               <div class="form-group">
-                                  <label for="nome">Nome da Coleção</label>
+                                  <label for="nome">Nombre de la Colección</label>
                                   <input type="text" class="form-control" name="nome_es" id="nome_es" placeholder="" required><br>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Descrição</label><br>
+                                  <label for="descricao">Descripción</label><br>
                                   <textarea class="form-control" name="descricao_es" id="descricao_es" rows="4"></textarea>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Indicação</label><br>
+                                  <label for="descricao">Recomendación</label><br>
                                   <textarea class="form-control" name="indicacao_es" id="indicacao_es" rows="4"></textarea>
                               </div>
                               <br>
                               <div class="form-group">
-                                  <label for="descricao">Ação</label><br>
+                                  <label for="descricao">Acción</label><br>
                                   <textarea class="form-control" name="acao_es" id="acao_es" rows="4"></textarea>
                               </div>
                             </div>
@@ -157,10 +157,10 @@ $cat_br = listaCategoria($soller);
                         </div>
                         <br>
                         <div id="dvFile">
-                          <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Coleção | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 2000px X 450px)</span></strong></label>
+                          <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Coleção (Banner) | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 2000px X 450px)</span></strong></label>
                           <input type="file" name="arquivo" id="arquivo">
                           <br>
-                          <label for="arquivo_home" style="width: 100%; margin-top: 15px;">Imagem da Coleção na Home | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 400px X 460px)</span></strong></label>
+                          <label for="arquivo_home" style="width: 100%; margin-top: 15px;">Imagem da Coleção (Home) | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 400px X 460px)</span></strong></label>
                           <input type="file" name="arquivo_home" id="arquivo_home">
                           <br>
                           <!-- <label for="arquivo_mobile" style="width: 100%; margin-top: 15px;">Imagem da Coleção na Home | Mobile<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 400px X 460px)</span></strong></label>

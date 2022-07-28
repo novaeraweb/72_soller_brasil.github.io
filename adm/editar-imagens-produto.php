@@ -68,7 +68,7 @@ $produtos = listaProdutoId($soller, $id);
                         <table class="table">
                             <thead>
                                 <tr class="text-center">
-                                    <th>Foto 1</th>
+                                    <th>Imagem Atual</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -76,13 +76,13 @@ $produtos = listaProdutoId($soller, $id);
                                     <td><?php if ($produto->arquivo == Null) {  ?>
                                     <img src="arquivos/sem-imagem.png" alt="" width="100" height="100" />             
                                     <?php } else { ?>
-                                    <img src="arquivos/<?=$produto->arquivo;?>" alt="" width="240" height="160"/> 
+                                    <img src="arquivos/<?=$produto->arquivo;?>" alt="" width="240"/> 
                                     <?php } ?>
-                                    <br>
-                                    <label for="arquivo">Selecione a nova imagem</label>
+                                    <br><br><br>
+                                    <label for="arquivo">Selecione a nova imagem do Produto <br><strong>(400px X 400px)</strong></label>
                                     <br>
                                     <button type="button" class="btn btn-warning">
-                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto 1</label>
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Nova Imagem</label>
                                       <input type="file" name="arquivo" id="arquivo"/>
                                     </button>
                                     </td>

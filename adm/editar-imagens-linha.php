@@ -68,7 +68,7 @@ $linhas = listaLinhaId($soller, $id);
                         <table class="table">
                             <thead>
                                 <tr class="text-center">
-                                    <th>Foto 1</th>
+                                    <th>Imagem Atual</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -79,10 +79,10 @@ $linhas = listaLinhaId($soller, $id);
                                     <img src="arquivos/<?=$linha->arquivo;?>" alt="" width="240" height="160"/> 
                                     <?php } ?>
                                     <br>
-                                    <label for="arquivo1">Selecione a nova imagem</label>
+                                    <label for="arquivo1">Selecione a nova imagem da Linha <br><strong>(200px | 200px)</strong></label>
                                     <br>
                                     <button type="button" class="btn btn-warning">
-                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Foto 1</label>
+                                      <label for="arquivo" style="padding: 0; margin: 0; color: #fff">Nova Imagem</label>
                                       <input type="file" name="arquivo" id="arquivo"/>
                                     </button>
                                     </td>

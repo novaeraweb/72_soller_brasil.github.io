@@ -56,13 +56,50 @@ $hora = time();
         rename($var, $var_novo);
     }
 
-    $sql = "UPDATE colecao SET arquivo = '$novo' WHERE idcolecao=$id";
+    $nomevar_home = 'arquivo_home';
+    
+    if (isset($_FILES[$nomevar_home])) {
+        $arquivo_teste = $_FILES[$nomevar_home]; 
+        $arquivo_teste = $arquivo_teste["name"];
+        
+        $$nomevar_home = $arquivo_teste;
+    }
+
+	if($$nomevar_home != Null){
+	   
+		mysqli_select_db($soller, $database_soller);
+		$query = "SELECT * FROM colecao WHERE idcolecao = $id";
+		$rs_projeto = mysqli_query($soller, $query) or die(mysqli_error($soller));
+		$row_rs_projeto = mysqli_fetch_assoc($rs_projeto);
+		$rs_arquivo = $row_rs_projeto["arquivo_home"];
+		if ($rs_arquivo != "sem-imagem.png" AND file_exists($rs_arquivo)) {
+			unlink($diretorio.$rs_arquivo);
+		}
+
+		$nome_arquivo = $_FILES["arquivo_home"]["name"];
+        $nome_arquivo = "arquivos/".$nome_arquivo;
+		$arquivo_temporario = $_FILES["arquivo_home"]["tmp_name"];
+		move_uploaded_file($arquivo_temporario, $nome_arquivo);
+
+        // Descobre a extensao:
+        $ext = pathinfo($$nomevar_home, PATHINFO_EXTENSION);
+        $ponto = ".";
+
+        // Gera novo nome
+        $novo_home = 'soller-brasil-'.$hora2.$ponto.$ext;
+        $var = $diretorio.$$nomevar_home;
+        $var_novo_home = $diretorio.$novo_home;
+
+        rename($var, $var_novo_home);
+    }
+
+    $sql = "UPDATE colecao SET arquivo = '$novo', arquivo_home = '$novo_home' WHERE idcolecao=$id";
     $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
 
-    $sql = "UPDATE colecao SET arquivo = '$novo' WHERE idcolecao=$id-1";
+    $sql = "UPDATE colecao SET arquivo = '$novo', arquivo_home = '$novo_home' WHERE idcolecao=$id-1";
     $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
 
-    $sql = "UPDATE colecao SET arquivo = '$novo' WHERE idcolecao=$id+1";
+    $sql = "UPDATE colecao SET arquivo = '$novo', arquivo_home = '$novo_home' WHERE idcolecao=$id+1";
     $Result = mysqli_query($soller, $sql) or die(mysqli_error($soller));
 
 

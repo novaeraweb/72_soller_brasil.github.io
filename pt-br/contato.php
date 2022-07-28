@@ -66,11 +66,12 @@
 					<div class="row-content buffer even clear-after">
 						<div class="column nine">
 							<form id="contact-form" class="contact-section" method="post" action="../phpmailer/mailer.php" onsubmit="return validaCaptcha()">
+								<input type="hidden" name="reseller_pt" value="pt">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
-								<input class="name plain buffer" type="text" name="nome" placeholder="Nome">
+								<input class="name plain buffer" type="text" name="nome" placeholder="Nome" required>
 								<span class="pre-input"><i class="icon icon-email"></i></span>
-								<input class="email plain buffer" type="email" name="email" placeholder="E-mail">
-								<textarea class="plain buffer" name="message" placeholder="Mensagem"></textarea>
+								<input class="email plain buffer" type="email" name="email" placeholder="E-mail" required>
+								<textarea class="plain buffer" name="message" placeholder="Mensagem" required></textarea>
 								<div class="g-recaptcha" data-sitekey="6LfuadEeAAAAAMBHrpRborH4bYaoEqqgkbAJp3nt"></div>
 								<button id="send" class="plain button red">Enviar Mensagem</button>
 								
