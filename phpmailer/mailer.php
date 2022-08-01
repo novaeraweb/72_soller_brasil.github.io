@@ -8,7 +8,7 @@ require("class.phpmailer.php");
 require("class.smtp.php");
 
 //Defino a Chave do meu site
-$secret_key = '6LfuadEeAAAAAMuEPNnOla-hLUlD7aXLZhvrarF3';
+$secret_key = '6LfmOUUdAAAAAB2N9wIvIESO1-HcHYbofIDwqk_p';
 
 //Pego a validação do Captcha feita pelo usuário
 $recaptcha_response = $_POST['g-recaptcha-response'];

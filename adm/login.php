@@ -10,8 +10,10 @@
 
 
       if (validaUsuario($soller, $user, $senha)) {
-        $_SESSION["logado"] = true;
+        $_SESSION["logado"] = time();
         $_SESSION["usuario_logado"] = $user;
+
+        $_SESSION['expirar'] = $_SESSION["logado"] + (60*30);
         
         $_SESSION["user_id"] = $user;
         $_SESSION["user_senha"] = $senha;
