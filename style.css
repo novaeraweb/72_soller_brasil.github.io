@@ -3841,6 +3841,15 @@ footer .row-content.buffer {
 
     .yesphone{display: block;}
     .nophone{display: none;}
+
+    .section-volume {
+        height: auto;
+        min-height: 0px;
+    }
+    
+    .section-volume.bg{
+        height: 120px;
+    }
 }
 
 /*----------------------------------------------------------------
