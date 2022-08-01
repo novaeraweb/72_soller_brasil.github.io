@@ -149,7 +149,7 @@ $cat_br = listaCategoria($soller);
                         <div class="form-group">
                           <!-- <label for="categoria">Categoria</label> -->
                           <select name="categoria" id="categoria" class="form-control" required>
-                            <option value="">Categoria</option>
+                            <option value="">Selecione a Categoria</option>
                             <?php foreach ($cat_br as $cat) { ?>
                               <option value="<?=$cat->idcategoria;?>"><?=$cat->nome;?></option>
                             <?php }?>
@@ -159,7 +159,7 @@ $cat_br = listaCategoria($soller);
                         <div id="dvFile">
                           <label for="arquivo" style="width: 100%; margin-top: 15px;">Imagem da Coleção (Banner) | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 2000px X 450px)</span></strong></label>
                           <input type="file" name="arquivo" id="arquivo">
-                          <br>
+                          <br><br><br>
                           <label for="arquivo_home" style="width: 100%; margin-top: 15px;">Imagem da Coleção (Home) | Desktop<strong> <span style="font-size:0.9em;">(Tamanho da Imagem - 400px X 460px)</span></strong></label>
                           <input type="file" name="arquivo_home" id="arquivo_home">
                           <br>

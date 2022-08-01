@@ -10,26 +10,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> 
 
         <meta name="description" content="Nova Era Web | (14)9.9628.5428 - Criação e desenvolvimento de sites responsivos, Marketing Digital e Hospedagem de Sites profissional." />
-        <meta name="keywords" content="criação de sites, desenvolvimento de sites, sites, agencia web, agência digital, marketing online, hospedagem de sites, botucatu, avare, bauru, criação de sites botucatu, desenvolvimento de sites botucatu" />
         <meta name="author" content="Thiago Motta Vannuchi | Agência Nova Era Web - Criação e desenvolvimento de sites | Botucatu/SP"> 
         <meta name="company" content="Agência Nova Era Web - Criação e desenvolvimento de sites | Botucatu/SP" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
         <meta name="robots" content="follow,index">
         <meta name= "googlebot" content="follow,index">
-
         <link rel="author" href="https://www.novaeraweb.com.br"/>
-        <link rel="publisher" href="https://plus.google.com/+NovaEraWebCria%C3%A7%C3%A3oeDesenvolvimentoBotucatu/posts"/>
-        <link rel="canonical" href="https://novaeraweb.com.br" />
-
-        <!-- Open Graph Data -->
-        <meta property="og:locale" content="pt_BR">
-        <meta property="og:title" content="Criação de sites | Agência Nova Era Web - Botucatu / SP" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://www.novaeraweb.com.br/"/>
-        <meta property="og:image" content="https://novaeraweb.com.br/img/logo-nova-era-web.jpg" />
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="800">
-        <meta property="og:image:height" content="600">
-        <meta property="og:description" content="Website da agência Nova Era Web criação e desenvolvimento de sites, marketing Digital e hospedagem de sites" />
         <meta property="og:site_name" content="Agência Nova Era Web"/>
         <meta property="fb:admins" content="Facebook ID - toda conta developer possui um ID"/>
        <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
@@ -43,8 +32,6 @@
         <script src="js/html5shiv.min.js"></script>
         <![endif] -->
 
-
-        
         <!--[if lt IE 9]>
             <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <![endif]-->

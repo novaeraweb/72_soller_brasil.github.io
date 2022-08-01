@@ -77,9 +77,9 @@ $banners = listaBannerId($soller, $id);
                                     <td><?php if ($banner->arquivo == Null) {  ?>
                                     <img src="arquivos/sem-imagem.png" alt="" width="100" height="100" />             
                                     <?php } else { ?>
-                                    <img src="arquivos/<?=$banner->arquivo;?>" alt="" width="240" height="160"/> 
+                                    <img src="arquivos/<?=$banner->arquivo;?>" alt="" height="160"/> 
                                     <?php } ?>
-                                    <br>
+                                    <br><br><br>
                                     <label for="arquivo">Selecione a nova imagem (Desktop): <br><strong>(2000px X 1270px)</strong>
                                     </label>
                                     <br>
@@ -94,7 +94,7 @@ $banners = listaBannerId($soller, $id);
                                     <?php } else { ?>
                                     <img src="arquivos/<?=$banner->arquivo_mobile;?>" alt="" width="240" height="auto"/> 
                                     <?php } ?>
-                                    <br>
+                                    <br><br><br>
                                     <label for="arquivo_mobile">Selecione a nova imagem (Mobile): <br><strong>(500px X 420px)</strong></label>
                                     <br>
                                     <button type="button" class="btn btn-warning">

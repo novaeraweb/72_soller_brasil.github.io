@@ -65,8 +65,8 @@ if(isset($recaptcha_response)){
       );
       // Define o remetente
       // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-      $mail->From = 'site@sollerbrasilinternational.com'; // Seu e-mail
-      $mail->Sender = 'site@sollerbrasilinternational.com'; // Seu e-mail
+      $mail->From = 'site@sollerbrasil.com'; // Seu e-mail
+      $mail->Sender = 'site@sollerbrasil.com'; // Seu e-mail
       $mail->FromName = $nome; // Seu nome
       $mail->AddAddress('export@sollerbrasil.com.br'); // Copia
       $mail->AddBCC('contato@novaeraweb.com.br'); // Cópia Oculta
@@ -97,7 +97,7 @@ if(isset($recaptcha_response)){
             } else if ($re_es){
                 header("Location: ../es/index.php?enviado=true");
             } else if ($re_pt){
-                header("Location: ../pt/index.php?enviado=true");
+                header("Location: ../pt-br/index.php?enviado=true");
             }
           
           } 
