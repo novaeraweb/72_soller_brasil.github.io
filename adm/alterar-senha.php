@@ -23,6 +23,7 @@ require_once "class.php";
 <body>
   <div class="wrapper ">
     <?php require_once "sidebar.php"?>
+  </div>
     <div class="main-panel">
       <!-- Navbar -->
       <?php require_once "dashboard.php"?>
@@ -48,19 +49,18 @@ require_once "class.php";
                 <div class="card col-md-8" style="padding-top: 20px;">
                     <form  class="col-md-8" method="POST" action="banco-alterar-senha.php">
                         <div class="form-group">
-                            <label for="nome">Usuário: </label>
-                            <input type="text" class="form-control" name="nome" id="nome" placeholder="<?php echo $_SESSION["usuario_logado"];?>" disabled>
-                            <input type="hidden" name="user_id" value="<?php echo $_SESSION["user_id"];?>">
+                          <label for="nome">Usuário: </label>
+                          <input type="text" class="form-control" name="nome" id="nome" placeholder="<?php echo $_SESSION["usuario_logado"];?>" disabled>
+                          <input type="hidden" name="user_id" value="<?php echo $_SESSION["user_id"];?>">
                         </div>
                         <br>
                         <div class="form-group">
-                            <label for="senhaatual">Senha atual:</label>
-                            <input type="text" class="form-control" name="senhaatual" id="senhaatual" placeholder="">
-                            
+                          <label for="senhaatual">Senha atual:</label>
+                          <input type="text" class="form-control" name="senhaatual" id="senhaatual" placeholder="">
                         </div>
                         <div class="form-group" style="margin-top:60px;">
-                            <label for="novasenha">Nova Senha:</label>
-                            <input type="text" class="form-control" name="novasenha" id="novasenha" placeholder="">
+                          <label for="novasenha">Nova Senha:</label>
+                          <input type="text" class="form-control" name="novasenha" id="novasenha" placeholder="">
                         </div>
                         <button type="submit" class="btn btn-info float-right">Confirmar</button>
                     </form>
