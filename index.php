@@ -28,7 +28,7 @@ $col_imgs = listaColecaoImgHome($soller);
 
     <!-- Schema.org markup -->
     <meta itemprop="name" content="S'ollér Brasil - Hair Cosmetics">
-    <meta itemprop="url" content="https://www.sollerbrasilinternational.com/index.php"/>
+    <meta itemprop="url" content="https://www.sollerbrasil.com/index.php"/>
     <meta itemprop="image" content="img/soller_shared.jpg" >
     <meta itemprop="description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
 
@@ -37,10 +37,10 @@ $col_imgs = listaColecaoImgHome($soller);
     <meta property="og:title" content="S'ollér Brasil - Hair Cosmetics">
     <meta property="og:description" content="S’ollér Brasil produces its cosmetics collections to always offer differentiated products. Lines for volume reduction, treatments, finishers, placement and discoloration. ">
     <meta property="og:site_name" content="S'ollér Brasil - Hair Cosmetics">
-    <meta property="og:url" content="https://www.sollerbrasilinternational.com/index.php">
+    <meta property="og:url" content="https://www.sollerbrasil.com/index.php">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.sollerbrasilinternational.com/img/soller_shared.jpg">
-    <meta property="og:image:secure_url" content="https://www.sollerbrasilinternational.com/img/soller_shared.jpg">
+    <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+    <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="2720">
     <meta property="og:image:height" content="960">
@@ -98,7 +98,6 @@ $col_imgs = listaColecaoImgHome($soller);
 					<div class="row-content buffer even clear-after">
 						<div class="section-title"><h2>The S'ollér</h2></div>
 						<p class="centertxt">Through our incredible network of S'ollér partners, we have been able to reach professionals,<br>consumers and take our collections to the whole world</p>
-						
 
 						<div class="row" style="text-align:center;">
                 <div class="column four" style="text-align:center;margin-left:4%;">
@@ -120,8 +119,6 @@ $col_imgs = listaColecaoImgHome($soller);
 					</div>	
 				</section>	
 				<section class="row section">
-
-
 				<div class="owl-carousel">
 					<?php foreach ($col_imgs as $col_img) { ?>
 						<?php if ($col_img->arquivo_home != '')  {?>
@@ -202,7 +199,6 @@ $col_imgs = listaColecaoImgHome($soller);
 						<a class="button red" href="reseller.php">Contact us</a>
 					</div>
 				</section>				
-
 			</div><!-- id-main -->
 		</main><!-- main -->
 		<?php require_once "footer.php" ?>
@@ -238,6 +234,6 @@ $col_imgs = listaColecaoImgHome($soller);
         }
     }
 })
-		</script>
-	</body>
+</script>
+</body>
 </html>

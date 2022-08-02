@@ -202,6 +202,7 @@ $col_imgs = listaColecaoImgHome($soller); ?>
 				</section>				
 
 			</div><!-- id-main -->
+			<?php require "alerta.php";?>
 		</main><!-- main -->
 		<?php require_once "footer.php" ?>
 		<script src="https://code.jquery.com/jquery.js"></script>

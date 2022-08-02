@@ -203,19 +203,21 @@ $col_imgs = listaColecaoImgHome($soller);?>
 						</div>					
 					</div>	
 				</section>	
-
 				<section class="row section">
-
 				</section>	
-				
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
 						<p>¿Quieres ser nuestra representante?</p>
 						<a class="button red" href="reseller.php">Contacta con nosotras</a>
 					</div>
 				</section>				
-
 			</div><!-- id-main -->
+<?php require "alerta.php";?>
+<style type="text/css">
+	.swal2-title {
+		font-size: 1.5em;
+	}
+</style>
 		</main><!-- main -->
 		<?php require_once "footer.php" ?>
 		<script src="https://code.jquery.com/jquery.js"></script>
@@ -249,6 +251,6 @@ $col_imgs = listaColecaoImgHome($soller);?>
         }
     }
 })
-		</script>
-	</body>
+</script>
+</body>
 </html>
