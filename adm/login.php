@@ -15,8 +15,12 @@
 
         $_SESSION['expirar'] = $_SESSION["logado"] + (60*30);
         
-        $_SESSION["user_id"] = $user;
-        $_SESSION["user_senha"] = $senha;
+        mysqli_select_db($soller, $database_soller);
+        $query = "SELECT * FROM usuario WHERE user = '$user'";
+        $rs_id = mysqli_query($soller, $query) or die(mysqli_error($soller));
+        $row_rs = mysqli_fetch_assoc($rs_id);
+        $_SESSION["user_id"] = $row_rs['idusuario'];
+        $_SESSION["user_senha"] = $row_rs['senha'];
         header('location:home.php');
 
       } else {

@@ -8,7 +8,7 @@ $senhaAtual = md5($senhaAtual);
 $novasenha = $_POST['novasenha'];
 $senhaMd5 = md5($novasenha);
 
-$user_id = $_POST["user_id"];
+$user_id = $_SESSION["user_id"];
 $senha = $_SESSION['user_senha'];
 
 if ($senhaAtual === $senha){

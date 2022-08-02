@@ -15,5 +15,6 @@ if (ini_get("session.use_cookies")) {
 }
 
 // Por último, destrói a sessão
-   session_destroy();
+session_unset();
+session_destroy();
    header('location:index.php');
