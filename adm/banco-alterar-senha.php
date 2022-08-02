@@ -17,7 +17,7 @@ if ($senhaAtual === $senha){
     // $usuario = mysqli_fetch_assoc($resultado);
     $_SESSION["user_senha"] = $senhaMd5;
 }  else {
-    echo "Senha atual incorreta";
+    header("Location: alterar-senha.php?alterado=false");
 }
 
 	
