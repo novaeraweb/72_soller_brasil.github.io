@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once "conecta.php";
-mysqli_select_db($soller, $database_omics);
+mysqli_select_db($soller, $database_soller);
 
 $senhaAtual = $_POST['senhaatual'];
 $senhaAtual = md5($senhaAtual);
