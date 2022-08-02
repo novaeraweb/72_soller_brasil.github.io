@@ -81,7 +81,7 @@ mysqli_select_db($soller, 'sollerbrasil');
 
     require "adicionar-imagens-red.php";
 
-    if ($linha == ''){
+    if ($linha == '0'){
         $linha = '0';
     } else {
         $linha_en = $linha - 1;
