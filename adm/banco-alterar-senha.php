@@ -16,10 +16,9 @@ if ($senhaAtual === $senha){
     $resultado = mysqli_query($soller, $query) or die(mysqli_error($soller));  
     // $usuario = mysqli_fetch_assoc($resultado);
     $_SESSION["user_senha"] = $senhaMd5;
-}  else {
+    header("Location: home.php?alterado=true");
+}  else if ($senhaAtual !== $senha) {
     header("Location: alterar-senha.php?alterado=false");
 }
 
 	
-
-header("Location: home.php?alterado=true");
