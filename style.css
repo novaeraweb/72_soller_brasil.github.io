@@ -3687,7 +3687,7 @@ footer .row-content.buffer {
 
     #brand a,
     nav a {
-        color: #333 !important;
+        color: white !important;
     }
 
     nav a:hover {
@@ -3788,6 +3788,35 @@ footer .row-content.buffer {
         box-shadow: none;
     }
 
+.revenda {
+    margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+.banner-company {
+  background-image: url(img/banner-company-mobile.jpg);
+}
+.banner-infra {
+  background-image: url(img/banner-infra-mobile.jpg);
+}
+.banner-comex {
+  background-image: url(img/banner-comex-mobile.jpg);
+}
+.banner-contato {
+    background-image: url(img/banner-contato-mobile.jpg);
+    height: 260px;
+}
+.banner-reseller {
+    background-image: url(img/banner-reseller-mobile.jpg);
+    height: 260px;
+}
+.texto {
+    padding: 0 7%;
+}
+.titulo {
+    font-size:1.8em;
+    text-align: center;
+}
     #intro {
         position: relative;
     }

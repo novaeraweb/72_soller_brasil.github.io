@@ -10,55 +10,55 @@ $result = mysqli_fetch_assoc($resultado_categorias);
 $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 ?>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
-		<style type="text/css">@-ms-viewport{width: device-width;}</style>
-		<title><?=$result['nome'];?> | S'ollér Brasil</title>
-		<link rel="stylesheet" href="../css/layers.min.css" media="screen">
-		<link rel="stylesheet" href="../css/font-awesome.min.css" media="screen"> 
-		<link rel="stylesheet" href="../style.css" media="screen">
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
-    <!-- Favico -->
-    <link rel="shortcut icon" href="../img/fav/favicon.ico" type="image/x-icon">
-    <link rel="apple-icon" sizes="57x57" href="../img/fav/apple-icon-57x57.png">
-    <link rel="apple-icon" sizes="72x72" href="../img/fav/apple-icon-72x72.png">
-    <link rel="apple-icon" sizes="76x76" href="../img/fav/apple-icon-76x76.png">
-    <link rel="apple-icon" sizes="114x114" href="../img/fav/apple-icon-114x114.png">
-    <link rel="apple-icon" sizes="120x120" href="../img/fav/apple-icon-120x120.png">
-    <link rel="apple-icon" sizes="144x144" href="../img/fav/apple-icon-144x144.png">
-    <link rel="apple-icon" sizes="152x152" href="../img/fav/apple-icon-152x152.png">
-    <link rel="apple-icon" sizes="180x180" href="../img/fav/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../img/fav/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/fav/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/fav/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../img/fav/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
+<style type="text/css">@-ms-viewport{width: device-width;}</style>
+<title><?=$result['nome'];?> | S'ollér Brasil</title>
+<link rel="stylesheet" href="../css/layers.min.css" media="screen">
+<link rel="stylesheet" href="../css/font-awesome.min.css" media="screen"> 
+<link rel="stylesheet" href="../style.css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!-- Favico -->
+<link rel="shortcut icon" href="../img/fav/favicon.ico" type="image/x-icon">
+<link rel="apple-icon" sizes="57x57" href="../img/fav/apple-icon-57x57.png">
+<link rel="apple-icon" sizes="72x72" href="../img/fav/apple-icon-72x72.png">
+<link rel="apple-icon" sizes="76x76" href="../img/fav/apple-icon-76x76.png">
+<link rel="apple-icon" sizes="114x114" href="../img/fav/apple-icon-114x114.png">
+<link rel="apple-icon" sizes="120x120" href="../img/fav/apple-icon-120x120.png">
+<link rel="apple-icon" sizes="144x144" href="../img/fav/apple-icon-144x144.png">
+<link rel="apple-icon" sizes="152x152" href="../img/fav/apple-icon-152x152.png">
+<link rel="apple-icon" sizes="180x180" href="../img/fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../img/fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/fav/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../img/fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
-    <!-- Schema.org markup -->
-    <meta itemprop="name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta itemprop="url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['idcategoria'];?>"/>
-    <meta itemprop="image" content="../img/soller_shared.jpg" >
-    <meta itemprop="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
+<!-- Schema.org markup -->
+<meta itemprop="name" content="<?=$result['nome'];?> | S'ollér Brasil">
+<meta itemprop="url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['idcategoria'];?>"/>
+<meta itemprop="image" content="../img/soller_shared.jpg" >
+<meta itemprop="description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
 
-    <!-- facebook -->
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta property="og:description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
-    <meta property="og:site_name" content="<?=$result['nome'];?> | S'ollér Brasil">
-    <meta property="og:url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['idcategoria'];?>">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
-    <meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="2720">
-    <meta property="og:image:height" content="960">
-    <meta property="fb:app_id" content="819613408060975" />
+<!-- facebook -->
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="<?=$result['nome'];?> | S'ollér Brasil">
+<meta property="og:description" content="S'ollér Brasil produce sus colecciones de cosméticos para ofrecer siempre productos diferenciados. Líneas para reducción de volumen, tratamientos, acabados, coloración y decoloración. ">
+<meta property="og:site_name" content="<?=$result['nome'];?> | S'ollér Brasil">
+<meta property="og:url" content="https://www.sollerbrasil.com/es/colecoes.php?id=<?=$result['idcategoria'];?>">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+<meta property="og:image:secure_url" content="https://www.sollerbrasil.com/img/soller_shared.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="2720">
+<meta property="og:image:height" content="960">
+<meta property="fb:app_id" content="819613408060975" />
 
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -135,8 +135,8 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 													<img src="../adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
 												</figure>
 											</div>
-											<div class="column seven" style="text-align:justify;">
-												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong></p>
+											<div class="column seven texto" style="text-align:justify;">
+												<p class="mbr-content-title mbr-bold mbr-fonts-style display-7 titulo"><strong><?=$produto->nome;?></strong></p>
 												<p style="text-align: left;"> <?=$produto->descricao;?></p>
 												<div class="peso">
 													<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
@@ -199,21 +199,18 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 								<?php }?>
 						</div>
 				</section>
-			
 				<?php } ?>
-				
 				<section class="row section call-to-action">
 					<div class="row-content buffer even animation">
 						<p>¿Quieres ser nuestra representante?</p>
 						<a class="button red" href="#">Contacta con nosotras</a>
 					</div>
 				</section>					
-
-			</div><!-- id-main -->
-		</main><!-- main -->
-		<?php require_once "footer.php" ?>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="../js/plugins.js"></script>
-		<script src="../js/beetle.js"></script>
-	</body>
+</div><!-- id-main -->
+</main><!-- main -->
+<?php require_once "footer.php" ?>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/beetle.js"></script>
+</body>
 </html>
