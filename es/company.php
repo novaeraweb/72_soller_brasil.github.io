@@ -157,29 +157,6 @@
 										<p></p>
 									</div><!-- experience-info -->
 								</div><!-- experience -->								
-							</div><!-- year -->	
-							<div class="year">
-								<time datetime="2016">2016/2017</time>
-								<div class="experience">
-									<span class="circle"></span>
-									<div class="experience-info clear-after">
-										<h5>SUPERCONCIENCIA</h5>
-										<div class="role">S’ollér Brasil hoy produce al rededor 900tons por año. Esta presente en todo país y en más de 40 países.</div>
-										<p></p>
-									</div><!-- experience-info -->
-								</div><!-- experience -->								
-							</div><!-- year -->	
-							<div class="year">
-								<time datetime="2016">2021</time>
-								<div class="experience">
-									<span class="circle"></span>
-								
-									<div class="experience-info clear-after">
-										<h5>TEXT</h5>
-										<div class="role">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra Aenean molestie nisi<br>vel vestibulum scelerisque.</div>
-										<p></p>
-									</div><!-- experience-info -->
-								</div><!-- experience -->								
 							</div><!-- year -->									
 						</div><!-- timeline -->
 					</div>	
@@ -192,7 +169,7 @@
 					<div class="row-content buffer even clear-after">
 						<div class="column" style="text-align:justify;">
 							<p>Nuestros productos son creados y desarrollados por nuestros equipos de Investigación y Desarrollo, en estructuras modernas y diferenciadas. Nuestros laboratorios cuentan con sectores de Control de Calidad y maquinarias automatizadas, disminuyendo el contacto humano y aumentando la calidad de nuestros productos. Además, nuestros productos son envasados y etiquetados en el mismo parque de producción, agilizando la logística y eliminando contacto con agentes contaminantes.</p>
-							<p>Al año, <strong>S’ollér Brasil</strong> cuenta con la capacidad de producción de 900 toneladas de productos, distribuidos por nuestra estructura logística de más de 10 mil metros². Es con esta estructura sólida y moderna que conseguimos producir colecciones innovadoras y con calidad excepcional para llevar a todo el mundo productos de belleza.</p>
+							<p>Es con esta estructura sólida y moderna que conseguimos producir colecciones innovadoras y con calidad excepcional para llevar a todo el mundo productos de belleza.</p>
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>	

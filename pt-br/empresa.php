@@ -141,25 +141,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row timeline-element reverse">
-                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-5"><strong>
-                           2016/2017</strong></p>
-                    </div>
-                </div>
-                <span class="iconBackground"></span>
-                <div class="col-xs-12 col-md-6 align-right">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
-                            Superconceituada</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">
-                            A S’ollér Brasil hoje produz uma média de 900 toneladas de produtos por ano. Presente em todo o território Nacional e em mais de 40 países
-                        </p>
-                    </div>
-                </div>
-            </div>            
+           
         </div>
     </div>
 </section>
@@ -200,7 +182,7 @@
 <section class="mbr-section article content1 cid-qvHGmQNl7S" id="content1-26" data-rv-view="490">
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Os produtos S'ollér são criados e elaborados por nossas equipes de Pesquisa &amp; Desenvolvimento, em estruturas modernas e diferenciadas. Nossos laboratórios contam com setores de Controle de Qualidade e maquinários automatizados, reduzindo o contato humano e aumentando a qualidade dos nossos produtos, que são envasados e rotulados no mesmo parque de produção, agilizando a logística e eliminando contato com agentes contaminadores.</p><p><span style="font-size: 1rem;">Ao ano, a <strong>S’ollér Brasil </strong>conta com a capacidade de produção de 900 toneladas, alocados por todo o nosso parque fabril.  É com essa estrutura sólida e moderna que conseguimos produzir coleções inovadoras e com qualidade excepcional para levar produtos de beleza ao mundo todo.</span><br></p></div>
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Os produtos S'ollér são criados e elaborados por nossas equipes de Pesquisa &amp; Desenvolvimento, em estruturas modernas e diferenciadas. Nossos laboratórios contam com setores de Controle de Qualidade e maquinários automatizados, reduzindo o contato humano e aumentando a qualidade dos nossos produtos, que são envasados e rotulados no mesmo parque de produção, agilizando a logística e eliminando contato com agentes contaminadores.</p><p><span style="font-size: 1rem;">É com essa estrutura sólida e moderna que conseguimos produzir coleções inovadoras e com qualidade excepcional para levar produtos de beleza ao mundo todo.</span><br></p></div>
         </div>
     </div>
 </section>

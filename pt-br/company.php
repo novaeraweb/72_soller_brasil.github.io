@@ -158,18 +158,7 @@
 										<p></p>
 									</div><!-- experience-info -->
 								</div><!-- experience -->								
-							</div><!-- year -->	
-							<div class="year">
-								<time datetime="2016">2016/2017</time>
-								<div class="experience">
-									<span class="circle"></span>
-									<div class="experience-info clear-after">
-										<h5>SUPERCONCEITUADA</h5>
-										<div class="role">A S’ollér Brasil hoje produz uma média de 900 toneladas de produtos por ano. Presente em todo o território Nacional e em mais de 40 países.</div>
-										<p></p>
-									</div><!-- experience-info -->
-								</div><!-- experience -->								
-							</div><!-- year -->								
+							</div><!-- year -->							
 						</div><!-- timeline -->
 					</div>	
 				</section>
@@ -181,7 +170,7 @@
 					<div class="row-content buffer even clear-after">
 						<div class="column" style="text-align:justify;">
 							<p>Os produtos S'ollér são criados e elaborados por nossas equipes de Pesquisa & Desenvolvimento, em estruturas modernas e diferenciadas. Nossos laboratórios contam com setores de Controle de Qualidade e maquinários automatizados, reduzindo o contato humano e aumentando a qualidade dos nossos produtos, que são envasados e rotulados no mesmo parque de produção, agilizando a logística e eliminando contato com agentes contaminadores.</p>
-							<p>Ao ano, a <strong>S’ollér Brasil</strong> conta com a capacidade de produção de 900 toneladas, alocados por todo o nosso parque fabril. É com essa estrutura sólida e moderna que conseguimos produzir coleções inovadoras e com qualidade excepcional para levar produtos de beleza ao mundo todo.</p>
+							<p>É com essa estrutura sólida e moderna que conseguimos produzir coleções inovadoras e com qualidade excepcional para levar produtos de beleza ao mundo todo.</p>
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>	
