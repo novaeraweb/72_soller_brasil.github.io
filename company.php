@@ -161,7 +161,7 @@
 					
 						</div><!-- timeline -->
 					</div>	
-				</section>
+				</section>		
 				<div class="banner-infra" style="color:white; text-align: center;padding-top:2%;height:230px;">
 				<h2 style="color:white;">INFRASTRUCTURE</h2>
 				<p>We are located in a wide production park that allows us to<br>produce products of differentiated quality and with exclusive formulas.</p>
@@ -173,7 +173,9 @@
 							<p>It is with this solid and modern structure that we are able to produce innovative collections of exceptional quality to bring beauty products around the world.</p>
 						</div><!-- timeline-label -->		
 					</div>	
-				</section>	
+				</section>
+				<div class="banner-aereo">
+				</div>		
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<h3>Talk with us</h3>

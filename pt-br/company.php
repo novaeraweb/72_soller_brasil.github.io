@@ -173,7 +173,9 @@
 							<p>É com essa estrutura sólida e moderna que conseguimos produzir coleções inovadoras e com qualidade excepcional para levar produtos de beleza ao mundo todo.</p>
 						</div><!-- timeline-label -->		
 					</div>	
-				</section>	
+				</section>
+				<div class="banner-aereo">
+				</div>	
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<h3>Entre em Contato:</h3>
