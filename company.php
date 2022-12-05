@@ -164,13 +164,13 @@
 				</section>		
 				<div class="banner-infra" style="color:white; text-align: center;padding-top:2%;height:230px;">
 				<h2 style="color:white;">INFRASTRUCTURE</h2>
-				<p>We are located in a wide production park that allows us to<br>produce products of differentiated quality and with exclusive formulas.</p>
+				<p>We are located in a large production park that makes<br> it possible to manufacture products with high quality and exclusive formulas.</p>
 			</div><!-- intro-wrap -->							
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="column" style="text-align:justify;">
-							<p>Our products are created and developed by our Research & Development teams, in modern and differentiated structures. Our laboratories count on sectors of Quality Control and automated machinery, reducing the human contact and increasing the quality of our products. In addition, our products are packaged and labeled in the same production park, streamlining logistics and eliminating contact with contaminants.</p>
-							<p>It is with this solid and modern structure that we are able to produce innovative collections of exceptional quality to bring beauty products around the world.</p>
+							<p>S’ollér Brasil products are created and elaborated by our Research & Development team in modern structures using the highest technology. Our laboratories have a Quality Control sector and high-performance automated machinery, thus reducing human contact and increasing the quality of products that are bottled and labeled in the same production park, streamlining logistics and eliminating contact with contaminating agents.</p>
+							<p>Currently our industrial park has around 13 thousand square meters, with a solid and modern structure to make innovative collections with exceptional quality taking beauty products to the whole world.</p>
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>

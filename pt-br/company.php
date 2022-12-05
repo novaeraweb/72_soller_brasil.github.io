@@ -164,13 +164,13 @@
 				</section>
 				<div class="banner-infra" style="color:white; text-align: center;padding-top:2%;height:230px;">
 				<h2 style="color:white;">INFRAESTRUTURA</h2>
-				<p>Estamos localizados em um amplo parque de produção que nos possibilita<br> fabricar produtos com qualidade diferenciada e fórmulas exclusivas.</p>
+				<p>Estamos localizados em um amplo parque de produção que possibilita<br> a fabricação de produtos com alta qualidade e fórmulas exclusivas.</p>
 			</div><!-- intro-wrap -->							
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="column" style="text-align:justify;">
-							<p>Os produtos S'ollér são criados e elaborados por nossas equipes de Pesquisa & Desenvolvimento, em estruturas modernas e diferenciadas. Nossos laboratórios contam com setores de Controle de Qualidade e maquinários automatizados, reduzindo o contato humano e aumentando a qualidade dos nossos produtos, que são envasados e rotulados no mesmo parque de produção, agilizando a logística e eliminando contato com agentes contaminadores.</p>
-							<p>É com essa estrutura sólida e moderna que conseguimos produzir coleções inovadoras e com qualidade excepcional para levar produtos de beleza ao mundo todo.</p>
+							<p>Os produtos S’ollér Brasil são criados e elaborados por nossa equipe de Pesquisa & Desenvolvimento em estruturas modernas usando a mais alta tecnologia. Nossos laboratórios contam com setor de Controle de Qualidade e maquinários automatizado de alta performance, reduzindo assim o contato humano e aumentando a qualidade dos produtos que são envasados e rotulados no mesmo parque de produção, agilizando a logística e eliminando contato com agentes contaminadores.</p>
+							<p>Atualmente nosso parque fabril conta com cerca de 13 mil m², com estrutura sólida e moderna para produzir coleções inovadores e com qualidade excepcional para levar produtos de beleza ao mundo todo.</p>
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>

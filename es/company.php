@@ -163,13 +163,13 @@
 				</section>
 				<div class="banner-infra" style="color:white; text-align: center;padding-top:2%;height:230px;">
 				<h2 style="color:white;">INFRAESTRUCTURA</h2>
-				<p>Estamos ubicados en un amplio parque de producción que nos permite<br> producir productos de calidad diferenciada y con fórmulas exclusivas.</p>
+				<p>Estamos ubicados en un gran parque productivo que permite<br> fabricar productos de alta calidad y fórmulas exclusivas.</p>
 			</div><!-- intro-wrap -->							
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="column" style="text-align:justify;">
-							<p>Nuestros productos son creados y desarrollados por nuestros equipos de Investigación y Desarrollo, en estructuras modernas y diferenciadas. Nuestros laboratorios cuentan con sectores de Control de Calidad y maquinarias automatizadas, disminuyendo el contacto humano y aumentando la calidad de nuestros productos. Además, nuestros productos son envasados y etiquetados en el mismo parque de producción, agilizando la logística y eliminando contacto con agentes contaminantes.</p>
-							<p>Es con esta estructura sólida y moderna que conseguimos producir colecciones innovadoras y con calidad excepcional para llevar a todo el mundo productos de belleza.</p>
+							<p>Los productos de S’ollér Brasil son creados y elaborados por nuestro equipo de Investigación y Desarrollo en modernas estructuras usando la más alta tecnología. Nuestros laboratorios cuentan con un sector de Control de Calidad y maquinaria automatizada de alto rendimiento, reduciendo así el contacto humano y aumentando la calidad de los productos que son envasados y etiquetados en el mismo parque de producción, agilizando la logística y eliminando el contacto con agentes contaminantes.</p>
+							<p>Actualmente nuestro parque industrial cuenta con alrededor de 13 mil metros cuadrados, con una estructura sólida y moderna para producir colecciones innovadoras y con una calidad excepcional para llevar productos de belleza a todo el mundo.</p>
 						</div><!-- timeline-label -->		
 					</div>	
 				</section>
