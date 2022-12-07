@@ -168,14 +168,18 @@
 			</div><!-- intro-wrap -->							
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
-						<div class="column" style="text-align:justify;">
+						<div class="column six" style="text-align:justify;">
 							<p>S’ollér Brasil products are created and elaborated by our Research & Development team in modern structures using the highest technology. Our laboratories have a Quality Control sector and high-performance automated machinery, thus reducing human contact and increasing the quality of products that are bottled and labeled in the same production park, streamlining logistics and eliminating contact with contaminating agents.</p>
+
+						</div><!-- timeline-label -->
+						<div class="column five">
+							<img src="img/soller-brasil-foto-aerea.webp">
+						</div>
+						<div class="column" style="margin-top:80px;">
 							<p>Currently our industrial park has around 13 thousand square meters, with a solid and modern structure to make innovative collections with exceptional quality taking beauty products to the whole world.</p>
-						</div><!-- timeline-label -->		
+						</div>
 					</div>	
-				</section>
-				<div class="banner-aereo">
-				</div>		
+				</section>	
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<h3>Talk with us</h3>
