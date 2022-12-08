@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="The Page Description">
+		<meta name="description" content="In order to bring the quality of S'ollér Brazil products to every corner of the world, we dream higher and start our international opening in 2008, with partners who believe in the brand and gain space in other continents.">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
 		<title>Comex Internacional</title>
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
@@ -111,7 +111,6 @@
 				<section class="row section">
 					<div class="row-content buffer even clear-after">
 						<div class="section-title"><h3>Want to be our representative?</h3></div>	
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra quam quis justo euismod, vitae fringilla magna rhoncus.</p>
 						<div class="column nine">
 						<form id="contact-form" class="contact-section" method="post" action="phpmailer/mailer.php" onsubmit="return validaCaptcha()">
 								<span class="pre-input"><i class="icon icon-user"></i></span>
