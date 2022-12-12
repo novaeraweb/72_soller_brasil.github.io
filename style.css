@@ -381,10 +381,10 @@ header {
     position: relative !important;
 }
 
-.no-parallax header.transparent.light #brand a,
+/* .no-parallax header.transparent.light #brand a,
 .no-parallax header.transparent.light nav > ul > li > a {
     color: #333 !important;
-}
+} */
 
 header.transition {
     -webkit-transition: background-color 0.3s ease;
