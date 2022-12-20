@@ -124,7 +124,7 @@ $col_imgs = listaColecaoImgHome($soller);?>
                   <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">países alcanzados<br> hasta 2017</h4>
                 </div>
                 <div class="column four" style="text-align:center;">
-                  <img src="../img/img/icon-cruelty-free.svg" height="100" style="margin:0 auto">
+                  <img src="../img/icon-cruelty-free.svg" height="100" style="margin:0 auto">
                   <h3><strong>X</strong></h3>
                   <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">no testeamos en<br>animales</h4>
                 </div>
