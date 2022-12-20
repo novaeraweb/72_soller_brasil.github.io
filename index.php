@@ -111,9 +111,9 @@ $col_imgs = listaColecaoImgHome($soller);
                   <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">countries reached <br>by 2017</h4>
                 </div>
                 <div class="column four" style="text-align:center;">
-                  <img src="img/900-toneladas-cosmeticos.svg" height="100" style="margin:0 auto">
-                  <h3><strong>900</strong></h3>
-                  <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">tons of products <br>produced per year</h4>
+                  <img src="img/icon-cruelty-free.svg" height="100" style="margin:0 auto">
+                  <h3><strong>X</strong></h3>
+                  <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">not test on<br> animals</h4>
                 </div>
             </div>
 					</div>	
