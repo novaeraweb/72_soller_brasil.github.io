@@ -1,6 +1,4 @@
 <?php 
-
-// Queries Categorias
 function listaCategoria ($soller) {
  	$query = "SELECT cat.*, i.ididioma
 	 		  FROM categoria cat
@@ -239,13 +237,13 @@ function listaColecaoId($soller, $id){
 	return $colecoes;
 }
 
-function listaColecaoImgHome($soller){
+function listaColecaoImgHomeUS($soller){
 	$query = "SELECT c.*, cat.idcategoria, i.ididioma
 			  FROM colecao c
 			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
 			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
-			  WHERE c.ididioma_col = '2'
-			  ORDER BY c.nome ASC";
+			  WHERE c.ididioma_col = '1'
+			  ORDER BY c.idcolecao ASC";
 
 	$resultado = mysqli_query($soller, $query);
 	$colecoes = array();
@@ -259,6 +257,7 @@ function listaColecaoImgHome($soller){
 		$colecao->arquivo = $array['arquivo'];
 		$colecao->arquivo_home = $array['arquivo_home'];
 		$colecao->video = $array['video'];
+		$colecao->link = $array['link'];
 		$colecao->ativo = $array['ativo'];
 		$colecao->idcategoria = $array['idcategoria'];
 		$colecao->ididioma_col = $array['ididioma_col'];
@@ -270,7 +269,70 @@ function listaColecaoImgHome($soller){
 	}
 	return $colecoes;
 }
+function listaColecaoImgHomeBR($soller){
+	$query = "SELECT c.*, cat.idcategoria, i.ididioma
+			  FROM colecao c
+			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
+			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
+			  WHERE c.ididioma_col = '2'
+			  ORDER BY c.idcolecao ASC";
 
+	$resultado = mysqli_query($soller, $query);
+	$colecoes = array();
+	while ($array = mysqli_fetch_assoc($resultado)){
+		$colecao = new Colecao();
+		$colecao->idcolecao = $array['idcolecao'];
+		$colecao->nome = $array['nome'];
+		$colecao->descricao = $array['descricao'];
+		$colecao->indicacao = $array['indicacao'];
+		$colecao->acao = $array['acao'];
+		$colecao->arquivo = $array['arquivo'];
+		$colecao->arquivo_home = $array['arquivo_home'];
+		$colecao->video = $array['video'];
+		$colecao->link = $array['link'];
+		$colecao->ativo = $array['ativo'];
+		$colecao->idcategoria = $array['idcategoria'];
+		$colecao->ididioma_col = $array['ididioma_col'];
+		$colecao->data = $array['data'];
+		$colecao->user = $array['user'];
+		$colecao->hora = $array['hora'];
+
+		array_push($colecoes, $colecao);
+	}
+	return $colecoes;
+}
+function listaColecaoImgHomeES($soller){
+	$query = "SELECT c.*, cat.idcategoria, i.ididioma
+			  FROM colecao c
+			  INNER JOIN categoria cat ON (cat.idcategoria = c.idcategoria)
+			  INNER JOIN idioma i ON (i.ididioma = c.ididioma_col)
+			  WHERE c.ididioma_col = '3'
+			  ORDER BY c.idcolecao ASC";
+
+	$resultado = mysqli_query($soller, $query);
+	$colecoes = array();
+	while ($array = mysqli_fetch_assoc($resultado)){
+		$colecao = new Colecao();
+		$colecao->idcolecao = $array['idcolecao'];
+		$colecao->nome = $array['nome'];
+		$colecao->descricao = $array['descricao'];
+		$colecao->indicacao = $array['indicacao'];
+		$colecao->acao = $array['acao'];
+		$colecao->arquivo = $array['arquivo'];
+		$colecao->arquivo_home = $array['arquivo_home'];
+		$colecao->video = $array['video'];
+		$colecao->link = $array['link'];
+		$colecao->ativo = $array['ativo'];
+		$colecao->idcategoria = $array['idcategoria'];
+		$colecao->ididioma_col = $array['ididioma_col'];
+		$colecao->data = $array['data'];
+		$colecao->user = $array['user'];
+		$colecao->hora = $array['hora'];
+
+		array_push($colecoes, $colecao);
+	}
+	return $colecoes;
+}
 function listaColecaoIdEn($soller, $id){
 	$id = $id-1;
 	$query = "SELECT c.*, cat.idcategoria, i.ididioma

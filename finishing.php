@@ -11,7 +11,6 @@
 <?php if (isset($_GET['source'])): ?>
 <?php $source = $_GET['source']; ?>
 <?php endif; ?>
-
 <?php include 'includes/navbar.php' ?>
 
 <section class="mbr-section content5 cid-qvC4ePNet9 mbr-parallax-background" id="content5-5p" data-rv-view="600">
