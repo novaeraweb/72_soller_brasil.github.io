@@ -8,7 +8,6 @@ $query_categorias = "SELECT c.*, i.ididioma FROM categoria c LEFT JOIN idioma i 
 $resultado_categorias = mysqli_query($soller, $query_categorias);
 $result = mysqli_fetch_assoc($resultado_categorias);
 $colecoes = listaColecaoFrontPt($soller, $categoria_get);
-$banners = listaBannerHome($soller);
 ?>
 <html lang="pt_BR">
 <head>
@@ -85,7 +84,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>	
 			</div>					
 		</div>
-	</div?>
+	</div>
 	<div id="main">
 		<?php if (isset($result['descricao_longa'])) { ?>
 			<section class="row section">
@@ -192,16 +191,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<?php }?>	
 						</div>
 					</div>
-			
 			</section>
 		<?php } ?>
-			<section class="row section call-to-action">
-				<div class="row-content buffer even animation">
-					<p>Quer se tornar nosso representante?</p>
-					<a class="button red" href="reseller.php">Entre em contato</a>
-				</div>
-			</section>					
-	</div>
+<section class="row section call-to-action">
+<div class="row-content buffer even animation">
+<p>Quer se tornar nosso representante?</p>
+<a class="button red" href="reseller.php">Entre em contato</a>
+</div>
+</section>					
+</div>
 </main>
 <?php require_once "footer.php" ?>
 <script src="https://code.jquery.com/jquery.js"></script>	

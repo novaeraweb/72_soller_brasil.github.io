@@ -8,6 +8,7 @@ $query_categorias = "SELECT c.*, i.ididioma FROM categoria c LEFT JOIN idioma i 
 $resultado_categorias = mysqli_query($soller, $query_categorias);
 $result = mysqli_fetch_assoc($resultado_categorias);
 $colecoes = listaColecaoFrontEn($soller, $categoria_get);
+$banners = listaBannerHome($soller);
 ?>
 <html lang="en">
 <head>
