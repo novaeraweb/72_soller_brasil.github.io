@@ -115,12 +115,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	                </div>
         		</div>
 			</div>	
-		</section>	
+		</section>
+
 		<section class="row section">
 			<div class="owl-carousel">
 				<?php foreach ($col_imgs as $col_img) { ?>
 					<?php if ($col_img->arquivo_home != '')  {?>
-						<div><a href="colecoes.php?id=<?=$col_img->link?>"><img src="../adm/arquivos/<?=$col_img->arquivo_home;?>" alt="<?=$col_img->nome;?>" class="sombra"></a></div>	
+
+
+							<?php if ($col_img->link == '26#RadiancePlus')  {?>
+
+
+							<div>
+								<a href="colecoes-h.php?id=<?=$col_img->link?>"><img src="../adm/arquivos/<?=$col_img->arquivo_home;?>" alt="<?=$col_img->nome;?>" class="sombra"></a>
+							</div>	
+
+
+							<?php } else { ?>
+
+
+						<div><a href="colecoes.php?id=<?=$col_img->link?>"><img src="../adm/arquivos/<?=$col_img->arquivo_home;?>" alt="<?=$col_img->nome;?>" class="sombra"></a></div>
+						
+						<?php } ?>
+
+
 					<?php } ?>
 				<?php } ?>
 			</div>
@@ -196,12 +214,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</section>
 	</div>
-	<?php require "alerta.php";?>
+<?php require "alerta.php";?>
 </main><!-- main -->
 <?php require_once "footer.php" ?>
 <script src="https://code.jquery.com/jquery.js"></script>
-<script src="../js/owl.carousel.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+<script src="../js/owl.carousel.min.js"></script>	
 <script src="../js/plugins.js"></script>
 <script src="../js/beetle.js"></script>
 <script type="text/javascript">

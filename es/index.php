@@ -128,7 +128,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="owl-carousel">
 				<?php foreach ($col_imgs as $col_img) { ?>
 					<?php if ($col_img->arquivo_home != '')  {?>
+
+							<?php if ($col_img->link == '27#RadiancePlus')  {?>
+
+
+							<div>
+								<a href="colecoes-h.php?id=<?=$col_img->link?>"><img src="../adm/arquivos/<?=$col_img->arquivo_home;?>" alt="<?=$col_img->nome;?>" class="sombra"></a>
+							</div>	
+
+
+							<?php } else { ?>
+
+
 						<div><a href="colecoes.php?id=<?=$col_img->link?>"><img src="../adm/arquivos/<?=$col_img->arquivo_home;?>" alt="<?=$col_img->nome;?>" class="sombra"></a></div>	
+
+							<?php } ?>
+
+
 					<?php } ?>
 				<?php } ?>
 			</div>

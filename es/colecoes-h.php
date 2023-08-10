@@ -122,7 +122,7 @@ $colecoes = listaColecaoFrontEs($soller, $categoria_get);
 								$resultado_professional = mysqli_query($soller, $query_professional);
 								$result_professional = mysqli_fetch_assoc($resultado_professional);?>
 							<?php if(isset($result_professional)) { ?>
-						  	<h3>Professional Line</h3><br><br>
+						  	<h3>Professional Line</h3>
 							<?php } ?>
 							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção) // A variável total verifica o nº de produtos de uma determinada coleção para decidir o tamanho da div
 									$count = 1; $produtos = listaProdutoFrontEs($soller, $idcol); 

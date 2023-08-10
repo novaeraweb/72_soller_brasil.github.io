@@ -95,12 +95,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<?php } else { ?>
 		<?php } ?>
 		<?php foreach ($colecoes as $colecao) {	$idcol = $colecao->idcolecao;?>
-			<div id="<?=str_replace(' ', '', $colecao->nome);?>" style="height:80px;"></div>
+			<div id="<?=str_replace(' ', '', $colecao->nome);?>"></div>
 			<section class="row section section-volume bg" style="background: url(../adm/arquivos/<?=$colecao->arquivo;?>) no-repeat; background-size: 100%;">
 			</section>
 			<section class="row section section-volume">
 					<div class="text-center">
-						<div class="row-content buffer even clear-after" style="padding-top:0;">
+						<div class="row-content buffer even clear-after" style="padding-top:0;padding-bottom:0;">
 							<?=$colecao->descricao;?><br>
 						</div>
 						<?php $id = $colecao->idcolecao;
@@ -152,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<?php }?>
 						</div>
 						<?php if(isset($result_main)) { ?>
-					  	<div><hr></div><h3 style="padding-top: 5%;">Line Maintenance</h3><br><br>
+					  	<div><hr></div><h3>Line Maintenance</h3><br><br>
 						<?php } ?>
 						<div style="margin-left:8%;">					
 										<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)

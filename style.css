@@ -56,7 +56,7 @@ body {
     font-weight: 200;
     font-family: 'Montserrat';
     line-height: 1.8;
-    font-weight: 200;
+    font-weight:normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -148,7 +148,9 @@ picture, picture source, picture img {
     color: #f9f9f9;
 }
 
-
+.parallax {
+    height:390vh;
+}
 /*----------------------------------------------------------------
     Perfect Fourth (http://type-scale.com)
 ----------------------------------------------------------------*/
@@ -658,18 +660,18 @@ nav ul.sub-menu > li:last-child > a {
     -webkit-filter: drop-shadow(3px 3px 6px #555);
 }
 .section-finishing {
-    height:600px;
+    height:500px;
 }
 
 
 /* Configurações da Seção de Produtos */
 .section-volume {
     height: auto;
-    min-height: 440px;
+    min-height:220px;
 }
 
 .section-volume.bg{
-    height: 370px;
+    height:320px;
 }
 
 .section-volume .text-center{
@@ -3694,7 +3696,9 @@ footer .row-content.buffer {
         text-align: center;
         width: 143%;
     }
-
+.parallax {
+    height:435vh!important;
+}
     .banner-titulo{
         position: relative;
     }
@@ -3906,7 +3910,7 @@ text-align: center;
     }
     
     .section-volume.bg{
-        height: 120px;
+        height:85px;
     }
 }
 
@@ -3929,7 +3933,18 @@ text-align: center;
     }
 }       
 
+/*----------------------------------------------------------------
+    1300px Breakpoint
+----------------------------------------------------------------*/
 
+@media handheld, only screen and (min-width:1300px) {
+
+.parallax {
+    height:335vh!important;
+}
+
+
+}
 /*----------------------------------------------------------------
     Lightbox
 ----------------------------------------------------------------*/

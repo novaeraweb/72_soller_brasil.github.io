@@ -96,12 +96,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<?php } else { ?>
 		<?php } ?>
 		<?php foreach ($colecoes as $colecao) {	$idcol = $colecao->idcolecao;?>
-			<div id="<?=str_replace(' ', '', $colecao->nome);?>" style="height:80px;"></div>
+			<div id="<?=str_replace(' ', '', $colecao->nome);?>"></div>
 			<section class="row section section-volume bg" style="background: url(adm/arquivos/<?=$colecao->arquivo;?>) no-repeat; background-size: 100%;">
 			</section>
 			<section class="row section section-volume">
 					<div class="text-center">
-						<div class="row-content buffer even clear-after" style="padding-top:0;">
+						<div class="row-content buffer even clear-after" style="padding-top:0;padding-bottom:0;">
 							<?=$colecao->descricao;?><br>
 						</div>
 						<?php $id = $colecao->idcolecao;
@@ -114,7 +114,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						?>
 
 						<?php if(isset($result_professional)) { ?>
-					  	<h3>Professional Line</h3><br><br>
+					  	<h3>Professional Line</h3>
 						<?php } ?>
 					
 						<div style="margin-left:8%;">
@@ -123,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								$count = 1; $produtos = listaProdutoFront($soller, $idcol); 
 						  		foreach ($produtos as $produto) { ?>
 									<?php if ($produto->idlinha_prod == '4'){?>
-											<div class="column third produto">
+											<div class="column third produto" style="min-height:550px">
 											<figure>
 												<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
 											</figure>
@@ -151,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<?php }?>
 						</div>
 						<?php if(isset($result_main)) { ?>
-					  	<div><hr></div><h3 style="padding-top: 5%;">Line Maintenance</h3><br><br>
+					  	<div><hr></div><h3 style="">Line Maintenance</h3><br><br>
 						<?php } ?>
 						<div style="margin-left:8%;">					
 							<?php // Carrega os produtos dinamicamente a partir das linhas (profissionais/manutenção)
@@ -159,14 +159,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								$count = 1; $produtos = listaProdutoFront($soller, $idcol); 
 						  		foreach ($produtos as $produto) { ?>
 									<?php if ($produto->idlinha_prod == '1'){?>
-
-					
-											<div class="column third produto">
-								
+										<div class="column third produto" style="min-height:700px;">
 											<figure>
 												<img src="adm/arquivos/<?=$produto->arquivo;?>" alt="Produto <?=$produto->nome;?> | Coleção <?=$colecao->nome;?>" class="animation" style="margin:0 auto">
 											</figure>
-											<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong>, <?=$produto->descricao;?></p>
+											<p class="mbr-content-title mbr-bold mbr-fonts-style display-7"><strong><?=$produto->nome;?></strong></p>
+											<p style="text-align:justify;"><?=$produto->descricao;?></p>
 											<div class="peso">
 												<?php // Verifica se o produto possui uma entrada de peso ou diversas e produz o resultado adequado
 												if ($produto->peso_unico == '') { ?>
@@ -183,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														<li><?=$produto->peso_unico;?></li>
 													</ul>
 												<?php }?>
-											</div>
+										    </div>
 										</div>
 									<?php } else {?>
 								<?php }?>

@@ -114,7 +114,7 @@ $result_professional = mysqli_fetch_assoc($resultado_professional);
 
 							 ?>
 							<?php if(isset($result_professional)) { ?>
-						  	<h3>Professional Line</h3><br><br>
+						  	<h3>Professional Line</h3>
 							<?php } ?>
 
 

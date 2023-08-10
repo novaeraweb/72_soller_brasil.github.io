@@ -1,14 +1,14 @@
 ##### LOCAWEB - NAO REMOVER #####
 AddHandler php7-script .php
-suPHP_ConfigPath /home/sollerbrasil3/
+suPHP_ConfigPath /home/moldmix9/
 ##### LOCAWEB - NAO REMOVER #####
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.sollerbrasil.com/$1 [R,L]
+RewriteRule ^(.*)$ https://www.moldmix.com.br/$1 [R,L]
 
-RewriteCond %{HTTP_HOST} ^sollerbrasil.com
-RewriteRule ^ http://www.sollerbrasil.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^moldmix.com.br
+RewriteRule ^ http://www.moldmix.com.br%{REQUEST_URI} [L,R=301]
 
 # REMOVE PHP FROM URL
 # REMOVE PHP EXTENSION
